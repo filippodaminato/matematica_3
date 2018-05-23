@@ -1,15 +1,15 @@
 //
-//  Matematica_3Tests.swift
-//  Matematica_3Tests
+//  matematica_3Tests.swift
+//  matematica_3Tests
 //
-//  Created by Alex on 11/05/18.
+//  Created by Alex on 12/05/18.
 //  Copyright © 2018 Class_4AI. All rights reserved.
 //
 
 import XCTest
-@testable import Matematica_3
+@testable import matematica_3
 
-class Matematica_3Tests: XCTestCase {
+class matematica_3Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

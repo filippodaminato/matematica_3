@@ -7,64 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA4634CE20A5954B005CCDA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4634CD20A5954B005CCDA8 /* AppDelegate.swift */; };
-		FA4634D020A5954B005CCDA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4634CF20A5954B005CCDA8 /* ViewController.swift */; };
-		FA4634D320A5954B005CCDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4634D120A5954B005CCDA8 /* Main.storyboard */; };
-		FA4634D520A5954C005CCDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4634D420A5954C005CCDA8 /* Assets.xcassets */; };
-		FA4634D820A5954C005CCDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4634D620A5954C005CCDA8 /* LaunchScreen.storyboard */; };
-		FA4634E320A5954C005CCDA8 /* Matematica_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4634E220A5954C005CCDA8 /* Matematica_3Tests.swift */; };
-		FA4634EE20A5954C005CCDA8 /* Matematica_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4634ED20A5954C005CCDA8 /* Matematica_3UITests.swift */; };
+		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
+		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
+		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
+		FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */; };
+		FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */; };
+		FAA9DBF420A6CA59002B3F36 /* matematica_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */; };
+		FAA9DBFF20A6CA59002B3F36 /* matematica_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */; };
+		FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */; };
+		FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */; };
+		FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */; };
+		FACF193F20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */; };
+		FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */; };
+		FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */; };
+		FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */; };
+		FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */; };
+		FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */; };
+		FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */; };
+		FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */; };
+		FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */; };
+		FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */; };
+		FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */; };
+		FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */; };
+		FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FA4634DF20A5954C005CCDA8 /* PBXContainerItemProxy */ = {
+		FAA9DBF020A6CA59002B3F36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA4634C220A5954B005CCDA8 /* Project object */;
+			containerPortal = FAA9DBD320A6CA57002B3F36 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA4634C920A5954B005CCDA8;
-			remoteInfo = Matematica_3;
+			remoteGlobalIDString = FAA9DBDA20A6CA57002B3F36;
+			remoteInfo = matematica_3;
 		};
-		FA4634EA20A5954C005CCDA8 /* PBXContainerItemProxy */ = {
+		FAA9DBFB20A6CA59002B3F36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA4634C220A5954B005CCDA8 /* Project object */;
+			containerPortal = FAA9DBD320A6CA57002B3F36 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA4634C920A5954B005CCDA8;
-			remoteInfo = Matematica_3;
+			remoteGlobalIDString = FAA9DBDA20A6CA57002B3F36;
+			remoteInfo = matematica_3;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA4634CA20A5954B005CCDA8 /* Matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4634CD20A5954B005CCDA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA4634CF20A5954B005CCDA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA4634D220A5954B005CCDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA4634D420A5954C005CCDA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA4634D720A5954C005CCDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FA4634D920A5954C005CCDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA4634DE20A5954C005CCDA8 /* Matematica_3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Matematica_3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4634E220A5954C005CCDA8 /* Matematica_3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matematica_3Tests.swift; sourceTree = "<group>"; };
-		FA4634E420A5954C005CCDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA4634E920A5954C005CCDA8 /* Matematica_3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Matematica_3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4634ED20A5954C005CCDA8 /* Matematica_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matematica_3UITests.swift; sourceTree = "<group>"; };
-		FA4634EF20A5954C005CCDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAA9DBE320A6CA57002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA9DBE820A6CA58002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA9DBEA20A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA9DBEF20A6CA59002B3F36 /* matematica_3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matematica_3Tests.swift; sourceTree = "<group>"; };
+		FAA9DBF520A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA9DBFA20A6CA59002B3F36 /* matematica_3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matematica_3UITests.swift; sourceTree = "<group>"; };
+		FAA9DC0020A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACF193120AFFC350083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bugin-Pinton.storyboard"; sourceTree = "<group>"; };
+		FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bugin-Pinton_Controller.swift"; sourceTree = "<group>"; };
+		FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bonaldo-Xia_Controller.swift"; sourceTree = "<group>"; };
+		FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Caldini-Marchioro_Controller.swift"; sourceTree = "<group>"; };
+		FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mason-Casagrande_Controller.swift"; sourceTree = "<group>"; };
+		FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lazzarin-Baricchio_Controller.swift"; sourceTree = "<group>"; };
+		FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Migali-Giacomello_Controller.swift"; sourceTree = "<group>"; };
+		FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan_Controller.swift"; sourceTree = "<group>"; };
+		FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bolzo-Calderon_Controller.swift"; sourceTree = "<group>"; };
+		FACF194C20AFFEF30083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bonaldo-Xia.storyboard"; sourceTree = "<group>"; };
+		FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Caldini-Marchioro.storyboard"; sourceTree = "<group>"; };
+		FACF195120AFFF3D0083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Mason-Casagrande.storyboard"; sourceTree = "<group>"; };
+		FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bolzo-Calderon.storyboard"; sourceTree = "<group>"; };
+		FACF195620AFFF770083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
+		FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Migali-Giacomello.storyboard"; sourceTree = "<group>"; };
+		FACF195B20AFFFC90083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Lazzarin-Baricchio.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA4634C720A5954B005CCDA8 /* Frameworks */ = {
+		FAA9DBD820A6CA57002B3F36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4634DB20A5954C005CCDA8 /* Frameworks */ = {
+		FAA9DBEC20A6CA59002B3F36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4634E620A5954C005CCDA8 /* Frameworks */ = {
+		FAA9DBF720A6CA59002B3F36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,217 +106,217 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA4634C120A5954B005CCDA8 = {
+		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
-				FA4634CC20A5954B005CCDA8 /* Matematica_3 */,
-				FA4634E120A5954C005CCDA8 /* Matematica_3Tests */,
-				FA4634EC20A5954C005CCDA8 /* Matematica_3UITests */,
-				FA4634CB20A5954B005CCDA8 /* Products */,
+				FACF193B20AFFDF70083D028 /* Bolzo-Calderon */,
+				FACF193A20AFFDE80083D028 /* Barbiero-Bazan */,
+				FACF193920AFFDD30083D028 /* Migali-Giacomello */,
+				FACF193820AFFDA60083D028 /* Lazzarin-Baricchio */,
+				FACF193720AFFD880083D028 /* Mason-Casagrande */,
+				FACF193620AFFD7A0083D028 /* Caldini-Marchioro */,
+				FACF193520AFFD5F0083D028 /* Bonaldo-Xia */,
+				FACF192F20AFFC040083D028 /* Bugin-Pinton */,
+				FAA9DBDD20A6CA57002B3F36 /* matematica_3 */,
+				FAA9DBF220A6CA59002B3F36 /* matematica_3Tests */,
+				FAA9DBFD20A6CA59002B3F36 /* matematica_3UITests */,
+				FAA9DBDC20A6CA57002B3F36 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA4634CB20A5954B005CCDA8 /* Products */ = {
+		FAA9DBDC20A6CA57002B3F36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA4634CA20A5954B005CCDA8 /* Matematica_3.app */,
-				FA4634DE20A5954C005CCDA8 /* Matematica_3Tests.xctest */,
-				FA4634E920A5954C005CCDA8 /* Matematica_3UITests.xctest */,
+				FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */,
+				FAA9DBEF20A6CA59002B3F36 /* matematica_3Tests.xctest */,
+				FAA9DBFA20A6CA59002B3F36 /* matematica_3UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA4634CC20A5954B005CCDA8 /* Matematica_3 */ = {
+		FAA9DBDD20A6CA57002B3F36 /* matematica_3 */ = {
 			isa = PBXGroup;
 			children = (
-				FA46350420A59817005CCDA8 /* Immagini */,
-				FA46350320A597C2005CCDA8 /* Bolzonella_Jose_Antonio_Iamarino_Calderon */,
-				FA46350220A597A5005CCDA8 /* Barbiero_Basan */,
-				FA46350120A596C7005CCDA8 /* Migali_Giacomello */,
-				FA46350020A59679005CCDA8 /* Lazzarin_Baricchio */,
-				FA4634FF20A59662005CCDA8 /* Mason_Casagrande */,
-				FA4634FE20A5964F005CCDA8 /* Cladini_Marchioro */,
-				FA4634FD20A5963B005CCDA8 /* Xia_Bonaldo */,
-				FA4634FC20A59573005CCDA8 /* Bau_Stojkovich */,
-				FA4634FB20A59562005CCDA8 /* Bugin_Pinton */,
-				FA4634CF20A5954B005CCDA8 /* ViewController.swift */,
-				FA4634CD20A5954B005CCDA8 /* AppDelegate.swift */,
-				FA4634D120A5954B005CCDA8 /* Main.storyboard */,
-				FA4634D420A5954C005CCDA8 /* Assets.xcassets */,
-				FA4634D620A5954C005CCDA8 /* LaunchScreen.storyboard */,
-				FA4634D920A5954C005CCDA8 /* Info.plist */,
+				FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */,
+				FAA9DBE020A6CA57002B3F36 /* ViewController.swift */,
+				FAA9DBE220A6CA57002B3F36 /* Main.storyboard */,
+				FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */,
+				FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */,
+				FAA9DBEA20A6CA59002B3F36 /* Info.plist */,
 			);
-			path = Matematica_3;
+			path = matematica_3;
 			sourceTree = "<group>";
 		};
-		FA4634E120A5954C005CCDA8 /* Matematica_3Tests */ = {
+		FAA9DBF220A6CA59002B3F36 /* matematica_3Tests */ = {
 			isa = PBXGroup;
 			children = (
-				FA4634E220A5954C005CCDA8 /* Matematica_3Tests.swift */,
-				FA4634E420A5954C005CCDA8 /* Info.plist */,
+				FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */,
+				FAA9DBF520A6CA59002B3F36 /* Info.plist */,
 			);
-			path = Matematica_3Tests;
+			path = matematica_3Tests;
 			sourceTree = "<group>";
 		};
-		FA4634EC20A5954C005CCDA8 /* Matematica_3UITests */ = {
+		FAA9DBFD20A6CA59002B3F36 /* matematica_3UITests */ = {
 			isa = PBXGroup;
 			children = (
-				FA4634ED20A5954C005CCDA8 /* Matematica_3UITests.swift */,
-				FA4634EF20A5954C005CCDA8 /* Info.plist */,
+				FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */,
+				FAA9DC0020A6CA59002B3F36 /* Info.plist */,
 			);
-			path = Matematica_3UITests;
+			path = matematica_3UITests;
 			sourceTree = "<group>";
 		};
-		FA4634FB20A59562005CCDA8 /* Bugin_Pinton */ = {
+		FACF192F20AFFC040083D028 /* Bugin-Pinton */ = {
 			isa = PBXGroup;
 			children = (
+				FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */,
+				FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */,
 			);
-			path = Bugin_Pinton;
+			path = "Bugin-Pinton";
 			sourceTree = "<group>";
 		};
-		FA4634FC20A59573005CCDA8 /* Bau_Stojkovich */ = {
+		FACF193520AFFD5F0083D028 /* Bonaldo-Xia */ = {
 			isa = PBXGroup;
 			children = (
+				FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */,
+				FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */,
 			);
-			path = Bau_Stojkovich;
+			path = "Bonaldo-Xia";
 			sourceTree = "<group>";
 		};
-		FA4634FD20A5963B005CCDA8 /* Xia_Bonaldo */ = {
+		FACF193620AFFD7A0083D028 /* Caldini-Marchioro */ = {
 			isa = PBXGroup;
 			children = (
+				FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */,
+				FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */,
 			);
-			path = Xia_Bonaldo;
+			path = "Caldini-Marchioro";
 			sourceTree = "<group>";
 		};
-		FA4634FE20A5964F005CCDA8 /* Cladini_Marchioro */ = {
+		FACF193720AFFD880083D028 /* Mason-Casagrande */ = {
 			isa = PBXGroup;
 			children = (
+				FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */,
+				FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */,
 			);
-			path = Cladini_Marchioro;
+			path = "Mason-Casagrande";
 			sourceTree = "<group>";
 		};
-		FA4634FF20A59662005CCDA8 /* Mason_Casagrande */ = {
+		FACF193820AFFDA60083D028 /* Lazzarin-Baricchio */ = {
 			isa = PBXGroup;
 			children = (
+				FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */,
+				FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */,
 			);
-			path = Mason_Casagrande;
+			path = "Lazzarin-Baricchio";
 			sourceTree = "<group>";
 		};
-		FA46350020A59679005CCDA8 /* Lazzarin_Baricchio */ = {
+		FACF193920AFFDD30083D028 /* Migali-Giacomello */ = {
 			isa = PBXGroup;
 			children = (
+				FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */,
+				FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */,
 			);
-			path = Lazzarin_Baricchio;
+			path = "Migali-Giacomello";
 			sourceTree = "<group>";
 		};
-		FA46350120A596C7005CCDA8 /* Migali_Giacomello */ = {
+		FACF193A20AFFDE80083D028 /* Barbiero-Bazan */ = {
 			isa = PBXGroup;
 			children = (
+				FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */,
+				FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */,
 			);
-			path = Migali_Giacomello;
+			path = "Barbiero-Bazan";
 			sourceTree = "<group>";
 		};
-		FA46350220A597A5005CCDA8 /* Barbiero_Basan */ = {
+		FACF193B20AFFDF70083D028 /* Bolzo-Calderon */ = {
 			isa = PBXGroup;
 			children = (
+				FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */,
+				FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */,
 			);
-			path = Barbiero_Basan;
-			sourceTree = "<group>";
-		};
-		FA46350320A597C2005CCDA8 /* Bolzonella_Jose_Antonio_Iamarino_Calderon */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Bolzonella_Jose_Antonio_Iamarino_Calderon;
-			sourceTree = "<group>";
-		};
-		FA46350420A59817005CCDA8 /* Immagini */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Immagini;
+			path = "Bolzo-Calderon";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA4634C920A5954B005CCDA8 /* Matematica_3 */ = {
+		FAA9DBDA20A6CA57002B3F36 /* matematica_3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA4634F220A5954C005CCDA8 /* Build configuration list for PBXNativeTarget "Matematica_3" */;
+			buildConfigurationList = FAA9DC0320A6CA59002B3F36 /* Build configuration list for PBXNativeTarget "matematica_3" */;
 			buildPhases = (
-				FA4634C620A5954B005CCDA8 /* Sources */,
-				FA4634C720A5954B005CCDA8 /* Frameworks */,
-				FA4634C820A5954B005CCDA8 /* Resources */,
+				FAA9DBD720A6CA57002B3F36 /* Sources */,
+				FAA9DBD820A6CA57002B3F36 /* Frameworks */,
+				FAA9DBD920A6CA57002B3F36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Matematica_3;
-			productName = Matematica_3;
-			productReference = FA4634CA20A5954B005CCDA8 /* Matematica_3.app */;
+			name = matematica_3;
+			productName = matematica_3;
+			productReference = FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA4634DD20A5954C005CCDA8 /* Matematica_3Tests */ = {
+		FAA9DBEE20A6CA59002B3F36 /* matematica_3Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA4634F520A5954C005CCDA8 /* Build configuration list for PBXNativeTarget "Matematica_3Tests" */;
+			buildConfigurationList = FAA9DC0620A6CA59002B3F36 /* Build configuration list for PBXNativeTarget "matematica_3Tests" */;
 			buildPhases = (
-				FA4634DA20A5954C005CCDA8 /* Sources */,
-				FA4634DB20A5954C005CCDA8 /* Frameworks */,
-				FA4634DC20A5954C005CCDA8 /* Resources */,
+				FAA9DBEB20A6CA59002B3F36 /* Sources */,
+				FAA9DBEC20A6CA59002B3F36 /* Frameworks */,
+				FAA9DBED20A6CA59002B3F36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA4634E020A5954C005CCDA8 /* PBXTargetDependency */,
+				FAA9DBF120A6CA59002B3F36 /* PBXTargetDependency */,
 			);
-			name = Matematica_3Tests;
-			productName = Matematica_3Tests;
-			productReference = FA4634DE20A5954C005CCDA8 /* Matematica_3Tests.xctest */;
+			name = matematica_3Tests;
+			productName = matematica_3Tests;
+			productReference = FAA9DBEF20A6CA59002B3F36 /* matematica_3Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FA4634E820A5954C005CCDA8 /* Matematica_3UITests */ = {
+		FAA9DBF920A6CA59002B3F36 /* matematica_3UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA4634F820A5954C005CCDA8 /* Build configuration list for PBXNativeTarget "Matematica_3UITests" */;
+			buildConfigurationList = FAA9DC0920A6CA59002B3F36 /* Build configuration list for PBXNativeTarget "matematica_3UITests" */;
 			buildPhases = (
-				FA4634E520A5954C005CCDA8 /* Sources */,
-				FA4634E620A5954C005CCDA8 /* Frameworks */,
-				FA4634E720A5954C005CCDA8 /* Resources */,
+				FAA9DBF620A6CA59002B3F36 /* Sources */,
+				FAA9DBF720A6CA59002B3F36 /* Frameworks */,
+				FAA9DBF820A6CA59002B3F36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA4634EB20A5954C005CCDA8 /* PBXTargetDependency */,
+				FAA9DBFC20A6CA59002B3F36 /* PBXTargetDependency */,
 			);
-			name = Matematica_3UITests;
-			productName = Matematica_3UITests;
-			productReference = FA4634E920A5954C005CCDA8 /* Matematica_3UITests.xctest */;
+			name = matematica_3UITests;
+			productName = matematica_3UITests;
+			productReference = FAA9DBFA20A6CA59002B3F36 /* matematica_3UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA4634C220A5954B005CCDA8 /* Project object */ = {
+		FAA9DBD320A6CA57002B3F36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Class_4AI;
 				TargetAttributes = {
-					FA4634C920A5954B005CCDA8 = {
+					FAA9DBDA20A6CA57002B3F36 = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					FA4634DD20A5954C005CCDA8 = {
+					FAA9DBEE20A6CA59002B3F36 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = FA4634C920A5954B005CCDA8;
+						TestTargetID = FAA9DBDA20A6CA57002B3F36;
 					};
-					FA4634E820A5954C005CCDA8 = {
+					FAA9DBF920A6CA59002B3F36 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = FA4634C920A5954B005CCDA8;
+						TestTargetID = FAA9DBDA20A6CA57002B3F36;
 					};
 				};
 			};
-			buildConfigurationList = FA4634C520A5954B005CCDA8 /* Build configuration list for PBXProject "Matematica_3" */;
+			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,37 +324,45 @@
 				en,
 				Base,
 			);
-			mainGroup = FA4634C120A5954B005CCDA8;
-			productRefGroup = FA4634CB20A5954B005CCDA8 /* Products */;
+			mainGroup = FAA9DBD220A6CA57002B3F36;
+			productRefGroup = FAA9DBDC20A6CA57002B3F36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA4634C920A5954B005CCDA8 /* Matematica_3 */,
-				FA4634DD20A5954C005CCDA8 /* Matematica_3Tests */,
-				FA4634E820A5954C005CCDA8 /* Matematica_3UITests */,
+				FAA9DBDA20A6CA57002B3F36 /* matematica_3 */,
+				FAA9DBEE20A6CA59002B3F36 /* matematica_3Tests */,
+				FAA9DBF920A6CA59002B3F36 /* matematica_3UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA4634C820A5954B005CCDA8 /* Resources */ = {
+		FAA9DBD920A6CA57002B3F36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4634D820A5954C005CCDA8 /* LaunchScreen.storyboard in Resources */,
-				FA4634D520A5954C005CCDA8 /* Assets.xcassets in Resources */,
-				FA4634D320A5954B005CCDA8 /* Main.storyboard in Resources */,
+				FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */,
+				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
+				FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */,
+				FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */,
+				FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */,
+				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
+				FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */,
+				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
+				FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */,
+				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
+				FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4634DC20A5954C005CCDA8 /* Resources */ = {
+		FAA9DBED20A6CA59002B3F36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4634E720A5954C005CCDA8 /* Resources */ = {
+		FAA9DBF820A6CA59002B3F36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,67 +372,115 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA4634C620A5954B005CCDA8 /* Sources */ = {
+		FAA9DBD720A6CA57002B3F36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4634D020A5954B005CCDA8 /* ViewController.swift in Sources */,
-				FA4634CE20A5954B005CCDA8 /* AppDelegate.swift in Sources */,
+				FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */,
+				FACF193F20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift in Sources */,
+				FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */,
+				FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */,
+				FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */,
+				FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */,
+				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
+				FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */,
+				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
+				FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4634DA20A5954C005CCDA8 /* Sources */ = {
+		FAA9DBEB20A6CA59002B3F36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4634E320A5954C005CCDA8 /* Matematica_3Tests.swift in Sources */,
+				FAA9DBF420A6CA59002B3F36 /* matematica_3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA4634E520A5954C005CCDA8 /* Sources */ = {
+		FAA9DBF620A6CA59002B3F36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4634EE20A5954C005CCDA8 /* Matematica_3UITests.swift in Sources */,
+				FAA9DBFF20A6CA59002B3F36 /* matematica_3UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FA4634E020A5954C005CCDA8 /* PBXTargetDependency */ = {
+		FAA9DBF120A6CA59002B3F36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA4634C920A5954B005CCDA8 /* Matematica_3 */;
-			targetProxy = FA4634DF20A5954C005CCDA8 /* PBXContainerItemProxy */;
+			target = FAA9DBDA20A6CA57002B3F36 /* matematica_3 */;
+			targetProxy = FAA9DBF020A6CA59002B3F36 /* PBXContainerItemProxy */;
 		};
-		FA4634EB20A5954C005CCDA8 /* PBXTargetDependency */ = {
+		FAA9DBFC20A6CA59002B3F36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA4634C920A5954B005CCDA8 /* Matematica_3 */;
-			targetProxy = FA4634EA20A5954C005CCDA8 /* PBXContainerItemProxy */;
+			target = FAA9DBDA20A6CA57002B3F36 /* matematica_3 */;
+			targetProxy = FAA9DBFB20A6CA59002B3F36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA4634D120A5954B005CCDA8 /* Main.storyboard */ = {
+		FAA9DBE220A6CA57002B3F36 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA4634D220A5954B005CCDA8 /* Base */,
+				FAA9DBE320A6CA57002B3F36 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FA4634D620A5954C005CCDA8 /* LaunchScreen.storyboard */ = {
+		FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA4634D720A5954C005CCDA8 /* Base */,
+				FAA9DBE820A6CA58002B3F36 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACF193120AFFC350083D028 /* Base */,
+			);
+			name = "Bugin-Pinton.storyboard";
+			sourceTree = "<group>";
+		};
+		FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACF194C20AFFEF30083D028 /* Base */,
+			);
+			name = "Bonaldo-Xia.storyboard";
+			sourceTree = "<group>";
+		};
+		FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACF195120AFFF3D0083D028 /* Base */,
+			);
+			name = "Mason-Casagrande.storyboard";
+			sourceTree = "<group>";
+		};
+		FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACF195620AFFF770083D028 /* Base */,
+			);
+			name = "Barbiero-Bazan.storyboard";
+			sourceTree = "<group>";
+		};
+		FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACF195B20AFFFC90083D028 /* Base */,
+			);
+			name = "Lazzarin-Baricchio.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FA4634F020A5954C005CCDA8 /* Debug */ = {
+		FAA9DC0120A6CA59002B3F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -452,7 +540,7 @@
 			};
 			name = Debug;
 		};
-		FA4634F120A5954C005CCDA8 /* Release */ = {
+		FAA9DC0220A6CA59002B3F36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -506,158 +594,158 @@
 			};
 			name = Release;
 		};
-		FA4634F320A5954C005CCDA8 /* Debug */ = {
+		FAA9DC0420A6CA59002B3F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Matematica_3/Info.plist;
+				INFOPLIST_FILE = matematica_3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Classe.Matematica-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "calsse-4AI.matematica-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		FA4634F420A5954C005CCDA8 /* Release */ = {
+		FAA9DC0520A6CA59002B3F36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Matematica_3/Info.plist;
+				INFOPLIST_FILE = matematica_3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Classe.Matematica-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "calsse-4AI.matematica-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
-		FA4634F620A5954C005CCDA8 /* Debug */ = {
+		FAA9DC0720A6CA59002B3F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Matematica_3Tests/Info.plist;
+				INFOPLIST_FILE = matematica_3Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Classe.Matematica-3Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "calsse-4AI.matematica-3Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Matematica_3.app/Matematica_3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/matematica_3.app/matematica_3";
 			};
 			name = Debug;
 		};
-		FA4634F720A5954C005CCDA8 /* Release */ = {
+		FAA9DC0820A6CA59002B3F36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Matematica_3Tests/Info.plist;
+				INFOPLIST_FILE = matematica_3Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Classe.Matematica-3Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "calsse-4AI.matematica-3Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Matematica_3.app/Matematica_3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/matematica_3.app/matematica_3";
 			};
 			name = Release;
 		};
-		FA4634F920A5954C005CCDA8 /* Debug */ = {
+		FAA9DC0A20A6CA59002B3F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Matematica_3UITests/Info.plist;
+				INFOPLIST_FILE = matematica_3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Classe.Matematica-3UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "calsse-4AI.matematica-3UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Matematica_3;
+				TEST_TARGET_NAME = matematica_3;
 			};
 			name = Debug;
 		};
-		FA4634FA20A5954C005CCDA8 /* Release */ = {
+		FAA9DC0B20A6CA59002B3F36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Matematica_3UITests/Info.plist;
+				INFOPLIST_FILE = matematica_3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Classe.Matematica-3UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "calsse-4AI.matematica-3UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Matematica_3;
+				TEST_TARGET_NAME = matematica_3;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA4634C520A5954B005CCDA8 /* Build configuration list for PBXProject "Matematica_3" */ = {
+		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA4634F020A5954C005CCDA8 /* Debug */,
-				FA4634F120A5954C005CCDA8 /* Release */,
+				FAA9DC0120A6CA59002B3F36 /* Debug */,
+				FAA9DC0220A6CA59002B3F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA4634F220A5954C005CCDA8 /* Build configuration list for PBXNativeTarget "Matematica_3" */ = {
+		FAA9DC0320A6CA59002B3F36 /* Build configuration list for PBXNativeTarget "matematica_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA4634F320A5954C005CCDA8 /* Debug */,
-				FA4634F420A5954C005CCDA8 /* Release */,
+				FAA9DC0420A6CA59002B3F36 /* Debug */,
+				FAA9DC0520A6CA59002B3F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA4634F520A5954C005CCDA8 /* Build configuration list for PBXNativeTarget "Matematica_3Tests" */ = {
+		FAA9DC0620A6CA59002B3F36 /* Build configuration list for PBXNativeTarget "matematica_3Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA4634F620A5954C005CCDA8 /* Debug */,
-				FA4634F720A5954C005CCDA8 /* Release */,
+				FAA9DC0720A6CA59002B3F36 /* Debug */,
+				FAA9DC0820A6CA59002B3F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA4634F820A5954C005CCDA8 /* Build configuration list for PBXNativeTarget "Matematica_3UITests" */ = {
+		FAA9DC0920A6CA59002B3F36 /* Build configuration list for PBXNativeTarget "matematica_3UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA4634F920A5954C005CCDA8 /* Debug */,
-				FA4634FA20A5954C005CCDA8 /* Release */,
+				FAA9DC0A20A6CA59002B3F36 /* Debug */,
+				FAA9DC0B20A6CA59002B3F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA4634C220A5954B005CCDA8 /* Project object */;
+	rootObject = FAA9DBD320A6CA57002B3F36 /* Project object */;
 }

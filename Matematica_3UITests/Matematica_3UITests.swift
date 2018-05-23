@@ -1,14 +1,14 @@
 //
-//  Matematica_3UITests.swift
-//  Matematica_3UITests
+//  matematica_3UITests.swift
+//  matematica_3UITests
 //
-//  Created by Alex on 11/05/18.
+//  Created by Alex on 12/05/18.
 //  Copyright © 2018 Class_4AI. All rights reserved.
 //
 
 import XCTest
 
-class Matematica_3UITests: XCTestCase {
+class matematica_3UITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Matematica_3
+//  matematica_3
 //
-//  Created by Alex on 11/05/18.
+//  Created by Alex on 12/05/18.
 //  Copyright © 2018 Class_4AI. All rights reserved.
 //
 
