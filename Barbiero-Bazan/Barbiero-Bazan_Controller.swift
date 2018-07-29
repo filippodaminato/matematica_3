@@ -9,7 +9,7 @@
 import UIKit
 
 class Barbiero_Bazan_Controller: UIViewController {
-	//ciao ciao
+	//ciao ciao ciao
     override func viewDidLoad() {
         super.viewDidLoad()
 
