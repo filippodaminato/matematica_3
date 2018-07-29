@@ -12,8 +12,6 @@
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
 		FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */; };
 		FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */; };
-		FAA9DBF420A6CA59002B3F36 /* matematica_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */; };
-		FAA9DBFF20A6CA59002B3F36 /* matematica_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */; };
 		FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */; };
 		FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */; };
 /* End PBXBuildFile section */
@@ -44,11 +42,7 @@
 		FAA9DBE820A6CA58002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA9DBEA20A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA9DBEF20A6CA59002B3F36 /* matematica_3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matematica_3Tests.swift; sourceTree = "<group>"; };
-		FAA9DBF520A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA9DBFA20A6CA59002B3F36 /* matematica_3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matematica_3UITests.swift; sourceTree = "<group>"; };
-		FAA9DC0020A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan_Controller.swift"; sourceTree = "<group>"; };
 		FACF195620AFFF770083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +77,6 @@
 			children = (
 				FACF193A20AFFDE80083D028 /* Barbiero-Bazan */,
 				FAA9DBDD20A6CA57002B3F36 /* matematica_3 */,
-				FAA9DBF220A6CA59002B3F36 /* matematica_3Tests */,
-				FAA9DBFD20A6CA59002B3F36 /* matematica_3UITests */,
 				FAA9DBDC20A6CA57002B3F36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,24 +102,6 @@
 				FAA9DBEA20A6CA59002B3F36 /* Info.plist */,
 			);
 			path = matematica_3;
-			sourceTree = "<group>";
-		};
-		FAA9DBF220A6CA59002B3F36 /* matematica_3Tests */ = {
-			isa = PBXGroup;
-			children = (
-				FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */,
-				FAA9DBF520A6CA59002B3F36 /* Info.plist */,
-			);
-			path = matematica_3Tests;
-			sourceTree = "<group>";
-		};
-		FAA9DBFD20A6CA59002B3F36 /* matematica_3UITests */ = {
-			isa = PBXGroup;
-			children = (
-				FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */,
-				FAA9DC0020A6CA59002B3F36 /* Info.plist */,
-			);
-			path = matematica_3UITests;
 			sourceTree = "<group>";
 		};
 		FACF193A20AFFDE80083D028 /* Barbiero-Bazan */ = {
@@ -218,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */;
+			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -281,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA9DBF420A6CA59002B3F36 /* matematica_3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA9DBFF20A6CA59002B3F36 /* matematica_3UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +537,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */ = {
+		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAA9DC0120A6CA59002B3F36 /* Debug */,
