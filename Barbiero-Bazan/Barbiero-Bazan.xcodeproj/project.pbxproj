@@ -54,6 +54,7 @@
 		D53E6412210E257A00BA0858 /* Barbiero-Bazan */ = {
 			isa = PBXGroup;
 			children = (
+				D53E6425210E2B8B00BA0858 /* images */,
 				D53E6413210E257A00BA0858 /* AppDelegate.swift */,
 				D53E6415210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift */,
 				D53E6417210E257A00BA0858 /* Barbiero-Bazan.storyboard */,
@@ -62,6 +63,13 @@
 				D53E641F210E257B00BA0858 /* Info.plist */,
 			);
 			path = "Barbiero-Bazan";
+			sourceTree = "<group>";
+		};
+		D53E6425210E2B8B00BA0858 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
