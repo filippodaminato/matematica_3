@@ -7,13 +7,46 @@
 //
 
 import UIKit
+import Darwin
 
 class Bolzo_Calderon_Controller: UIViewController {
 
+    
+//    Label
+    @IBOutlet weak var num_rand: UILabel!
+    @IBOutlet weak var lbl_result: UILabel!
+    @IBOutlet weak var lbl_num: UILabel!
+    @IBOutlet weak var lbl_denom: UILabel!
+    //    text fields
+    @IBOutlet weak var denominatore: UITextField!
+    @IBOutlet weak var numeratore: UITextField!
+//    buttons
+    @IBAction func btn_check(_ sender: Any) {
+        if(numeratore.text != "" && denominatore.text != ""){
+            
+            if(Double(numeratore.text!)! == num && Double(denominatore.text!)! == deno){
+                lbl_result.text = "giusto"
+            }
+            else{
+                lbl_result.text = "sbagliato"
+            }
+        }
+    }
+    
+    var num:Double = 0
+    var deno:Double = 0
+    var startNumber:Double = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        num = getNumeratore()
+        deno = getDenominatore()
+        lbl_num.text = String(num)
+        lbl_denom.text = String(deno)
+        startNumber = getStartNumber(numeratore: num, denominatore: deno)
+        num_rand.text = String(startNumber)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +54,21 @@ class Bolzo_Calderon_Controller: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // ritorna intero che corrisponde al denominatore
+    func getDenominatore() -> Double {
+        let cases = [10,100,1000]
+        return Double(cases[Int(arc4random_uniform(3))])
     }
-    */
+    
+    func getNumeratore() -> Double {
+        return Double(arc4random_uniform(7000))+1
+    }
+    
+    func getStartNumber(numeratore:Double,denominatore:Double) -> Double {
+        
+//        return Double(round(1000*numeratore)/1000)
+        return Double(numeratore/denominatore) // Swift 3 version
+    }
+    
 
 }
