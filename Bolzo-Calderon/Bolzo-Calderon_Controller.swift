@@ -24,12 +24,27 @@ class Bolzo_Calderon_Controller: UIViewController {
     @IBAction func btn_check(_ sender: Any) {
         if(numeratore.text != "" && denominatore.text != ""){
             
+            var alertController = UIAlertController()
+            
             if(Double(numeratore.text!)! == num && Double(denominatore.text!)! == deno){
                 lbl_result.text = "giusto"
+                alertController = UIAlertController(title: "Risultato", message: "Giusto!", preferredStyle: .alert)
+                
+                
+                
             }
             else{
                 lbl_result.text = "sbagliato"
+                alertController = UIAlertController(title: "Risultato", message: "Sbagliato!", preferredStyle: .alert)
             }
+            
+            let action1 = UIAlertAction(title: "Ok", style: .default) { (action:UIAlertAction) in
+                //                    reset function
+                self.prepareGame()
+            }
+            
+            alertController.addAction(action1)
+            self.present(alertController, animated: true, completion: nil)
         }
     }
     
@@ -40,18 +55,24 @@ class Bolzo_Calderon_Controller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        num = getNumeratore()
-        deno = getDenominatore()
-        lbl_num.text = String(num)
-        lbl_denom.text = String(deno)
-        startNumber = getStartNumber(numeratore: num, denominatore: deno)
-        num_rand.text = String(startNumber)
+        prepareGame()
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func prepareGame() {
+        denominatore.text = ""
+        numeratore.text = ""
+        num = getNumeratore()
+        deno = getDenominatore()
+        lbl_num.text = String(num)
+        lbl_denom.text = String(deno)
+        startNumber = getStartNumber(numeratore: num, denominatore: deno)
+        num_rand.text = String(startNumber)
     }
     
     // ritorna intero che corrisponde al denominatore
