@@ -10,30 +10,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bugin Pinton Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="matematica_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Bugin_Pinton_Controller" customModule="matematica_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondo" translatesAutoresizingMaskIntoConstraints="NO" id="2od-5V-0Kb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2od-5V-0Kb">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambino2" translatesAutoresizingMaskIntoConstraints="NO" id="Uc2-Rd-s5k">
-                                <rect key="frame" x="890" y="531" width="134" height="241"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambina" translatesAutoresizingMaskIntoConstraints="NO" id="6VN-jk-cke">
-                                <rect key="frame" x="600" y="124" width="123" height="253"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambino2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uc2-Rd-s5k">
+                                <rect key="frame" x="886" y="494" width="134" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frM-7m-trq">
-                                <rect key="frame" x="32" y="20" width="46" height="30"/>
+                                <rect key="frame" x="18" y="39" width="100" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="indietro.png"/>
+                                <connections>
+                                    <action selector="indietro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Na1-FH-BBX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDa-Pe-7Cc">
                                 <rect key="frame" x="32" y="136" width="86" height="32"/>
@@ -301,7 +300,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="1RQ-1b-5Ay"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="kqU-6X-zXn"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ui-ka-l7y">
@@ -311,7 +310,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="mh1-cQ-34z"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Tue-62-WGd"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r66-Jp-M2W">
@@ -321,7 +320,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Cie-br-G9s"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="0FA-LW-Qsd"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MqK-SF-ovB">
@@ -331,7 +330,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="w4G-qK-Ujt"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="h0A-Hi-SWS"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0To-hJ-OZf">
@@ -341,7 +340,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="fKh-a3-upQ"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="c5Z-QR-XhR"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AM0-0l-Kce">
@@ -351,7 +350,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="JVx-8S-Y9E"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Xud-cU-XH5"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-VB-8dD">
@@ -361,7 +360,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="3Ks-RX-oiL"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="JS1-2K-nNA"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6y8-X9-loI">
@@ -371,7 +370,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="qFg-8u-n2U"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="T8O-AB-udz"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWr-HF-7cm">
@@ -381,7 +380,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="EtY-zy-HwQ"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="62x-Zi-mll"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9k-s7-vB4">
@@ -391,7 +390,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="iIa-HW-kRq"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="8iU-G9-Sd3"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btr-im-CTI">
@@ -401,7 +400,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="E8P-Im-KIw"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="4ts-gZ-o4L"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckl-o7-EM0">
@@ -411,7 +410,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Uxn-BY-9W1"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="sPj-7M-T3K"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcB-AM-TgL">
@@ -421,7 +420,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="UYT-hH-puk"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Uk4-4v-qwC"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2XX-Vc-YRn">
@@ -431,7 +430,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="byw-SQ-CGq"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="eMQ-1a-ZGb"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="clN-FK-aQD">
@@ -441,7 +440,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="jec-MG-wx2"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="QUy-1s-lUi"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qZ9-RJ-GxV">
@@ -451,7 +450,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="btu-Xu-Izp"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="dIH-Wg-puc"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Kt-hG-kSp">
@@ -461,7 +460,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Xzq-LC-feK"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Qeq-qw-A8J"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6L-QD-BPk">
@@ -766,11 +765,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Al-5w-BY1">
-                                <rect key="frame" x="390" y="689" width="236" height="66"/>
+                                <rect key="frame" x="411" y="707" width="202" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="img_verifica"/>
+                                <state key="normal" image="verifica.png"/>
                                 <connections>
-                                    <action selector="controlla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NIq-Qq-vf8"/>
+                                    <action selector="controlla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kBt-YH-mgq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/ 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-LW-ken">
@@ -780,8 +779,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambino1" translatesAutoresizingMaskIntoConstraints="NO" id="XhT-G1-nfY">
-                                <rect key="frame" x="269" y="157" width="113" height="210"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambino1.png" translatesAutoresizingMaskIntoConstraints="NO" id="XhT-G1-nfY">
+                                <rect key="frame" x="254" y="231" width="113" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7a-MM-auI">
@@ -791,104 +790,108 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="bDI-Xq-zOa"/>
+                                    <action selector="keyboardWillAppear:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="w1w-IC-9j9"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambina.png" translatesAutoresizingMaskIntoConstraints="NO" id="6VN-jk-cke">
+                                <rect key="frame" x="618" y="75" width="123" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Zone" destination="8bC-Xf-vdC" id="H7Y-hR-iUI"/>
-                        <outletCollection property="dividendiLabel" destination="XDa-Pe-7Cc" collectionClass="NSMutableArray" id="WWU-qE-eIx"/>
-                        <outletCollection property="dividendiLabel" destination="JVC-c8-LG5" collectionClass="NSMutableArray" id="8W4-x3-lov"/>
-                        <outletCollection property="dividendiLabel" destination="eQJ-Db-8gi" collectionClass="NSMutableArray" id="8zk-wh-ZOE"/>
-                        <outletCollection property="dividendiLabel" destination="wC6-sg-5fh" collectionClass="NSMutableArray" id="7Qu-Dv-aUc"/>
-                        <outletCollection property="dividendiLabel" destination="BJD-8w-KGi" collectionClass="NSMutableArray" id="k0c-pE-Xhn"/>
-                        <outletCollection property="dividendiLabel" destination="QOD-lC-eFf" collectionClass="NSMutableArray" id="0dH-Tf-p40"/>
-                        <outletCollection property="dividendiLabel" destination="P8k-tw-Vl5" collectionClass="NSMutableArray" id="1xw-wh-EY5"/>
-                        <outletCollection property="dividendiLabel" destination="mRF-6P-xXA" collectionClass="NSMutableArray" id="mwU-7k-AhQ"/>
-                        <outletCollection property="dividendiLabel" destination="Rjk-0d-3c9" collectionClass="NSMutableArray" id="MyO-J5-jba"/>
-                        <outletCollection property="dividendiLabel" destination="jL4-Y6-KH2" collectionClass="NSMutableArray" id="3lt-uA-7l8"/>
-                        <outletCollection property="dividendiLabel" destination="5T3-mK-3do" collectionClass="NSMutableArray" id="kQY-tq-11G"/>
-                        <outletCollection property="dividendiLabel" destination="Aqh-5i-TQV" collectionClass="NSMutableArray" id="Dtc-TZ-2vW"/>
-                        <outletCollection property="dividendiLabel" destination="JbQ-oV-bVu" collectionClass="NSMutableArray" id="nTE-yv-bg2"/>
-                        <outletCollection property="dividendiLabel" destination="r8P-Dk-MVn" collectionClass="NSMutableArray" id="dpi-ct-vEe"/>
-                        <outletCollection property="dividendiLabel" destination="c67-IA-nUV" collectionClass="NSMutableArray" id="uyQ-22-kfa"/>
-                        <outletCollection property="dividendiLabel" destination="DHV-mz-5sh" collectionClass="NSMutableArray" id="mZ8-iu-ssP"/>
-                        <outletCollection property="dividendiLabel" destination="UTd-h9-8oj" collectionClass="NSMutableArray" id="5h5-wK-63d"/>
-                        <outletCollection property="dividendiLabel" destination="86g-Bw-wri" collectionClass="NSMutableArray" id="nCO-OL-pSU"/>
-                        <outletCollection property="risultatoTextField" destination="jLD-F2-4Gl" collectionClass="NSMutableArray" id="gcj-e7-cKy"/>
-                        <outletCollection property="risultatoTextField" destination="crC-Gf-hiM" collectionClass="NSMutableArray" id="5ig-il-8Yk"/>
-                        <outletCollection property="risultatoTextField" destination="Usf-GD-vmg" collectionClass="NSMutableArray" id="YSq-5V-y4e"/>
-                        <outletCollection property="risultatoTextField" destination="W0c-IE-jqc" collectionClass="NSMutableArray" id="ofM-zZ-fOG"/>
-                        <outletCollection property="risultatoTextField" destination="xic-b8-8R9" collectionClass="NSMutableArray" id="Jfw-qn-McC"/>
-                        <outletCollection property="risultatoTextField" destination="48D-Ns-6S4" collectionClass="NSMutableArray" id="gOA-JW-y5P"/>
-                        <outletCollection property="risultatoTextField" destination="PsF-ZA-iBq" collectionClass="NSMutableArray" id="kgU-gx-cMc"/>
-                        <outletCollection property="risultatoTextField" destination="UKv-lZ-Z3U" collectionClass="NSMutableArray" id="TTc-mO-f7N"/>
-                        <outletCollection property="risultatoTextField" destination="kd0-AI-RIr" collectionClass="NSMutableArray" id="ypM-Be-FaH"/>
-                        <outletCollection property="risultatoTextField" destination="HvG-14-bLG" collectionClass="NSMutableArray" id="sC1-dc-Uzn"/>
-                        <outletCollection property="risultatoTextField" destination="5mA-fN-NwL" collectionClass="NSMutableArray" id="Ird-2R-r8Z"/>
-                        <outletCollection property="risultatoTextField" destination="mKc-Pr-brp" collectionClass="NSMutableArray" id="Nw7-II-p6L"/>
-                        <outletCollection property="risultatoTextField" destination="Ii6-yf-AwU" collectionClass="NSMutableArray" id="3Ne-P8-RxB"/>
-                        <outletCollection property="risultatoTextField" destination="uVG-J6-lnR" collectionClass="NSMutableArray" id="gZR-CT-i1R"/>
-                        <outletCollection property="risultatoTextField" destination="yJH-mV-k8S" collectionClass="NSMutableArray" id="uKG-Ur-6RB"/>
-                        <outletCollection property="risultatoTextField" destination="OmO-vM-Wko" collectionClass="NSMutableArray" id="imd-7d-QlI"/>
-                        <outletCollection property="risultatoTextField" destination="o3Q-nL-y5t" collectionClass="NSMutableArray" id="WgI-On-nPi"/>
-                        <outletCollection property="risultatoTextField" destination="hdH-8t-LYv" collectionClass="NSMutableArray" id="MlD-xb-Vuh"/>
-                        <outletCollection property="dividendiLabel2" destination="9us-Sa-g8D" collectionClass="NSMutableArray" id="agh-SZ-B45"/>
-                        <outletCollection property="dividendiLabel2" destination="N8a-ZQ-oUy" collectionClass="NSMutableArray" id="9dK-nt-Ntj"/>
-                        <outletCollection property="dividendiLabel2" destination="JL8-1i-fRZ" collectionClass="NSMutableArray" id="IyI-NI-aGE"/>
-                        <outletCollection property="dividendiLabel2" destination="CZu-1c-Yke" collectionClass="NSMutableArray" id="OBP-cP-qGf"/>
-                        <outletCollection property="dividendiLabel2" destination="2P1-Bb-01k" collectionClass="NSMutableArray" id="DSC-jR-haX"/>
-                        <outletCollection property="dividendiLabel2" destination="4YQ-Jx-rQh" collectionClass="NSMutableArray" id="QtH-g1-dhL"/>
-                        <outletCollection property="dividendiLabel2" destination="dxJ-Qm-plt" collectionClass="NSMutableArray" id="erB-nV-0fX"/>
-                        <outletCollection property="dividendiLabel2" destination="dKl-Zc-8ev" collectionClass="NSMutableArray" id="OKI-nd-c8W"/>
-                        <outletCollection property="dividendiLabel2" destination="wid-bn-3C8" collectionClass="NSMutableArray" id="2mT-xY-XJA"/>
-                        <outletCollection property="dividendiLabel2" destination="4hb-wH-5Mp" collectionClass="NSMutableArray" id="b73-Nb-X26"/>
-                        <outletCollection property="dividendiLabel2" destination="BzZ-hd-vvJ" collectionClass="NSMutableArray" id="jPT-9j-ID5"/>
-                        <outletCollection property="dividendiLabel2" destination="lHK-TR-5iI" collectionClass="NSMutableArray" id="SKE-60-Rx6"/>
-                        <outletCollection property="risultatiLabel2" destination="sdn-J2-MLD" collectionClass="NSMutableArray" id="k1A-LJ-0Wa"/>
-                        <outletCollection property="risultatiLabel2" destination="4Zl-tK-zAn" collectionClass="NSMutableArray" id="7k3-rg-7MT"/>
-                        <outletCollection property="risultatiLabel2" destination="7su-HA-HPD" collectionClass="NSMutableArray" id="cz1-bN-SYr"/>
-                        <outletCollection property="risultatiLabel2" destination="5t4-69-UtN" collectionClass="NSMutableArray" id="nqY-Pg-2Ga"/>
-                        <outletCollection property="risultatiLabel2" destination="F7Z-tb-Xmq" collectionClass="NSMutableArray" id="87F-EN-JzC"/>
-                        <outletCollection property="risultatiLabel2" destination="qVu-nM-h9w" collectionClass="NSMutableArray" id="nCM-UK-Hvc"/>
-                        <outletCollection property="risultatiLabel2" destination="o2e-Dj-I5M" collectionClass="NSMutableArray" id="drc-Cn-mWK"/>
-                        <outletCollection property="risultatiLabel2" destination="QYD-FJ-bfk" collectionClass="NSMutableArray" id="u5x-P8-qiA"/>
-                        <outletCollection property="risultatiLabel2" destination="1OF-Rj-dY5" collectionClass="NSMutableArray" id="kkC-8X-rDv"/>
-                        <outletCollection property="risultatiLabel2" destination="ldE-eE-V2N" collectionClass="NSMutableArray" id="TmI-8b-k3m"/>
-                        <outletCollection property="risultatiLabel2" destination="Utr-V8-xmO" collectionClass="NSMutableArray" id="q6a-6W-cJE"/>
-                        <outletCollection property="risultatiLabel2" destination="Ohc-Qh-AFe" collectionClass="NSMutableArray" id="YZY-x7-RTO"/>
-                        <outletCollection property="risultatoTextField2" destination="vdn-k6-dfx" collectionClass="NSMutableArray" id="deC-jX-nGd"/>
-                        <outletCollection property="risultatoTextField2" destination="3Ui-ka-l7y" collectionClass="NSMutableArray" id="DtA-7C-J18"/>
-                        <outletCollection property="risultatoTextField2" destination="r66-Jp-M2W" collectionClass="NSMutableArray" id="y9J-9Q-aKA"/>
-                        <outletCollection property="risultatoTextField2" destination="MqK-SF-ovB" collectionClass="NSMutableArray" id="iaE-Nw-nQx"/>
-                        <outletCollection property="risultatoTextField2" destination="0To-hJ-OZf" collectionClass="NSMutableArray" id="s9R-dM-rbu"/>
-                        <outletCollection property="risultatoTextField2" destination="AM0-0l-Kce" collectionClass="NSMutableArray" id="h2F-MT-sBS"/>
-                        <outletCollection property="risultatoTextField2" destination="5zU-VB-8dD" collectionClass="NSMutableArray" id="Kmm-cJ-Hmi"/>
-                        <outletCollection property="risultatoTextField2" destination="N7a-MM-auI" collectionClass="NSMutableArray" id="hBp-Tk-5Zk"/>
-                        <outletCollection property="risultatoTextField2" destination="6y8-X9-loI" collectionClass="NSMutableArray" id="mHg-S6-0RL"/>
-                        <outletCollection property="risultatoTextField2" destination="lWr-HF-7cm" collectionClass="NSMutableArray" id="Oyg-IG-fLt"/>
-                        <outletCollection property="risultatoTextField2" destination="b9k-s7-vB4" collectionClass="NSMutableArray" id="qGH-YT-F9V"/>
-                        <outletCollection property="risultatoTextField2" destination="btr-im-CTI" collectionClass="NSMutableArray" id="eS2-bJ-r1e"/>
-                        <outletCollection property="risultatoTextField2" destination="ckl-o7-EM0" collectionClass="NSMutableArray" id="Icy-hE-Hk5"/>
-                        <outletCollection property="risultatoTextField2" destination="hcB-AM-TgL" collectionClass="NSMutableArray" id="3Yb-cj-70z"/>
-                        <outletCollection property="risultatoTextField2" destination="2XX-Vc-YRn" collectionClass="NSMutableArray" id="iXr-J2-pex"/>
-                        <outletCollection property="risultatoTextField2" destination="clN-FK-aQD" collectionClass="NSMutableArray" id="aVC-B8-EmU"/>
-                        <outletCollection property="risultatoTextField2" destination="qZ9-RJ-GxV" collectionClass="NSMutableArray" id="8cn-yo-run"/>
-                        <outletCollection property="risultatoTextField2" destination="4Kt-hG-kSp" collectionClass="NSMutableArray" id="3gh-Lt-w8n"/>
-                        <outletCollection property="divisoriLabel2" destination="8Ga-0n-XMw" collectionClass="NSMutableArray" id="JYF-Q8-nzh"/>
-                        <outletCollection property="divisoriLabel2" destination="h6L-QD-BPk" collectionClass="NSMutableArray" id="q6d-fv-pPW"/>
-                        <outletCollection property="divisoriLabel2" destination="84V-gy-x3D" collectionClass="NSMutableArray" id="DIl-TH-uwI"/>
-                        <outletCollection property="divisoriLabel2" destination="0eW-y7-OIH" collectionClass="NSMutableArray" id="giR-jt-8Qb"/>
-                        <outletCollection property="divisoriLabel2" destination="NvZ-BM-sof" collectionClass="NSMutableArray" id="haI-UV-mDF"/>
-                        <outletCollection property="divisoriLabel2" destination="57K-hC-duO" collectionClass="NSMutableArray" id="wsW-w2-ZvB"/>
-                        <outletCollection property="divisoriLabel2" destination="mJR-y1-TAX" collectionClass="NSMutableArray" id="WUR-nk-z22"/>
-                        <outletCollection property="divisoriLabel2" destination="YYm-xB-moz" collectionClass="NSMutableArray" id="G5p-gp-h1t"/>
-                        <outletCollection property="divisoriLabel2" destination="Hf1-pS-zMR" collectionClass="NSMutableArray" id="qv5-ou-LEi"/>
-                        <outletCollection property="divisoriLabel2" destination="5fr-DK-qZt" collectionClass="NSMutableArray" id="6wS-1B-3H0"/>
-                        <outletCollection property="divisoriLabel2" destination="KzV-AB-kag" collectionClass="NSMutableArray" id="0hF-br-lC3"/>
-                        <outletCollection property="divisoriLabel2" destination="LgS-gt-NH2" collectionClass="NSMutableArray" id="R0X-7S-pg0"/>
+                        <outlet property="Zone" destination="8bC-Xf-vdC" id="utM-1Q-3V5"/>
+                        <outletCollection property="dividendiLabel" destination="XDa-Pe-7Cc" collectionClass="NSMutableArray" id="Bti-rt-5nI"/>
+                        <outletCollection property="dividendiLabel" destination="JVC-c8-LG5" collectionClass="NSMutableArray" id="uZK-Nu-Uuq"/>
+                        <outletCollection property="dividendiLabel" destination="eQJ-Db-8gi" collectionClass="NSMutableArray" id="Tb4-H5-JzH"/>
+                        <outletCollection property="dividendiLabel" destination="wC6-sg-5fh" collectionClass="NSMutableArray" id="xnF-j5-YPS"/>
+                        <outletCollection property="dividendiLabel" destination="BJD-8w-KGi" collectionClass="NSMutableArray" id="B18-GM-ILG"/>
+                        <outletCollection property="dividendiLabel" destination="QOD-lC-eFf" collectionClass="NSMutableArray" id="k13-yH-XCY"/>
+                        <outletCollection property="dividendiLabel" destination="P8k-tw-Vl5" collectionClass="NSMutableArray" id="Zgm-1f-lzr"/>
+                        <outletCollection property="dividendiLabel" destination="mRF-6P-xXA" collectionClass="NSMutableArray" id="F7M-n4-YuY"/>
+                        <outletCollection property="dividendiLabel" destination="Rjk-0d-3c9" collectionClass="NSMutableArray" id="IhH-Ub-e6C"/>
+                        <outletCollection property="dividendiLabel" destination="jL4-Y6-KH2" collectionClass="NSMutableArray" id="d5p-6l-spn"/>
+                        <outletCollection property="dividendiLabel" destination="5T3-mK-3do" collectionClass="NSMutableArray" id="Ubc-aL-nde"/>
+                        <outletCollection property="dividendiLabel" destination="Aqh-5i-TQV" collectionClass="NSMutableArray" id="De5-Ba-e67"/>
+                        <outletCollection property="dividendiLabel" destination="JbQ-oV-bVu" collectionClass="NSMutableArray" id="BOm-iK-cyu"/>
+                        <outletCollection property="dividendiLabel" destination="r8P-Dk-MVn" collectionClass="NSMutableArray" id="blx-Yz-ohw"/>
+                        <outletCollection property="dividendiLabel" destination="c67-IA-nUV" collectionClass="NSMutableArray" id="GL8-QL-kOA"/>
+                        <outletCollection property="dividendiLabel" destination="DHV-mz-5sh" collectionClass="NSMutableArray" id="sfE-gb-IDJ"/>
+                        <outletCollection property="dividendiLabel" destination="UTd-h9-8oj" collectionClass="NSMutableArray" id="Rh0-gR-iOO"/>
+                        <outletCollection property="dividendiLabel" destination="86g-Bw-wri" collectionClass="NSMutableArray" id="agR-tB-Oux"/>
+                        <outletCollection property="risultatoTextField" destination="jLD-F2-4Gl" collectionClass="NSMutableArray" id="BRB-Zw-zGN"/>
+                        <outletCollection property="risultatoTextField" destination="crC-Gf-hiM" collectionClass="NSMutableArray" id="Zag-iS-aRm"/>
+                        <outletCollection property="risultatoTextField" destination="Usf-GD-vmg" collectionClass="NSMutableArray" id="247-6M-0gg"/>
+                        <outletCollection property="risultatoTextField" destination="W0c-IE-jqc" collectionClass="NSMutableArray" id="Eko-Ed-oUq"/>
+                        <outletCollection property="risultatoTextField" destination="xic-b8-8R9" collectionClass="NSMutableArray" id="x6z-nI-en3"/>
+                        <outletCollection property="risultatoTextField" destination="48D-Ns-6S4" collectionClass="NSMutableArray" id="q2k-LN-1AD"/>
+                        <outletCollection property="risultatoTextField" destination="PsF-ZA-iBq" collectionClass="NSMutableArray" id="KwL-LN-qC2"/>
+                        <outletCollection property="risultatoTextField" destination="UKv-lZ-Z3U" collectionClass="NSMutableArray" id="byJ-Sp-KmS"/>
+                        <outletCollection property="risultatoTextField" destination="kd0-AI-RIr" collectionClass="NSMutableArray" id="1Hb-Gl-BUR"/>
+                        <outletCollection property="risultatoTextField" destination="HvG-14-bLG" collectionClass="NSMutableArray" id="SQJ-Te-KOS"/>
+                        <outletCollection property="risultatoTextField" destination="5mA-fN-NwL" collectionClass="NSMutableArray" id="GDK-Dg-Re3"/>
+                        <outletCollection property="risultatoTextField" destination="mKc-Pr-brp" collectionClass="NSMutableArray" id="NPE-Ve-pTu"/>
+                        <outletCollection property="risultatoTextField" destination="Ii6-yf-AwU" collectionClass="NSMutableArray" id="QSk-KC-a53"/>
+                        <outletCollection property="risultatoTextField" destination="uVG-J6-lnR" collectionClass="NSMutableArray" id="JLQ-eB-Mq6"/>
+                        <outletCollection property="risultatoTextField" destination="yJH-mV-k8S" collectionClass="NSMutableArray" id="jNu-FD-7rj"/>
+                        <outletCollection property="risultatoTextField" destination="OmO-vM-Wko" collectionClass="NSMutableArray" id="2wg-mX-ZcQ"/>
+                        <outletCollection property="risultatoTextField" destination="o3Q-nL-y5t" collectionClass="NSMutableArray" id="Ock-vO-kgz"/>
+                        <outletCollection property="risultatoTextField" destination="hdH-8t-LYv" collectionClass="NSMutableArray" id="BFB-BB-5UM"/>
+                        <outletCollection property="divisoriLabel2" destination="8Ga-0n-XMw" collectionClass="NSMutableArray" id="0eW-7U-9RD"/>
+                        <outletCollection property="divisoriLabel2" destination="h6L-QD-BPk" collectionClass="NSMutableArray" id="aGH-hL-XkF"/>
+                        <outletCollection property="divisoriLabel2" destination="84V-gy-x3D" collectionClass="NSMutableArray" id="Y8a-Ji-61G"/>
+                        <outletCollection property="divisoriLabel2" destination="0eW-y7-OIH" collectionClass="NSMutableArray" id="S6h-xy-Lpu"/>
+                        <outletCollection property="divisoriLabel2" destination="NvZ-BM-sof" collectionClass="NSMutableArray" id="Dal-dq-aQ7"/>
+                        <outletCollection property="divisoriLabel2" destination="57K-hC-duO" collectionClass="NSMutableArray" id="TNW-PG-j0d"/>
+                        <outletCollection property="divisoriLabel2" destination="mJR-y1-TAX" collectionClass="NSMutableArray" id="17C-15-M7V"/>
+                        <outletCollection property="divisoriLabel2" destination="YYm-xB-moz" collectionClass="NSMutableArray" id="39E-Pd-85X"/>
+                        <outletCollection property="divisoriLabel2" destination="Hf1-pS-zMR" collectionClass="NSMutableArray" id="Sd3-ph-yJJ"/>
+                        <outletCollection property="divisoriLabel2" destination="5fr-DK-qZt" collectionClass="NSMutableArray" id="n0P-PG-Ki5"/>
+                        <outletCollection property="divisoriLabel2" destination="KzV-AB-kag" collectionClass="NSMutableArray" id="Lyw-9K-rQC"/>
+                        <outletCollection property="divisoriLabel2" destination="LgS-gt-NH2" collectionClass="NSMutableArray" id="6zn-jP-bAY"/>
+                        <outletCollection property="risultatiLabel2" destination="sdn-J2-MLD" collectionClass="NSMutableArray" id="OMl-f2-YAc"/>
+                        <outletCollection property="risultatiLabel2" destination="4Zl-tK-zAn" collectionClass="NSMutableArray" id="pQD-5b-DkX"/>
+                        <outletCollection property="risultatiLabel2" destination="7su-HA-HPD" collectionClass="NSMutableArray" id="Hn7-i1-A9D"/>
+                        <outletCollection property="risultatiLabel2" destination="5t4-69-UtN" collectionClass="NSMutableArray" id="ay0-AU-avF"/>
+                        <outletCollection property="risultatiLabel2" destination="F7Z-tb-Xmq" collectionClass="NSMutableArray" id="EAr-aW-4EA"/>
+                        <outletCollection property="risultatiLabel2" destination="qVu-nM-h9w" collectionClass="NSMutableArray" id="4p8-iu-4v6"/>
+                        <outletCollection property="risultatiLabel2" destination="o2e-Dj-I5M" collectionClass="NSMutableArray" id="MFS-f8-6U9"/>
+                        <outletCollection property="risultatiLabel2" destination="QYD-FJ-bfk" collectionClass="NSMutableArray" id="KfE-mZ-lrJ"/>
+                        <outletCollection property="risultatiLabel2" destination="1OF-Rj-dY5" collectionClass="NSMutableArray" id="WK7-OZ-EKi"/>
+                        <outletCollection property="risultatiLabel2" destination="ldE-eE-V2N" collectionClass="NSMutableArray" id="gus-7H-O8T"/>
+                        <outletCollection property="risultatiLabel2" destination="Utr-V8-xmO" collectionClass="NSMutableArray" id="W2U-Io-jrQ"/>
+                        <outletCollection property="risultatiLabel2" destination="Ohc-Qh-AFe" collectionClass="NSMutableArray" id="x9U-hy-9Ff"/>
+                        <outletCollection property="dividendiLabel2" destination="9us-Sa-g8D" collectionClass="NSMutableArray" id="RGk-lo-UQS"/>
+                        <outletCollection property="dividendiLabel2" destination="N8a-ZQ-oUy" collectionClass="NSMutableArray" id="r9c-c6-hAw"/>
+                        <outletCollection property="dividendiLabel2" destination="JL8-1i-fRZ" collectionClass="NSMutableArray" id="cKx-Tx-G2M"/>
+                        <outletCollection property="dividendiLabel2" destination="CZu-1c-Yke" collectionClass="NSMutableArray" id="AmD-Qq-S2e"/>
+                        <outletCollection property="dividendiLabel2" destination="2P1-Bb-01k" collectionClass="NSMutableArray" id="rw7-hi-NBc"/>
+                        <outletCollection property="dividendiLabel2" destination="4YQ-Jx-rQh" collectionClass="NSMutableArray" id="MbQ-AK-eif"/>
+                        <outletCollection property="dividendiLabel2" destination="dxJ-Qm-plt" collectionClass="NSMutableArray" id="N2z-7d-ZSV"/>
+                        <outletCollection property="dividendiLabel2" destination="dKl-Zc-8ev" collectionClass="NSMutableArray" id="cmM-B3-SdI"/>
+                        <outletCollection property="dividendiLabel2" destination="wid-bn-3C8" collectionClass="NSMutableArray" id="mDo-YU-bMQ"/>
+                        <outletCollection property="dividendiLabel2" destination="4hb-wH-5Mp" collectionClass="NSMutableArray" id="D5z-R1-D3p"/>
+                        <outletCollection property="dividendiLabel2" destination="BzZ-hd-vvJ" collectionClass="NSMutableArray" id="rkp-x0-IpA"/>
+                        <outletCollection property="dividendiLabel2" destination="lHK-TR-5iI" collectionClass="NSMutableArray" id="YFZ-dW-mxN"/>
+                        <outletCollection property="risultatoTextField2" destination="vdn-k6-dfx" collectionClass="NSMutableArray" id="F0W-0e-0gj"/>
+                        <outletCollection property="risultatoTextField2" destination="3Ui-ka-l7y" collectionClass="NSMutableArray" id="PiU-2J-LEw"/>
+                        <outletCollection property="risultatoTextField2" destination="r66-Jp-M2W" collectionClass="NSMutableArray" id="FLz-Jw-mO8"/>
+                        <outletCollection property="risultatoTextField2" destination="MqK-SF-ovB" collectionClass="NSMutableArray" id="g1j-8j-v4C"/>
+                        <outletCollection property="risultatoTextField2" destination="0To-hJ-OZf" collectionClass="NSMutableArray" id="F0r-b9-x4B"/>
+                        <outletCollection property="risultatoTextField2" destination="AM0-0l-Kce" collectionClass="NSMutableArray" id="9a3-aB-66a"/>
+                        <outletCollection property="risultatoTextField2" destination="5zU-VB-8dD" collectionClass="NSMutableArray" id="B2b-aM-SLH"/>
+                        <outletCollection property="risultatoTextField2" destination="N7a-MM-auI" collectionClass="NSMutableArray" id="yRb-34-ffp"/>
+                        <outletCollection property="risultatoTextField2" destination="6y8-X9-loI" collectionClass="NSMutableArray" id="M7k-6B-XSv"/>
+                        <outletCollection property="risultatoTextField2" destination="lWr-HF-7cm" collectionClass="NSMutableArray" id="EHA-iA-ROA"/>
+                        <outletCollection property="risultatoTextField2" destination="b9k-s7-vB4" collectionClass="NSMutableArray" id="kMM-Aq-X2C"/>
+                        <outletCollection property="risultatoTextField2" destination="btr-im-CTI" collectionClass="NSMutableArray" id="Cz2-HH-0Xo"/>
+                        <outletCollection property="risultatoTextField2" destination="ckl-o7-EM0" collectionClass="NSMutableArray" id="S21-Qt-Pje"/>
+                        <outletCollection property="risultatoTextField2" destination="hcB-AM-TgL" collectionClass="NSMutableArray" id="xzQ-mf-4Zo"/>
+                        <outletCollection property="risultatoTextField2" destination="2XX-Vc-YRn" collectionClass="NSMutableArray" id="zGc-pU-IZH"/>
+                        <outletCollection property="risultatoTextField2" destination="clN-FK-aQD" collectionClass="NSMutableArray" id="XAk-QT-Ro5"/>
+                        <outletCollection property="risultatoTextField2" destination="qZ9-RJ-GxV" collectionClass="NSMutableArray" id="gqT-8H-k44"/>
+                        <outletCollection property="risultatoTextField2" destination="4Kt-hG-kSp" collectionClass="NSMutableArray" id="OEt-vU-pWL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -897,10 +900,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bambina" width="135" height="287"/>
-        <image name="bambino1" width="160" height="290"/>
-        <image name="bambino2" width="118" height="293"/>
-        <image name="img_verifica" width="762" height="252"/>
-        <image name="sfondo" width="3056" height="2293"/>
+        <image name="bambina.png" width="135" height="287"/>
+        <image name="bambino1.png" width="160" height="290"/>
+        <image name="bambino2.png" width="118" height="293"/>
+        <image name="indietro.png" width="661" height="252"/>
+        <image name="sfondo.png" width="3056" height="2293"/>
+        <image name="verifica.png" width="762" height="252"/>
     </resources>
 </document>

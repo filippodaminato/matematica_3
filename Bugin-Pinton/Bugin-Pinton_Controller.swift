@@ -28,10 +28,15 @@ class Bugin_Pinton_Controller: UIViewController {
     var ishidden = false
     var divisore = 0
     
+    @IBAction func indietro(_ sender: Any) {
+        self.dismiss(animated: true) {
+            //
+        }
+    }
     @IBAction func controlla(_ sender: Any) {
         //es 1------------------------------------------------------------------------
         var count = 0
-        for var a in risultatoTextField
+        for a in risultatoTextField
         {
             risultatoTextField[count].layer.borderWidth = 2
             risultatoTextField[count].layer.cornerRadius = 7
