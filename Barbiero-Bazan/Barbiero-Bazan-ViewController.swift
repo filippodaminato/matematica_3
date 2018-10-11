@@ -40,7 +40,7 @@ class DragNumberImageView : UIImageView {
     
     init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int) {
         super.init(frame: .zero)
-        self.layer.cornerRadius = 10.0
+        self.layer.cornerRadius = 21.1
         self.clipsToBounds = true
         rootView = root
         originView = origin
@@ -99,9 +99,9 @@ class BarbieroBazan: UIViewController {
     
     var numbersViews = [DragNumberImageView]()
     
-    var labels = [UILabel]()
+    var images = [UIImageView]()
     
-    let strings = ["Decine", "Unità", "Decimi", "Centesimi"]
+    let imagesImage = [#imageLiteral(resourceName: "Risorsa 25.png"), #imageLiteral(resourceName: "Risorsa 26.png"), #imageLiteral(resourceName: "Risorsa 28.png"), #imageLiteral(resourceName: "Risorsa 27.png")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,15 +131,15 @@ class BarbieroBazan: UIViewController {
         destinationViews.append(self.view.viewWithTag(13)!)
         destinationViews.append(self.view.viewWithTag(14)!)
         
-        labels.append(self.view.viewWithTag(21) as! UILabel)
-        labels.append(self.view.viewWithTag(22) as! UILabel)
-        labels.append(self.view.viewWithTag(23) as! UILabel)
-        labels.append(self.view.viewWithTag(24) as! UILabel)
+        images.append(self.view.viewWithTag(21) as! UIImageView)
+        images.append(self.view.viewWithTag(22) as! UIImageView)
+        images.append(self.view.viewWithTag(23) as! UIImageView)
+        images.append(self.view.viewWithTag(24) as! UIImageView)
     }
     
     func GenerateNumbersViews() {
         ClearNumbersArray()
-        ClearLabels()
+        ClearImages()
         let random = (String)(Int.random(in: 1000..<10000))
         print(random)
         let order = [0, 1, 2, 3].shuffled()
@@ -151,13 +151,13 @@ class BarbieroBazan: UIViewController {
             numbersViews[i].addGestureRecognizer(NewPanGestureRecognizer())
             numbersViews[i].backgroundColor = UIColor.red
             
-            labels[order[i]].text = strings[i]
+            images[order[i]].image = imagesImage[i]
         }
     }
     
-    func ClearLabels() {
+    func ClearImages() {
         for i in 0...3 {
-            labels[i].text = ""
+            images[i].image = nil
         }
     }
     
