@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52DD1568216F2BE900872B1F /* bambina.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DD1567216F2BE900872B1F /* bambina.png */; };
+		52DD156A216F2BF600872B1F /* bambino1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DD1569216F2BF600872B1F /* bambino1.png */; };
+		52DD156C216F2C0100872B1F /* bambino2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DD156B216F2C0100872B1F /* bambino2.png */; };
+		52DD156E216F2C0B00872B1F /* Risorsa 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DD156D216F2C0B00872B1F /* Risorsa 10.png */; };
+		52DD1570216F2C1400872B1F /* Risorsa 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 52DD156F216F2C1300872B1F /* Risorsa 9.png */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52DD1567216F2BE900872B1F /* bambina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bambina.png; sourceTree = "<group>"; };
+		52DD1569216F2BF600872B1F /* bambino1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bambino1.png; sourceTree = "<group>"; };
+		52DD156B216F2C0100872B1F /* bambino2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bambino2.png; sourceTree = "<group>"; };
+		52DD156D216F2C0B00872B1F /* Risorsa 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 10.png"; sourceTree = "<group>"; };
+		52DD156F216F2C1300872B1F /* Risorsa 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 9.png"; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52DD1566216F2B8600872B1F /* image */ = {
+			isa = PBXGroup;
+			children = (
+				52DD156F216F2C1300872B1F /* Risorsa 9.png */,
+				52DD156D216F2C0B00872B1F /* Risorsa 10.png */,
+				52DD156B216F2C0100872B1F /* bambino2.png */,
+				52DD1569216F2BF600872B1F /* bambino1.png */,
+				52DD1567216F2BE900872B1F /* bambina.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +155,7 @@
 		FACF192F20AFFC040083D028 /* Bugin-Pinton */ = {
 			isa = PBXGroup;
 			children = (
+				52DD1566216F2B8600872B1F /* image */,
 				FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */,
 				FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */,
 			);
@@ -218,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */;
+			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -244,9 +267,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
+				52DD156C216F2C0100872B1F /* bambino2.png in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
+				52DD156A216F2BF600872B1F /* bambino1.png in Resources */,
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
+				52DD156E216F2C0B00872B1F /* Risorsa 10.png in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
+				52DD1568216F2BE900872B1F /* bambina.png in Resources */,
+				52DD1570216F2C1400872B1F /* Risorsa 9.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */ = {
+		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAA9DC0120A6CA59002B3F36 /* Debug */,
