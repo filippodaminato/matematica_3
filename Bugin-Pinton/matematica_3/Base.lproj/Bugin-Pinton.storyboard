@@ -794,7 +794,7 @@
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambina.png" translatesAutoresizingMaskIntoConstraints="NO" id="6VN-jk-cke">
-                                <rect key="frame" x="618" y="75" width="123" height="253"/>
+                                <rect key="frame" x="603" y="76" width="123" height="253"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
