@@ -781,6 +781,44 @@
                                     <action selector="ControllaRis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o1-ps-rRt"/>
                                 </connections>
                             </button>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2q9-lx-ZPo">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luw-40-IfF">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="HAI COMPLETATO L'ESERCIZIO!">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChiudiFinestraVittoria:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WdQ-7A-Co5"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="BsI-fy-183">
+                                        <rect key="frame" x="719" y="213" width="127" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="mGU-dC-q2m">
+                                        <rect key="frame" x="584" y="213" width="127" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ue1-JD-2NA">
+                                        <rect key="frame" x="449" y="213" width="127" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="w34-e2-zYc">
+                                        <rect key="frame" x="314" y="213" width="127" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="c4Q-yC-TKr">
+                                        <rect key="frame" x="179" y="213" width="127" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="rtm-zV-UJh"/>
@@ -790,6 +828,7 @@
                         <outlet property="Azzera" destination="kXE-AP-LhN" id="D4Z-kn-NHj"/>
                         <outlet property="CheckButton" destination="hvU-xm-Hvg" id="oAE-xA-ewY"/>
                         <outlet property="Controlla" destination="ot7-Xf-GJb" id="D1I-RI-WC6"/>
+                        <outlet property="Vittoria" destination="2q9-lx-ZPo" id="hWx-BN-yKP"/>
                         <outlet property="Zone" destination="8bC-Xf-vdC" id="oI7-9S-jOI"/>
                         <outlet property="buttonQuizNew" destination="49H-ss-CUj" id="wlU-Xf-tL3"/>
                         <outletCollection property="arrayTextFieldD" destination="SOP-BG-vJj" collectionClass="NSMutableArray" id="xLp-Ln-mXo"/>
@@ -894,5 +933,6 @@
         <image name="Risorsa 30.png" width="3057" height="2293"/>
         <image name="Risorsa 31.png" width="762" height="252"/>
         <image name="Risorsa 32.png" width="762" height="252"/>
+        <image name="Stella.png" width="512" height="512"/>
     </resources>
 </document>

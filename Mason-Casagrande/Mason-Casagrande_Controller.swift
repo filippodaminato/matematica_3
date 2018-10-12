@@ -11,6 +11,7 @@ import Foundation
 
 class Mason_Casagrande_Controller: UIViewController {
     @IBOutlet var Zone: UIView!
+    @IBOutlet weak var Vittoria: UIView!
     
     @IBOutlet var arrayLabelD : Array<UILabel> = []
     @IBOutlet var arrayLabelC : Array<UILabel> = []
@@ -39,6 +40,7 @@ class Mason_Casagrande_Controller: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: Notification.Name.UIKeyboardWillHide, object: nil)
+        Vittoria.isHidden = true
         Azzera.isHidden = true
         Controlla.isHidden = false
         self.AggiungiBottoneKeyboard()
@@ -305,7 +307,12 @@ class Mason_Casagrande_Controller: UIViewController {
         {
             Controlla.isHidden = true
             Azzera.isHidden = false
+            Vittoria.isHidden = false
         }
+    }
+    
+    @IBAction func ChiudiFinestraVittoria(_ sender: UIButton) {
+        Vittoria.isHidden = true
     }
     
     @IBAction func NuovoRandom(_ sender: Any) {
@@ -460,6 +467,7 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
         }
         if(controlla != true)
         {
+            Vittoria.isHidden = false
             buttonQuizNew.isHidden = false
             CheckButton.isHidden = true
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD3CE5712170C9F50038F7D8 /* Stella.png in Resources */ = {isa = PBXBuildFile; fileRef = DD3CE5702170C9F40038F7D8 /* Stella.png */; };
 		DD425C262170C36A003517B2 /* Risorsa 29.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C252170C369003517B2 /* Risorsa 29.png */; };
 		DD425C2A2170C3B3003517B2 /* Risorsa 32.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C272170C3B0003517B2 /* Risorsa 32.png */; };
 		DD425C2B2170C3B3003517B2 /* Risorsa 30.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C282170C3B1003517B2 /* Risorsa 30.png */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD3CE5702170C9F40038F7D8 /* Stella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stella.png; sourceTree = "<group>"; };
 		DD425C252170C369003517B2 /* Risorsa 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 29.png"; sourceTree = "<group>"; };
 		DD425C272170C3B0003517B2 /* Risorsa 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 32.png"; sourceTree = "<group>"; };
 		DD425C282170C3B1003517B2 /* Risorsa 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 30.png"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		FACF193720AFFD880083D028 /* Mason-Casagrande */ = {
 			isa = PBXGroup;
 			children = (
+				DD3CE5702170C9F40038F7D8 /* Stella.png */,
 				DD5C56432170B5B000EA3648 /* prova.png */,
 				DD425C252170C369003517B2 /* Risorsa 29.png */,
 				DD425C282170C3B1003517B2 /* Risorsa 30.png */,
@@ -260,6 +263,7 @@
 			files = (
 				FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */,
 				DD5C56442170B5B000EA3648 /* prova.png in Resources */,
+				DD3CE5712170C9F50038F7D8 /* Stella.png in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
 				DD425C2C2170C3B3003517B2 /* Risorsa 31.png in Resources */,
