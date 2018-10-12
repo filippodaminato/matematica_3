@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD5C56422170AFB700EA3648 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = DD5C56412170AFB600EA3648 /* Images */; };
+		DD5C56442170B5B000EA3648 /* prova.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C56432170B5B000EA3648 /* prova.png */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
@@ -14,22 +16,8 @@
 		FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */; };
 		FAA9DBF420A6CA59002B3F36 /* matematica_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */; };
 		FAA9DBFF20A6CA59002B3F36 /* matematica_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */; };
-		FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */; };
-		FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */; };
-		FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */; };
-		FACF193F20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */; };
 		FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */; };
-		FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */; };
-		FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */; };
-		FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */; };
-		FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */; };
-		FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */; };
-		FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */; };
 		FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */; };
-		FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */; };
-		FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */; };
-		FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */; };
-		FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD5C56412170AFB600EA3648 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		DD5C56432170B5B000EA3648 /* prova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prova.png; sourceTree = "<group>"; };
+		DD5C56452170B5E800EA3648 /* Risorsa 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 29.png"; sourceTree = "<group>"; };
+		DD5C56462170B5E800EA3648 /* Risorsa 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 31.png"; sourceTree = "<group>"; };
+		DD5C56472170B5E800EA3648 /* Risorsa 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 30.png"; sourceTree = "<group>"; };
+		DD5C56482170B5E800EA3648 /* Risorsa 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 32.png"; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,22 +57,8 @@
 		FAA9DBFA20A6CA59002B3F36 /* matematica_3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matematica_3UITests.swift; sourceTree = "<group>"; };
 		FAA9DC0020A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FACF193120AFFC350083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bugin-Pinton.storyboard"; sourceTree = "<group>"; };
-		FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bugin-Pinton_Controller.swift"; sourceTree = "<group>"; };
-		FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bonaldo-Xia_Controller.swift"; sourceTree = "<group>"; };
-		FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Caldini-Marchioro_Controller.swift"; sourceTree = "<group>"; };
 		FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mason-Casagrande_Controller.swift"; sourceTree = "<group>"; };
-		FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lazzarin-Baricchio_Controller.swift"; sourceTree = "<group>"; };
-		FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Migali-Giacomello_Controller.swift"; sourceTree = "<group>"; };
-		FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan_Controller.swift"; sourceTree = "<group>"; };
-		FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bolzo-Calderon_Controller.swift"; sourceTree = "<group>"; };
-		FACF194C20AFFEF30083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bonaldo-Xia.storyboard"; sourceTree = "<group>"; };
-		FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Caldini-Marchioro.storyboard"; sourceTree = "<group>"; };
 		FACF195120AFFF3D0083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Mason-Casagrande.storyboard"; sourceTree = "<group>"; };
-		FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bolzo-Calderon.storyboard"; sourceTree = "<group>"; };
-		FACF195620AFFF770083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
-		FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Migali-Giacomello.storyboard"; sourceTree = "<group>"; };
-		FACF195B20AFFFC90083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Lazzarin-Baricchio.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +89,7 @@
 		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
-				FACF193B20AFFDF70083D028 /* Bolzo-Calderon */,
-				FACF193A20AFFDE80083D028 /* Barbiero-Bazan */,
-				FACF193920AFFDD30083D028 /* Migali-Giacomello */,
-				FACF193820AFFDA60083D028 /* Lazzarin-Baricchio */,
 				FACF193720AFFD880083D028 /* Mason-Casagrande */,
-				FACF193620AFFD7A0083D028 /* Caldini-Marchioro */,
-				FACF193520AFFD5F0083D028 /* Bonaldo-Xia */,
-				FACF192F20AFFC040083D028 /* Bugin-Pinton */,
 				FAA9DBDD20A6CA57002B3F36 /* matematica_3 */,
 				FAA9DBF220A6CA59002B3F36 /* matematica_3Tests */,
 				FAA9DBFD20A6CA59002B3F36 /* matematica_3UITests */,
@@ -165,76 +138,19 @@
 			path = matematica_3UITests;
 			sourceTree = "<group>";
 		};
-		FACF192F20AFFC040083D028 /* Bugin-Pinton */ = {
-			isa = PBXGroup;
-			children = (
-				FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */,
-				FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */,
-			);
-			path = "Bugin-Pinton";
-			sourceTree = "<group>";
-		};
-		FACF193520AFFD5F0083D028 /* Bonaldo-Xia */ = {
-			isa = PBXGroup;
-			children = (
-				FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */,
-				FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */,
-			);
-			path = "Bonaldo-Xia";
-			sourceTree = "<group>";
-		};
-		FACF193620AFFD7A0083D028 /* Caldini-Marchioro */ = {
-			isa = PBXGroup;
-			children = (
-				FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */,
-				FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */,
-			);
-			path = "Caldini-Marchioro";
-			sourceTree = "<group>";
-		};
 		FACF193720AFFD880083D028 /* Mason-Casagrande */ = {
 			isa = PBXGroup;
 			children = (
+				DD5C56432170B5B000EA3648 /* prova.png */,
+				DD5C56452170B5E800EA3648 /* Risorsa 29.png */,
+				DD5C56472170B5E800EA3648 /* Risorsa 30.png */,
+				DD5C56462170B5E800EA3648 /* Risorsa 31.png */,
+				DD5C56482170B5E800EA3648 /* Risorsa 32.png */,
+				DD5C56412170AFB600EA3648 /* Images */,
 				FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */,
 				FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */,
 			);
 			path = "Mason-Casagrande";
-			sourceTree = "<group>";
-		};
-		FACF193820AFFDA60083D028 /* Lazzarin-Baricchio */ = {
-			isa = PBXGroup;
-			children = (
-				FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */,
-				FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */,
-			);
-			path = "Lazzarin-Baricchio";
-			sourceTree = "<group>";
-		};
-		FACF193920AFFDD30083D028 /* Migali-Giacomello */ = {
-			isa = PBXGroup;
-			children = (
-				FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */,
-				FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */,
-			);
-			path = "Migali-Giacomello";
-			sourceTree = "<group>";
-		};
-		FACF193A20AFFDE80083D028 /* Barbiero-Bazan */ = {
-			isa = PBXGroup;
-			children = (
-				FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */,
-				FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */,
-			);
-			path = "Barbiero-Bazan";
-			sourceTree = "<group>";
-		};
-		FACF193B20AFFDF70083D028 /* Bolzo-Calderon */ = {
-			isa = PBXGroup;
-			children = (
-				FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */,
-				FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */,
-			);
-			path = "Bolzo-Calderon";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,17 +257,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */,
-				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
-				FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */,
-				FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */,
+				DD5C56422170AFB700EA3648 /* Images in Resources */,
 				FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */,
+				DD5C56442170B5B000EA3648 /* prova.png in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
-				FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */,
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
-				FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
-				FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,16 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */,
-				FACF193F20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift in Sources */,
-				FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */,
 				FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */,
-				FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */,
-				FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */,
 				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
-				FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
-				FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,44 +341,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACF193120AFFC350083D028 /* Base */,
-			);
-			name = "Bugin-Pinton.storyboard";
-			sourceTree = "<group>";
-		};
-		FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACF194C20AFFEF30083D028 /* Base */,
-			);
-			name = "Bonaldo-Xia.storyboard";
-			sourceTree = "<group>";
-		};
 		FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FACF195120AFFF3D0083D028 /* Base */,
 			);
 			name = "Mason-Casagrande.storyboard";
-			sourceTree = "<group>";
-		};
-		FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACF195620AFFF770083D028 /* Base */,
-			);
-			name = "Barbiero-Bazan.storyboard";
-			sourceTree = "<group>";
-		};
-		FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACF195B20AFFFC90083D028 /* Base */,
-			);
-			name = "Lazzarin-Baricchio.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -600,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = matematica_3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,6 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = matematica_3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
