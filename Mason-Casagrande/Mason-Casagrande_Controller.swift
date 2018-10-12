@@ -11,6 +11,11 @@ import Foundation
 
 class Mason_Casagrande_Controller: UIViewController {
     @IBOutlet var Zone: UIView!
+    @IBOutlet weak var Stella1: UIImageView!
+    @IBOutlet weak var Stella2: UIImageView!
+    @IBOutlet weak var Stella3: UIImageView!
+    @IBOutlet weak var Stella4: UIImageView!
+    @IBOutlet weak var Stella5: UIImageView!
     @IBOutlet weak var Vittoria: UIView!
     
     @IBOutlet var arrayLabelD : Array<UILabel> = []
@@ -29,9 +34,14 @@ class Mason_Casagrande_Controller: UIViewController {
     var moltiplicatore : [Int] = []
     var result : [Int] = []
     var hiddenkeyboard = true
-    
-    
-    
+    var posizioneFinale : [CGPoint] = [
+        CGPoint(x: 179, y: 213),
+        CGPoint(x: 314, y: 213),
+        CGPoint(x: 449, y: 213),
+        CGPoint(x: 584, y: 213),
+        CGPoint(x: 719, y: 213)
+    ]
+    var posizioneIniziale = CGPoint(x: 8, y: 647)
     
     @IBOutlet weak var Controlla: UIButton!
     @IBOutlet weak var Azzera: UIButton!
@@ -308,6 +318,7 @@ class Mason_Casagrande_Controller: UIViewController {
             Controlla.isHidden = true
             Azzera.isHidden = false
             Vittoria.isHidden = false
+            Animazione()
         }
     }
     
@@ -468,6 +479,7 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
         if(controlla != true)
         {
             Vittoria.isHidden = false
+            Animazione()
             buttonQuizNew.isHidden = false
             CheckButton.isHidden = true
         }
@@ -532,6 +544,19 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
         }
     }
    
-    
+    func Animazione() {
+        Stella1.frame.origin = posizioneIniziale
+        Stella2.frame.origin = posizioneIniziale
+        Stella3.frame.origin = posizioneIniziale
+        Stella4.frame.origin = posizioneIniziale
+        Stella5.frame.origin = posizioneIniziale
+        UIView.animate(withDuration: 1, animations: {
+            self.Stella1.frame.origin = self.posizioneFinale[0]
+            self.Stella2.frame.origin = self.posizioneFinale[1]
+            self.Stella3.frame.origin = self.posizioneFinale[2]
+            self.Stella4.frame.origin = self.posizioneFinale[3]
+            self.Stella5.frame.origin = self.posizioneFinale[4]
+        })
+    }
     
 }

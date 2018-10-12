@@ -797,23 +797,23 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="BsI-fy-183">
-                                        <rect key="frame" x="719" y="213" width="127" height="113"/>
+                                        <rect key="frame" x="8" y="647" width="127" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="mGU-dC-q2m">
-                                        <rect key="frame" x="584" y="213" width="127" height="113"/>
+                                        <rect key="frame" x="8" y="647" width="127" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ue1-JD-2NA">
-                                        <rect key="frame" x="449" y="213" width="127" height="113"/>
+                                        <rect key="frame" x="8" y="647" width="127" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="w34-e2-zYc">
-                                        <rect key="frame" x="314" y="213" width="127" height="113"/>
+                                        <rect key="frame" x="8" y="647" width="127" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stella.png" translatesAutoresizingMaskIntoConstraints="NO" id="c4Q-yC-TKr">
-                                        <rect key="frame" x="179" y="213" width="127" height="113"/>
+                                        <rect key="frame" x="8" y="647" width="127" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -828,6 +828,11 @@
                         <outlet property="Azzera" destination="kXE-AP-LhN" id="D4Z-kn-NHj"/>
                         <outlet property="CheckButton" destination="hvU-xm-Hvg" id="oAE-xA-ewY"/>
                         <outlet property="Controlla" destination="ot7-Xf-GJb" id="D1I-RI-WC6"/>
+                        <outlet property="Stella1" destination="c4Q-yC-TKr" id="oGc-49-mXx"/>
+                        <outlet property="Stella2" destination="w34-e2-zYc" id="sVw-eH-vL1"/>
+                        <outlet property="Stella3" destination="Ue1-JD-2NA" id="CU6-5X-SQw"/>
+                        <outlet property="Stella4" destination="mGU-dC-q2m" id="0S0-nR-1VL"/>
+                        <outlet property="Stella5" destination="BsI-fy-183" id="NWm-u0-ePr"/>
                         <outlet property="Vittoria" destination="2q9-lx-ZPo" id="hWx-BN-yKP"/>
                         <outlet property="Zone" destination="8bC-Xf-vdC" id="oI7-9S-jOI"/>
                         <outlet property="buttonQuizNew" destination="49H-ss-CUj" id="wlU-Xf-tL3"/>
