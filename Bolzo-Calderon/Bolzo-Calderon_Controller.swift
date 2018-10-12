@@ -21,6 +21,8 @@ class Bolzo_Calderon_Controller: UIViewController {
     @IBOutlet weak var denominatore: UITextField!
     @IBOutlet weak var numeratore: UITextField!
 //    buttons
+    
+    
     @IBAction func btn_check(_ sender: Any) {
         if(numeratore.text != "" && denominatore.text != ""){
             
