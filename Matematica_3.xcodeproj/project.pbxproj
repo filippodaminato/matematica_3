@@ -12,6 +12,7 @@
 		DD425C2A2170C3B3003517B2 /* Risorsa 32.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C272170C3B0003517B2 /* Risorsa 32.png */; };
 		DD425C2B2170C3B3003517B2 /* Risorsa 30.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C282170C3B1003517B2 /* Risorsa 30.png */; };
 		DD425C2C2170C3B3003517B2 /* Risorsa 31.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C292170C3B2003517B2 /* Risorsa 31.png */; };
+		DD52B2B52170F267006F37B3 /* Risorsa 88.png in Resources */ = {isa = PBXBuildFile; fileRef = DD52B2B42170F265006F37B3 /* Risorsa 88.png */; };
 		DD5C56442170B5B000EA3648 /* prova.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5C56432170B5B000EA3648 /* prova.png */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		DD425C272170C3B0003517B2 /* Risorsa 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 32.png"; sourceTree = "<group>"; };
 		DD425C282170C3B1003517B2 /* Risorsa 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 30.png"; sourceTree = "<group>"; };
 		DD425C292170C3B2003517B2 /* Risorsa 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 31.png"; sourceTree = "<group>"; };
+		DD52B2B42170F265006F37B3 /* Risorsa 88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 88.png"; sourceTree = "<group>"; };
 		DD5C56432170B5B000EA3648 /* prova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prova.png; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				DD425C282170C3B1003517B2 /* Risorsa 30.png */,
 				DD425C292170C3B2003517B2 /* Risorsa 31.png */,
 				DD425C272170C3B0003517B2 /* Risorsa 32.png */,
+				DD52B2B42170F265006F37B3 /* Risorsa 88.png */,
 				FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */,
 				FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */,
 			);
@@ -268,6 +271,7 @@
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
 				DD425C2C2170C3B3003517B2 /* Risorsa 31.png in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
+				DD52B2B52170F267006F37B3 /* Risorsa 88.png in Resources */,
 				DD425C262170C36A003517B2 /* Risorsa 29.png in Resources */,
 				DD425C2A2170C3B3003517B2 /* Risorsa 32.png in Resources */,
 				DD425C2B2170C3B3003517B2 /* Risorsa 30.png in Resources */,

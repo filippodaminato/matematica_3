@@ -558,5 +558,9 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
             self.Stella5.frame.origin = self.posizioneFinale[4]
         })
     }
+    @IBAction func `return`(_ sender: Any) {
+        self.dismiss(animated: true) {}
+        
+    }
     
 }
