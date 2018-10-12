@@ -25,6 +25,7 @@ class Bugin_Pinton_Controller: UIViewController {
     @IBOutlet var risultatoTextField2: Array<UITextField> = []
     @IBOutlet var Zone: UIView!
     
+    var punteggio = 0
     var ishidden = false
     var divisore = 0
     
@@ -47,6 +48,7 @@ class Bugin_Pinton_Controller: UIViewController {
                 }else{
                     risultatoTextField[count].layer.borderColor = UIColor.green.cgColor
                     risultatoTextField[count].isEnabled = false
+                    punteggio += 1
                 }
             }
             count += 1
@@ -60,24 +62,39 @@ class Bugin_Pinton_Controller: UIViewController {
             }else{
                 a.layer.borderColor = UIColor.green.cgColor
                 a.isEnabled = false
+                punteggio += 1
             }; break
             case 6...11:if(Int(a.text!) != divisori[count]){
                 a.layer.borderColor = UIColor.red.cgColor
             }else{
                 a.layer.borderColor = UIColor.green.cgColor
                 a.isEnabled = false
+                punteggio += 1
             }; break
             case 12...17:if(Int(a.text!) != risultati[count]){
                 a.layer.borderColor = UIColor.red.cgColor
             }else{
                 a.layer.borderColor = UIColor.green.cgColor
                 a.isEnabled = false
+                punteggio += 1
             }; break
             default: break
             }
             a.layer.borderWidth = 2
             a.layer.cornerRadius = 7
             count += 1
+        }
+        
+        let alert = UIAlertController(title: "Il punteggio è: ", message: String(punteggio), preferredStyle: UIAlertControllerStyle.alert)
+        let saveAction = UIAlertAction(title:"Il punteggio è: ", style: .default, handler: nil)
+        saveAction.setValue(UIImage(named:"stella6")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal), forKey:"image")
+        alert.addAction(saveAction)
+        alert.addAction(UIAlertAction(title: "chiudi", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+        switch(punteggio){
+            case 0...6: break
+        default:break
         }
     }
     
