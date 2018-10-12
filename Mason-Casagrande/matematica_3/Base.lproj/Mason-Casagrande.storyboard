@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -204,7 +203,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-AP-LhN">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-AP-LhN">
                                 <rect key="frame" x="421" y="292" width="186" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Risorsa 32.png"/>
@@ -659,8 +658,8 @@
                                     <action selector="checkButtonQuiz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHz-xq-mx7"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49H-ss-CUj">
-                                <rect key="frame" x="422" y="675" width="186" height="66"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49H-ss-CUj">
+                                <rect key="frame" x="421" y="675" width="186" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Risorsa 32.png"/>
                                 <connections>
@@ -759,14 +758,14 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 29.png" translatesAutoresizingMaskIntoConstraints="NO" id="0JN-lA-lrJ">
-                                <rect key="frame" x="9" y="29" width="137" height="95"/>
+                                <rect key="frame" x="9" y="29" width="131" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 29.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y7p-Vz-3jz">
                                 <rect key="frame" x="778" y="667" width="121" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 29.png" translatesAutoresizingMaskIntoConstraints="NO" id="yKK-1c-3SX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 29.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKK-1c-3SX">
                                 <rect key="frame" x="854" y="67" width="137" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -775,9 +774,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot7-Xf-GJb">
-                                <rect key="frame" x="631" y="292" width="186" height="66"/>
+                                <rect key="frame" x="422" y="292" width="186" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="prova"/>
+                                <state key="normal" image="Risorsa 31.png"/>
                                 <connections>
                                     <action selector="ControllaRis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o1-ps-rRt"/>
                                 </connections>
@@ -887,7 +886,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="-79"/>
+            <point key="canvasLocation" x="485.74218749999994" y="-79.6875"/>
         </scene>
     </scenes>
     <resources>
@@ -895,6 +894,5 @@
         <image name="Risorsa 30.png" width="3057" height="2293"/>
         <image name="Risorsa 31.png" width="762" height="252"/>
         <image name="Risorsa 32.png" width="762" height="252"/>
-        <image name="prova" width="85" height="37"/>
     </resources>
 </document>
