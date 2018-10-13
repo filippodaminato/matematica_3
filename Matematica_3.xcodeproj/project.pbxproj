@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F77FFA71217205F100FA5091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA70217205F100FA5091 /* Assets.xcassets */; };
+		F77FFA762172062100FA5091 /* Riprova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA722172062000FA5091 /* Riprova.jpg */; };
+		F77FFA772172062100FA5091 /* Circle green.png in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA732172062000FA5091 /* Circle green.png */; };
+		F77FFA782172062100FA5091 /* Circle blue.png in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA742172062100FA5091 /* Circle blue.png */; };
+		F77FFA792172062100FA5091 /* Circle red.png in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA752172062100FA5091 /* Circle red.png */; };
+		F77FFA7B2172067100FA5091 /* Cella.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77FFA7A2172067100FA5091 /* Cella.swift */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
-		FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */; };
 		FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */; };
 		FAA9DBF420A6CA59002B3F36 /* matematica_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */; };
 		FAA9DBFF20A6CA59002B3F36 /* matematica_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */; };
@@ -50,11 +55,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F77FFA70217205F100FA5091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F77FFA722172062000FA5091 /* Riprova.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Riprova.jpg; sourceTree = "<group>"; };
+		F77FFA732172062000FA5091 /* Circle green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle green.png"; sourceTree = "<group>"; };
+		F77FFA742172062100FA5091 /* Circle blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle blue.png"; sourceTree = "<group>"; };
+		F77FFA752172062100FA5091 /* Circle red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle red.png"; sourceTree = "<group>"; };
+		F77FFA7A2172067100FA5091 /* Cella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cella.swift; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAA9DBE320A6CA57002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA9DBE820A6CA58002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA9DBEA20A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA9DBEF20A6CA59002B3F36 /* matematica_3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +150,7 @@
 				FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */,
 				FAA9DBE020A6CA57002B3F36 /* ViewController.swift */,
 				FAA9DBE220A6CA57002B3F36 /* Main.storyboard */,
-				FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */,
+				F77FFA70217205F100FA5091 /* Assets.xcassets */,
 				FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */,
 				FAA9DBEA20A6CA59002B3F36 /* Info.plist */,
 			);
@@ -204,8 +214,13 @@
 		FACF193820AFFDA60083D028 /* Lazzarin-Baricchio */ = {
 			isa = PBXGroup;
 			children = (
+				F77FFA742172062100FA5091 /* Circle blue.png */,
+				F77FFA732172062000FA5091 /* Circle green.png */,
+				F77FFA752172062100FA5091 /* Circle red.png */,
+				F77FFA722172062000FA5091 /* Riprova.jpg */,
 				FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */,
 				FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */,
+				F77FFA7A2172067100FA5091 /* Cella.swift */,
 			);
 			path = "Lazzarin-Baricchio";
 			sourceTree = "<group>";
@@ -316,7 +331,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */;
+			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -342,13 +357,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */,
+				F77FFA762172062100FA5091 /* Riprova.jpg in Resources */,
+				F77FFA772172062100FA5091 /* Circle green.png in Resources */,
 				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
+				F77FFA71217205F100FA5091 /* Assets.xcassets in Resources */,
 				FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */,
+				F77FFA782172062100FA5091 /* Circle blue.png in Resources */,
+				F77FFA792172062100FA5091 /* Circle red.png in Resources */,
 				FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */,
 				FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
 				FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */,
-				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
 				FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
 				FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */,
@@ -382,6 +401,7 @@
 				FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */,
 				FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */,
 				FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */,
+				F77FFA7B2172067100FA5091 /* Cella.swift in Sources */,
 				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
 				FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
@@ -709,7 +729,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */ = {
+		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAA9DC0120A6CA59002B3F36 /* Debug */,
