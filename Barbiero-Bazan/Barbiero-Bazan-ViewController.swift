@@ -48,7 +48,7 @@ class DragNumberImageView : UIImageView {
         num = n
         rootView!.addSubview(self)
         rootView!.bringSubviewToFront(self)
-        self.translatesAutoresizingMaskIntoConstraints = false
+        //self.translatesAutoresizingMaskIntoConstraints = false
         self.frame = originView!.frame
         isPickedUp = true
         self.contentMode = .scaleAspectFill
@@ -151,8 +151,8 @@ class BarbieroBazan: UIViewController {
             numbersViews.append(DragNumberImageView(originView: originViews[order[i]], destinationView: destinationViews[i], rootView: self.view, value: val))
             numbersViews[i].isUserInteractionEnabled = true
             numbersViews[i].addGestureRecognizer(NewPanGestureRecognizer())
-            numbersViews[i].backgroundColor = UIColor.red
-            //numbersViews[i].image = UIImage(named: "\(val).png")
+            //numbersViews[i].backgroundColor = UIColor.red
+            numbersViews[i].image = UIImage(named: "\(val).png")
             images[order[i]].image = imagesImage[i]
         }
     }
