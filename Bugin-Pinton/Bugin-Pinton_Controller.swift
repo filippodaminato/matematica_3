@@ -18,17 +18,29 @@ class Bugin_Pinton_Controller: UIViewController {
     //es 1
     @IBOutlet var dividendiLabel: Array<UILabel> = []
     @IBOutlet var risultatoTextField: Array<UITextField> = []
+    @IBOutlet weak var controllaEnable: UIButton!
     //es 2
     @IBOutlet var divisoriLabel2: Array<UILabel> = []
     @IBOutlet var risultatiLabel2: Array<UILabel> = []
     @IBOutlet var dividendiLabel2: Array<UILabel> = []
     @IBOutlet var risultatoTextField2: Array<UITextField> = []
+    //view vincita
+    @IBOutlet weak var viewVincita: UIView!
+    @IBOutlet weak var immagineStelle: UIImageView!
+    @IBOutlet weak var labelPunteggio: UILabel!
+    
+    
     @IBOutlet var Zone: UIView!
     
     var punteggio = 0
     var ishidden = false
     var divisore = 0
     
+    
+    @IBAction func chiudiViewVincita(_ sender: Any) {
+        viewVincita.isHidden = true
+        controllaEnable.isEnabled = true
+    }
     @IBAction func indietro(_ sender: Any) {
         self.dismiss(animated: true) {
             //
@@ -36,13 +48,13 @@ class Bugin_Pinton_Controller: UIViewController {
     }
     @IBAction func controlla(_ sender: Any) {
         //es 1------------------------------------------------------------------------
+        controllaEnable.isEnabled = false
         var count = 0
         for a in risultatoTextField
         {
             risultatoTextField[count].layer.borderWidth = 2
             risultatoTextField[count].layer.cornerRadius = 7
             if let n = Int(a.text!){
-                
                 if( (a.text == "") || (Int(dividendiLabel[count].text!)!/dividendiLabel[count].tag) != Int(a.text!)!){
                     risultatoTextField[count].layer.borderColor = UIColor.red.cgColor
                 }else{
@@ -85,17 +97,30 @@ class Bugin_Pinton_Controller: UIViewController {
             count += 1
         }
         
-        let alert = UIAlertController(title: "Il punteggio è: ", message: String(punteggio), preferredStyle: UIAlertControllerStyle.alert)
-        let saveAction = UIAlertAction(title:"Il punteggio è: ", style: .default, handler: nil)
-        saveAction.setValue(UIImage(named:"stella6")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal), forKey:"image")
-        alert.addAction(saveAction)
-        alert.addAction(UIAlertAction(title: "chiudi", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-        
+        var img=""
+        punteggio=37
         switch(punteggio){
-            case 0...6: break
+        case 0...6: img = "stella_vuota"
+            break
+        case 6...11: img = "stella1"
+            break
+        case 11...17: img = "stella2"
+            break
+        case 18...23: img = "stella3"
+            break
+        case 24...29: img = "stella4"
+            break
+        case 30...35: img = "stella5"
+            break
+        case 36...42: img = "stella6"
+            break
         default:break
         }
+        labelPunteggio.text = "Il punteggio è: " + String(punteggio)
+        immagineStelle.image = UIImage(named: img)
+        immagineStelle.contentMode = .scaleAspectFit
+        viewVincita.isHidden = false
+        punteggio = 0
     }
     
     override func viewDidLoad() {
@@ -137,11 +162,11 @@ class Bugin_Pinton_Controller: UIViewController {
 func tastieraNumerica(risultatoTextField: Array<UITextField>,risultatoTextField2: Array<UITextField>){
     for var a in risultatoTextField{
         a.keyboardType = UIKeyboardType.decimalPad
-        a.layer.backgroundColor = UIColor.lightGray.cgColor
+        //a.layer.backgroundColor = UIColor.lightGray.cgColor
     }
     for var a in risultatoTextField2{
         a.keyboardType = UIKeyboardType.decimalPad
-        a.layer.backgroundColor = UIColor.lightGray.cgColor
+        //a.layer.backgroundColor = UIColor.lightGray.cgColor
     }
 }
 

@@ -797,11 +797,45 @@
                                 <rect key="frame" x="603" y="76" width="123" height="253"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view hidden="YES" opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Vf-88-Epc">
+                                <rect key="frame" x="0.0" y="180" width="1025" height="409"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Il punteggio è: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnI-Rg-lPU">
+                                        <rect key="frame" x="396" y="26" width="233" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bambina.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dmi-h9-Pvq">
+                                        <rect key="frame" x="325" y="8" width="79" height="145"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eh-Ou-rSc">
+                                        <rect key="frame" x="956" y="8" width="61" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="close.png"/>
+                                        <connections>
+                                            <action selector="chiudiViewVincita:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6m-iW-xZ2"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2SH-Id-Ag6">
+                                        <rect key="frame" x="126" y="101" width="773" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.87450980389999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Zone" destination="8bC-Xf-vdC" id="utM-1Q-3V5"/>
+                        <outlet property="controllaEnable" destination="7Al-5w-BY1" id="8wN-s0-6wV"/>
+                        <outlet property="immagineStelle" destination="2SH-Id-Ag6" id="8J3-aZ-XgT"/>
+                        <outlet property="labelPunteggio" destination="UnI-Rg-lPU" id="2ft-UR-Uwt"/>
+                        <outlet property="viewVincita" destination="5Vf-88-Epc" id="ZAA-Lq-yvB"/>
                         <outletCollection property="dividendiLabel" destination="XDa-Pe-7Cc" collectionClass="NSMutableArray" id="Bti-rt-5nI"/>
                         <outletCollection property="dividendiLabel" destination="JVC-c8-LG5" collectionClass="NSMutableArray" id="uZK-Nu-Uuq"/>
                         <outletCollection property="dividendiLabel" destination="eQJ-Db-8gi" collectionClass="NSMutableArray" id="Tb4-H5-JzH"/>
@@ -903,6 +937,7 @@
         <image name="bambina.png" width="135" height="287"/>
         <image name="bambino1.png" width="160" height="290"/>
         <image name="bambino2.png" width="118" height="293"/>
+        <image name="close.png" width="980" height="980"/>
         <image name="indietro.png" width="661" height="252"/>
         <image name="sfondo.png" width="3056" height="2293"/>
         <image name="verifica.png" width="762" height="252"/>
