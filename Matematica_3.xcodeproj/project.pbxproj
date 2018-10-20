@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F772C7E0217B1C5B00B0BFE2 /* riprova.png in Resources */ = {isa = PBXBuildFile; fileRef = F772C7DF217B1C5B00B0BFE2 /* riprova.png */; };
 		F77FFA71217205F100FA5091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA70217205F100FA5091 /* Assets.xcassets */; };
-		F77FFA762172062100FA5091 /* Riprova.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA722172062000FA5091 /* Riprova.jpg */; };
 		F77FFA772172062100FA5091 /* Circle green.png in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA732172062000FA5091 /* Circle green.png */; };
 		F77FFA782172062100FA5091 /* Circle blue.png in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA742172062100FA5091 /* Circle blue.png */; };
 		F77FFA792172062100FA5091 /* Circle red.png in Resources */ = {isa = PBXBuildFile; fileRef = F77FFA752172062100FA5091 /* Circle red.png */; };
@@ -55,8 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F772C7DF217B1C5B00B0BFE2 /* riprova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riprova.png; sourceTree = "<group>"; };
 		F77FFA70217205F100FA5091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F77FFA722172062000FA5091 /* Riprova.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Riprova.jpg; sourceTree = "<group>"; };
 		F77FFA732172062000FA5091 /* Circle green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle green.png"; sourceTree = "<group>"; };
 		F77FFA742172062100FA5091 /* Circle blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle blue.png"; sourceTree = "<group>"; };
 		F77FFA752172062100FA5091 /* Circle red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle red.png"; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 				F77FFA742172062100FA5091 /* Circle blue.png */,
 				F77FFA732172062000FA5091 /* Circle green.png */,
 				F77FFA752172062100FA5091 /* Circle red.png */,
-				F77FFA722172062000FA5091 /* Riprova.jpg */,
+				F772C7DF217B1C5B00B0BFE2 /* riprova.png */,
 				FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */,
 				FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */,
 				F77FFA7A2172067100FA5091 /* Cella.swift */,
@@ -357,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */,
-				F77FFA762172062100FA5091 /* Riprova.jpg in Resources */,
+				F772C7E0217B1C5B00B0BFE2 /* riprova.png in Resources */,
 				F77FFA772172062100FA5091 /* Circle green.png in Resources */,
 				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
 				F77FFA71217205F100FA5091 /* Assets.xcassets in Resources */,

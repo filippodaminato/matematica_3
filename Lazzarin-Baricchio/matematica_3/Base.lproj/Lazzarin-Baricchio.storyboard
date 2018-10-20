@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lazzarin Baricchio Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="01J-lp-oVM" customClass="Lazzarin_Baricchio_Controller" customModule="matematica_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="asj-7i-Fw3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yls-OP-JNc">
                                 <rect key="frame" x="228" y="194" width="98" height="98"/>
@@ -83,6 +86,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="KaK-0e-1YG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1i-gV-TTB">
                                 <rect key="frame" x="378" y="194" width="98" height="98"/>
@@ -91,6 +97,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="eAT-YI-SIy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGy-U3-w4o">
                                 <rect key="frame" x="528" y="194" width="98" height="98"/>
@@ -99,6 +108,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="yB1-wV-33t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEI-oD-r6s">
                                 <rect key="frame" x="78" y="344" width="98" height="98"/>
@@ -107,6 +119,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="Q5e-1V-MVC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-tT-Pch">
                                 <rect key="frame" x="228" y="344" width="98" height="98"/>
@@ -115,6 +130,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="kM6-ro-Ysm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjA-VU-LFt">
                                 <rect key="frame" x="378" y="344" width="98" height="98"/>
@@ -123,6 +141,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="CXQ-Jy-cNN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-QB-qnh">
                                 <rect key="frame" x="528" y="344" width="98" height="98"/>
@@ -131,6 +152,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="xAP-FP-iq5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-hS-Mds">
                                 <rect key="frame" x="78" y="494" width="98" height="98"/>
@@ -139,6 +163,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="0Sy-7m-ZOg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-iA-IMO">
                                 <rect key="frame" x="228" y="494" width="98" height="98"/>
@@ -147,6 +174,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="xJb-1D-gCH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmr-v0-DJP">
                                 <rect key="frame" x="378" y="494" width="98" height="98"/>
@@ -155,6 +185,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="988-H3-YVf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeS-B0-Xgd">
                                 <rect key="frame" x="528" y="494" width="98" height="98"/>
@@ -163,6 +196,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="cXL-92-IgZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUE-2u-s7d">
                                 <rect key="frame" x="78" y="644" width="98" height="98"/>
@@ -171,6 +207,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="eXA-yV-dvF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8T-on-aHo">
                                 <rect key="frame" x="228" y="644" width="98" height="98"/>
@@ -179,6 +218,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="Phm-HI-W3u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFr-jU-S45">
                                 <rect key="frame" x="378" y="644" width="98" height="98"/>
@@ -187,6 +229,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="abt-DN-hPh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14c-lN-7Dm">
                                 <rect key="frame" x="528" y="644" width="98" height="98"/>
@@ -195,6 +240,9 @@
                                 <state key="normal" title="0" backgroundImage="Circle blue.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="1IF-rA-8PC"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VuQ-iw-qGv">
                                 <rect key="frame" x="749" y="375" width="343" height="439"/>
@@ -260,10 +308,16 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="denominatore" destination="Yme-I6-nqr" id="wEX-KV-NcV"/>
+                                            <outlet property="numeratore" destination="hQZ-VX-xJi" id="DFs-ag-FLu"/>
+                                            <outlet property="resto" destination="xI0-zH-ro4" id="SKB-pI-arC"/>
+                                            <outlet property="risulatato" destination="fMn-S8-HvB" id="xqw-rd-jzx"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzh-sa-kNo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzh-sa-kNo">
                                 <rect key="frame" x="0.0" y="133" width="729" height="701"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -277,11 +331,49 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54K-EW-Toz">
+                                <rect key="frame" x="569" y="59" width="98" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                <state key="normal" backgroundImage="riprova.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nuovaPartita:" destination="01J-lp-oVM" eventType="touchUpInside" id="VKd-em-YZQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.70200479670000004" blue="0.01955704166" alpha="0.75305008559999997" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rzh-sa-kNo"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="conclusione" destination="rzh-sa-kNo" id="2cQ-Rf-SWm"/>
+                        <outlet property="divisoriMancanti" destination="2P3-iC-iA1" id="u9e-Lo-8nj"/>
+                        <outlet property="numeroDaTrovare" destination="K1C-hd-Ogj" id="AE7-mT-80b"/>
+                        <outlet property="tabella" destination="VuQ-iw-qGv" id="DcB-Kw-IvS"/>
+                        <outletCollection property="divisori" destination="NDz-Qs-diT" collectionClass="NSMutableArray" id="fMi-Gn-ut9"/>
+                        <outletCollection property="divisori" destination="Yls-OP-JNc" collectionClass="NSMutableArray" id="xHm-UW-3Df"/>
+                        <outletCollection property="divisori" destination="M1i-gV-TTB" collectionClass="NSMutableArray" id="Wca-XZ-efG"/>
+                        <outletCollection property="divisori" destination="uGy-U3-w4o" collectionClass="NSMutableArray" id="J4l-6Q-d8j"/>
+                        <outletCollection property="divisori" destination="CEI-oD-r6s" collectionClass="NSMutableArray" id="R8s-jm-mJI"/>
+                        <outletCollection property="divisori" destination="QfS-tT-Pch" collectionClass="NSMutableArray" id="M6E-QK-whN"/>
+                        <outletCollection property="divisori" destination="DjA-VU-LFt" collectionClass="NSMutableArray" id="6bZ-tO-bWa"/>
+                        <outletCollection property="divisori" destination="UD1-QB-qnh" collectionClass="NSMutableArray" id="F2q-8i-NZE"/>
+                        <outletCollection property="divisori" destination="Ieg-hS-Mds" collectionClass="NSMutableArray" id="dEd-NZ-v8t"/>
+                        <outletCollection property="divisori" destination="pGi-iA-IMO" collectionClass="NSMutableArray" id="jLg-BH-s4p"/>
+                        <outletCollection property="divisori" destination="cmr-v0-DJP" collectionClass="NSMutableArray" id="pMg-mH-50r"/>
+                        <outletCollection property="divisori" destination="OeS-B0-Xgd" collectionClass="NSMutableArray" id="UrD-kZ-5HX"/>
+                        <outletCollection property="divisori" destination="MUE-2u-s7d" collectionClass="NSMutableArray" id="owu-dj-gcR"/>
+                        <outletCollection property="divisori" destination="p8T-on-aHo" collectionClass="NSMutableArray" id="P8c-D8-zSU"/>
+                        <outletCollection property="divisori" destination="nFr-jU-S45" collectionClass="NSMutableArray" id="aur-YM-I9Q"/>
+                        <outletCollection property="divisori" destination="14c-lN-7Dm" collectionClass="NSMutableArray" id="ol9-Q0-XPV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,5 +382,6 @@
     </scenes>
     <resources>
         <image name="Circle blue.png" width="392" height="392"/>
+        <image name="riprova.png" width="980" height="866"/>
     </resources>
 </document>
