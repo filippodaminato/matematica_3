@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1420AA0C217B32D000EA6CD6 /* UIExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420AA0A217B32D000EA6CD6 /* UIExcercise.swift */; };
+		1420AA0D217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420AA0B217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift */; };
+		1420AA13217B32F000EA6CD6 /* Immagini in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA12217B32EF00EA6CD6 /* Immagini */; };
+		1420AA17217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA15217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1420AA0A217B32D000EA6CD6 /* UIExcercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExcercise.swift; path = "../../AppFranzi-Marchioro_Caldini/UIExcercise.swift"; sourceTree = "<group>"; };
+		1420AA0B217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Caldini-Marchioro_Controller.swift"; path = "../../AppFranzi-Marchioro_Caldini/Caldini-Marchioro_Controller.swift"; sourceTree = "<group>"; };
+		1420AA12217B32EF00EA6CD6 /* Immagini */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Immagini; path = "../../AppFranzi-Marchioro_Caldini/Immagini"; sourceTree = "<group>"; };
+		1420AA16217B355F00EA6CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Caldini-Marchioro_Storyboard.storyboard"; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +190,10 @@
 		FACF193620AFFD7A0083D028 /* Caldini-Marchioro */ = {
 			isa = PBXGroup;
 			children = (
+				1420AA15217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard */,
+				1420AA12217B32EF00EA6CD6 /* Immagini */,
+				1420AA0A217B32D000EA6CD6 /* UIExcercise.swift */,
+				1420AA0B217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift */,
 			);
 			path = "Caldini-Marchioro";
 			sourceTree = "<group>";
@@ -345,6 +357,8 @@
 				FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
 				FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */,
+				1420AA13217B32F000EA6CD6 /* Immagini in Resources */,
+				1420AA17217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +387,9 @@
 				FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */,
 				FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */,
 				FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */,
+				1420AA0D217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift in Sources */,
 				FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */,
+				1420AA0C217B32D000EA6CD6 /* UIExcercise.swift in Sources */,
 				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
 				FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
@@ -413,6 +429,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1420AA15217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1420AA16217B355F00EA6CD6 /* Base */,
+			);
+			name = "Caldini-Marchioro_Storyboard.storyboard";
+			sourceTree = "<group>";
+		};
 		FAA9DBE220A6CA57002B3F36 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
