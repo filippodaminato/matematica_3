@@ -174,7 +174,7 @@ class BarbieroBazan: UIViewController {
     
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
         if let view = recognizer.view as? DragNumberImageView{
-            
+            view.superview?.bringSubviewToFront(view)
             if recognizer.state == .began {
                 view.AnimatePickUp()
                 view.center = recognizer.location(in: self.view)
@@ -238,6 +238,9 @@ class BarbieroBazan: UIViewController {
             let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.\nProva a ricontrollare se hai messo i numeri nella posizione giusta.", preferredStyle: .alert)
             let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
                 print("Sbagliato")
+                for i in 0...3 {
+                    self.numbersViews[i].MoveToView(view: self.numbersViews[i].originView!, withDuration: 1, withDelay: 0)
+                }
             }
             dialogMessage.addAction(yeah)
             self.present(dialogMessage, animated: true, completion: nil)
