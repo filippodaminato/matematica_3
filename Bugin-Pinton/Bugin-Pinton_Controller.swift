@@ -41,20 +41,26 @@ class Bugin_Pinton_Controller: UIViewController {
         viewVincita.isHidden = true
         controllaEnable.isEnabled = true
     }
+    
     @IBAction func indietro(_ sender: Any) {
-        self.dismiss(animated: true) {
-            //
-        }
+        self.dismiss(animated: true) {}
     }
+    
     @IBAction func controlla(_ sender: Any) {
         //es 1------------------------------------------------------------------------
         controllaEnable.isEnabled = false
+        
+        self.Zone.transform = CGAffineTransform.init(translationX: 0.0, y: 0.0)
+        ishidden = true
+        
+        
         var count = 0
         for a in risultatoTextField
         {
             risultatoTextField[count].layer.borderWidth = 2
             risultatoTextField[count].layer.cornerRadius = 7
-            if let n = Int(a.text!){
+            if Int(a.text!) != nil{
+                print("entrato")
                 if( (a.text == "") || (Int(dividendiLabel[count].text!)!/dividendiLabel[count].tag) != Int(a.text!)!){
                     risultatoTextField[count].layer.borderColor = UIColor.red.cgColor
                 }else{
@@ -67,30 +73,32 @@ class Bugin_Pinton_Controller: UIViewController {
         }
         //es 2---------------------------------------------------------------------------------
         count = 0
-        for var a in risultatoTextField2{
-            switch (count){
-            case 0...5:if(Int(a.text!) != dividendi[count]){
-                a.layer.borderColor = UIColor.red.cgColor
-            }else{
-                a.layer.borderColor = UIColor.green.cgColor
-                a.isEnabled = false
-                punteggio += 1
-            }; break
-            case 6...11:if(Int(a.text!) != divisori[count]){
-                a.layer.borderColor = UIColor.red.cgColor
-            }else{
-                a.layer.borderColor = UIColor.green.cgColor
-                a.isEnabled = false
-                punteggio += 1
-            }; break
-            case 12...17:if(Int(a.text!) != risultati[count]){
-                a.layer.borderColor = UIColor.red.cgColor
-            }else{
-                a.layer.borderColor = UIColor.green.cgColor
-                a.isEnabled = false
-                punteggio += 1
-            }; break
-            default: break
+        for a in risultatoTextField2{
+            if(Int(a.text!) != nil){
+                switch (count){
+                case 0...5:if(Int(a.text!) != dividendi[count]){
+                    a.layer.borderColor = UIColor.red.cgColor
+                }else{
+                    a.layer.borderColor = UIColor.green.cgColor
+                    a.isEnabled = false
+                    punteggio += 1
+                }; break
+                case 6...11:if(Int(a.text!) != divisori[count]){
+                    a.layer.borderColor = UIColor.red.cgColor
+                }else{
+                    a.layer.borderColor = UIColor.green.cgColor
+                    a.isEnabled = false
+                    punteggio += 1
+                }; break
+                case 12...17:if(Int(a.text!) != risultati[count]){
+                    a.layer.borderColor = UIColor.red.cgColor
+                }else{
+                    a.layer.borderColor = UIColor.green.cgColor
+                    a.isEnabled = false
+                    punteggio += 1
+                }; break
+                default: break
+                }
             }
             a.layer.borderWidth = 2
             a.layer.cornerRadius = 7
@@ -98,7 +106,6 @@ class Bugin_Pinton_Controller: UIViewController {
         }
         
         var img=""
-        punteggio=37
         switch(punteggio){
         case 0...6: img = "stella_vuota"
             break
@@ -160,13 +167,13 @@ class Bugin_Pinton_Controller: UIViewController {
 }
 
 func tastieraNumerica(risultatoTextField: Array<UITextField>,risultatoTextField2: Array<UITextField>){
-    for var a in risultatoTextField{
+    for a in risultatoTextField{
         a.keyboardType = UIKeyboardType.decimalPad
-        //a.layer.backgroundColor = UIColor.lightGray.cgColor
+        a.layer.backgroundColor = UIColor.lightGray.cgColor
     }
-    for var a in risultatoTextField2{
+    for a in risultatoTextField2{
         a.keyboardType = UIKeyboardType.decimalPad
-        //a.layer.backgroundColor = UIColor.lightGray.cgColor
+        a.layer.backgroundColor = UIColor.lightGray.cgColor
     }
 }
 
@@ -174,9 +181,9 @@ func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risul
 {
     //es 1------------------------------------------------------------------------
     var controllo = false
-    for var a in dividendiLabel
+    for a in dividendiLabel
     {
-        var i = Int(arc4random_uniform(99)+1)
+        let i = Int(arc4random_uniform(99)+1)
         switch (a.tag){
         case 10: a.text = String(i*10); break
         case 100: a.text = String(i*100); break
@@ -186,7 +193,7 @@ func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risul
     }
     //es 2----------------------------------------------------------------------------------
     var count = 0
-    for var a in dividendi
+    for _ in dividendi
     {
         divisori[count] = divisoriDecimali[Int(arc4random_uniform(3))]
         dividendi[count] = Int(arc4random_uniform(9989)+10)
@@ -217,7 +224,7 @@ func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risul
         usleep(2000)
     }
     count = 0
-    for var a in divisoriLabel2{
+    for a in divisoriLabel2{
         switch (count){
         case 0...5: a.text = a.text! + String(divisori[count])
         risultatiLabel2[count].text = risultatiLabel2[count].text! + String(risultati[count])
