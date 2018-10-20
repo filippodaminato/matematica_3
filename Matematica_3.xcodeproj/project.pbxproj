@@ -17,14 +17,12 @@
 		FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF193020AFFC350083D028 /* Bugin-Pinton.storyboard */; };
 		FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */; };
 		FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */; };
-		FACF193F20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */; };
 		FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */; };
 		FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */; };
 		FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */; };
 		FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */; };
 		FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */; };
 		FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */; };
-		FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */; };
 		FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */; };
 		FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */; };
 		FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */; };
@@ -66,14 +64,12 @@
 		FACF193120AFFC350083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bugin-Pinton.storyboard"; sourceTree = "<group>"; };
 		FACF193320AFFC7A0083D028 /* Bugin-Pinton_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bugin-Pinton_Controller.swift"; sourceTree = "<group>"; };
 		FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bonaldo-Xia_Controller.swift"; sourceTree = "<group>"; };
-		FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Caldini-Marchioro_Controller.swift"; sourceTree = "<group>"; };
 		FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mason-Casagrande_Controller.swift"; sourceTree = "<group>"; };
 		FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lazzarin-Baricchio_Controller.swift"; sourceTree = "<group>"; };
 		FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Migali-Giacomello_Controller.swift"; sourceTree = "<group>"; };
 		FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan_Controller.swift"; sourceTree = "<group>"; };
 		FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bolzo-Calderon_Controller.swift"; sourceTree = "<group>"; };
 		FACF194C20AFFEF30083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bonaldo-Xia.storyboard"; sourceTree = "<group>"; };
-		FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Caldini-Marchioro.storyboard"; sourceTree = "<group>"; };
 		FACF195120AFFF3D0083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Mason-Casagrande.storyboard"; sourceTree = "<group>"; };
 		FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bolzo-Calderon.storyboard"; sourceTree = "<group>"; };
 		FACF195620AFFF770083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
@@ -186,8 +182,6 @@
 		FACF193620AFFD7A0083D028 /* Caldini-Marchioro */ = {
 			isa = PBXGroup;
 			children = (
-				FACF194E20AFFF1A0083D028 /* Caldini-Marchioro.storyboard */,
-				FACF193E20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift */,
 			);
 			path = "Caldini-Marchioro";
 			sourceTree = "<group>";
@@ -316,7 +310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */;
+			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -341,7 +335,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACF194F20AFFF1A0083D028 /* Caldini-Marchioro.storyboard in Resources */,
 				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
 				FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */,
 				FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */,
@@ -377,7 +370,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */,
-				FACF193F20AFFE3D0083D028 /* Caldini-Marchioro_Controller.swift in Sources */,
 				FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */,
 				FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */,
 				FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */,
@@ -709,7 +701,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */ = {
+		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAA9DC0120A6CA59002B3F36 /* Debug */,
