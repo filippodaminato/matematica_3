@@ -9,8 +9,20 @@
 /* Begin PBXBuildFile section */
 		1420AA0C217B32D000EA6CD6 /* UIExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420AA0A217B32D000EA6CD6 /* UIExcercise.swift */; };
 		1420AA0D217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420AA0B217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift */; };
-		1420AA13217B32F000EA6CD6 /* Immagini in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA12217B32EF00EA6CD6 /* Immagini */; };
 		1420AA17217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA15217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard */; };
+		1420AA19217B3B5000EA6CD6 /* kids-3420032_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA18217B3B5000EA6CD6 /* kids-3420032_960_720.png */; };
+		1420AA1B217B3B8400EA6CD6 /* 30c 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA1A217B3B8400EA6CD6 /* 30c 2.png */; };
+		1420AA1D217B3B8B00EA6CD6 /* 30c 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA1C217B3B8A00EA6CD6 /* 30c 3.png */; };
+		1420AA1F217B3B8F00EA6CD6 /* 30c 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA1E217B3B8F00EA6CD6 /* 30c 4.png */; };
+		1420AA21217B3B9300EA6CD6 /* 30c.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA20217B3B9300EA6CD6 /* 30c.png */; };
+		1420AA23217B3B9800EA6CD6 /* bimbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA22217B3B9800EA6CD6 /* bimbi.png */; };
+		1420AA25217B3B9E00EA6CD6 /* corretto_cm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA24217B3B9E00EA6CD6 /* corretto_cm.png */; };
+		1420AA27217B3BA300EA6CD6 /* dritto.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA26217B3BA200EA6CD6 /* dritto.png */; };
+		1420AA29217B3BA700EA6CD6 /* drittov2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA28217B3BA700EA6CD6 /* drittov2.png */; };
+		1420AA2B217B3BAF00EA6CD6 /* reset_cm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA2A217B3BAF00EA6CD6 /* reset_cm.png */; };
+		1420AA2D217B3BB500EA6CD6 /* sbagliato_cm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA2C217B3BB500EA6CD6 /* sbagliato_cm.png */; };
+		1420AA2F217B3BB900EA6CD6 /* stellina_cm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA2E217B3BB900EA6CD6 /* stellina_cm.png */; };
+		1420AA31217B3BC000EA6CD6 /* verifica_cm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1420AA30217B3BC000EA6CD6 /* verifica_cm.png */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
@@ -54,8 +66,20 @@
 /* Begin PBXFileReference section */
 		1420AA0A217B32D000EA6CD6 /* UIExcercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExcercise.swift; path = "../../AppFranzi-Marchioro_Caldini/UIExcercise.swift"; sourceTree = "<group>"; };
 		1420AA0B217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Caldini-Marchioro_Controller.swift"; path = "../../AppFranzi-Marchioro_Caldini/Caldini-Marchioro_Controller.swift"; sourceTree = "<group>"; };
-		1420AA12217B32EF00EA6CD6 /* Immagini */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Immagini; path = "../../AppFranzi-Marchioro_Caldini/Immagini"; sourceTree = "<group>"; };
 		1420AA16217B355F00EA6CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Caldini-Marchioro_Storyboard.storyboard"; sourceTree = "<group>"; };
+		1420AA18217B3B5000EA6CD6 /* kids-3420032_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kids-3420032_960_720.png"; sourceTree = "<group>"; };
+		1420AA1A217B3B8400EA6CD6 /* 30c 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30c 2.png"; sourceTree = "<group>"; };
+		1420AA1C217B3B8A00EA6CD6 /* 30c 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30c 3.png"; sourceTree = "<group>"; };
+		1420AA1E217B3B8F00EA6CD6 /* 30c 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "30c 4.png"; sourceTree = "<group>"; };
+		1420AA20217B3B9300EA6CD6 /* 30c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30c.png; sourceTree = "<group>"; };
+		1420AA22217B3B9800EA6CD6 /* bimbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bimbi.png; sourceTree = "<group>"; };
+		1420AA24217B3B9E00EA6CD6 /* corretto_cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corretto_cm.png; sourceTree = "<group>"; };
+		1420AA26217B3BA200EA6CD6 /* dritto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dritto.png; sourceTree = "<group>"; };
+		1420AA28217B3BA700EA6CD6 /* drittov2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drittov2.png; sourceTree = "<group>"; };
+		1420AA2A217B3BAF00EA6CD6 /* reset_cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset_cm.png; sourceTree = "<group>"; };
+		1420AA2C217B3BB500EA6CD6 /* sbagliato_cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sbagliato_cm.png; sourceTree = "<group>"; };
+		1420AA2E217B3BB900EA6CD6 /* stellina_cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stellina_cm.png; sourceTree = "<group>"; };
+		1420AA30217B3BC000EA6CD6 /* verifica_cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = verifica_cm.png; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +134,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1420AA32217B3BE800EA6CD6 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				1420AA30217B3BC000EA6CD6 /* verifica_cm.png */,
+				1420AA2E217B3BB900EA6CD6 /* stellina_cm.png */,
+				1420AA2C217B3BB500EA6CD6 /* sbagliato_cm.png */,
+				1420AA2A217B3BAF00EA6CD6 /* reset_cm.png */,
+				1420AA28217B3BA700EA6CD6 /* drittov2.png */,
+				1420AA26217B3BA200EA6CD6 /* dritto.png */,
+				1420AA24217B3B9E00EA6CD6 /* corretto_cm.png */,
+				1420AA22217B3B9800EA6CD6 /* bimbi.png */,
+				1420AA20217B3B9300EA6CD6 /* 30c.png */,
+				1420AA1E217B3B8F00EA6CD6 /* 30c 4.png */,
+				1420AA1C217B3B8A00EA6CD6 /* 30c 3.png */,
+				1420AA1A217B3B8400EA6CD6 /* 30c 2.png */,
+				1420AA18217B3B5000EA6CD6 /* kids-3420032_960_720.png */,
+			);
+			path = Img;
+			sourceTree = "<group>";
+		};
 		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +234,8 @@
 		FACF193620AFFD7A0083D028 /* Caldini-Marchioro */ = {
 			isa = PBXGroup;
 			children = (
+				1420AA32217B3BE800EA6CD6 /* Img */,
 				1420AA15217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard */,
-				1420AA12217B32EF00EA6CD6 /* Immagini */,
 				1420AA0A217B32D000EA6CD6 /* UIExcercise.swift */,
 				1420AA0B217B32D000EA6CD6 /* Caldini-Marchioro_Controller.swift */,
 			);
@@ -349,15 +393,27 @@
 			files = (
 				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
 				FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */,
+				1420AA2D217B3BB500EA6CD6 /* sbagliato_cm.png in Resources */,
 				FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */,
 				FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */,
+				1420AA19217B3B5000EA6CD6 /* kids-3420032_960_720.png in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
+				1420AA29217B3BA700EA6CD6 /* drittov2.png in Resources */,
+				1420AA1F217B3B8F00EA6CD6 /* 30c 4.png in Resources */,
+				1420AA25217B3B9E00EA6CD6 /* corretto_cm.png in Resources */,
+				1420AA21217B3B9300EA6CD6 /* 30c.png in Resources */,
 				FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */,
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
+				1420AA1D217B3B8B00EA6CD6 /* 30c 3.png in Resources */,
+				1420AA2B217B3BAF00EA6CD6 /* reset_cm.png in Resources */,
+				1420AA23217B3B9800EA6CD6 /* bimbi.png in Resources */,
 				FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
+				1420AA27217B3BA300EA6CD6 /* dritto.png in Resources */,
+				1420AA1B217B3B8400EA6CD6 /* 30c 2.png in Resources */,
+				1420AA31217B3BC000EA6CD6 /* verifica_cm.png in Resources */,
 				FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */,
-				1420AA13217B32F000EA6CD6 /* Immagini in Resources */,
+				1420AA2F217B3BB900EA6CD6 /* stellina_cm.png in Resources */,
 				1420AA17217B355F00EA6CD6 /* Caldini-Marchioro_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
