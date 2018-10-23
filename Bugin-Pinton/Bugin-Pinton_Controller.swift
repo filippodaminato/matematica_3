@@ -53,6 +53,8 @@ class Bugin_Pinton_Controller: UIViewController {
         self.Zone.transform = CGAffineTransform.init(translationX: 0.0, y: 0.0)
         ishidden = true
         
+        self.view.endEditing(true)
+        
         
         var count = 0
         for a in risultatoTextField
@@ -82,21 +84,26 @@ class Bugin_Pinton_Controller: UIViewController {
                     a.layer.borderColor = UIColor.green.cgColor
                     a.isEnabled = false
                     punteggio += 1
-                }; break
-                case 6...11:if(Int(a.text!) != divisori[count]){
-                    a.layer.borderColor = UIColor.red.cgColor
-                }else{
-                    a.layer.borderColor = UIColor.green.cgColor
-                    a.isEnabled = false
-                    punteggio += 1
-                }; break
+                }
+                    break
+                case 6...11:
+                    if(Int(a.text!) != divisori[count]){
+                        a.layer.borderColor = UIColor.red.cgColor
+                    }else{
+                        a.layer.borderColor = UIColor.green.cgColor
+                        a.isEnabled = false
+                        punteggio += 1
+                }
+                    break
                 case 12...17:if(Int(a.text!) != risultati[count]){
                     a.layer.borderColor = UIColor.red.cgColor
                 }else{
                     a.layer.borderColor = UIColor.green.cgColor
                     a.isEnabled = false
                     punteggio += 1
-                }; break
+                }
+                break
+
                 default: break
                 }
             }
