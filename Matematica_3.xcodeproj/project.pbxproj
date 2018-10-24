@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */; };
+		DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
@@ -20,12 +22,10 @@
 		FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */; };
 		FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */; };
 		FACF194620AFFE860083D028 /* Migali-Giacomello_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */; };
-		FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */; };
 		FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */; };
 		FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */; };
 		FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */; };
 		FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */; };
-		FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */; };
 		FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */; };
 		FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */; };
 /* End PBXBuildFile section */
@@ -48,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
+		DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,12 +69,10 @@
 		FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mason-Casagrande_Controller.swift"; sourceTree = "<group>"; };
 		FACF194320AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lazzarin-Baricchio_Controller.swift"; sourceTree = "<group>"; };
 		FACF194520AFFE860083D028 /* Migali-Giacomello_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Migali-Giacomello_Controller.swift"; sourceTree = "<group>"; };
-		FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan_Controller.swift"; sourceTree = "<group>"; };
 		FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bolzo-Calderon_Controller.swift"; sourceTree = "<group>"; };
 		FACF194C20AFFEF30083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bonaldo-Xia.storyboard"; sourceTree = "<group>"; };
 		FACF195120AFFF3D0083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Mason-Casagrande.storyboard"; sourceTree = "<group>"; };
 		FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bolzo-Calderon.storyboard"; sourceTree = "<group>"; };
-		FACF195620AFFF770083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
 		FACF195820AFFFA30083D028 /* Migali-Giacomello.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Migali-Giacomello.storyboard"; sourceTree = "<group>"; };
 		FACF195B20AFFFC90083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Lazzarin-Baricchio.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,8 +216,8 @@
 		FACF193A20AFFDE80083D028 /* Barbiero-Bazan */ = {
 			isa = PBXGroup;
 			children = (
-				FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */,
-				FACF194720AFFE990083D028 /* Barbiero-Bazan_Controller.swift */,
+				DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */,
+				DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */,
 			);
 			path = "Barbiero-Bazan";
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */;
+			buildConfigurationList = FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -338,11 +338,11 @@
 				FACF193220AFFC350083D028 /* Bugin-Pinton.storyboard in Resources */,
 				FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */,
 				FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */,
+				DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */,
 				FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
 				FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */,
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
-				FACF195720AFFF770083D028 /* Barbiero-Bazan.storyboard in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
 				FACF195920AFFFA30083D028 /* Migali-Giacomello.storyboard in Resources */,
 			);
@@ -369,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */,
 				FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */,
 				FACF193420AFFC7A0083D028 /* Bugin-Pinton_Controller.swift in Sources */,
 				FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */,
@@ -377,7 +378,6 @@
 				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
 				FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
-				FACF194820AFFE990083D028 /* Barbiero-Bazan_Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,14 +451,6 @@
 				FACF195120AFFF3D0083D028 /* Base */,
 			);
 			name = "Mason-Casagrande.storyboard";
-			sourceTree = "<group>";
-		};
-		FACF195520AFFF770083D028 /* Barbiero-Bazan.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACF195620AFFF770083D028 /* Base */,
-			);
-			name = "Barbiero-Bazan.storyboard";
 			sourceTree = "<group>";
 		};
 		FACF195A20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard */ = {
@@ -701,7 +693,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "Matematica_3" */ = {
+		FAA9DBD620A6CA57002B3F36 /* Build configuration list for PBXProject "matematica_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAA9DC0120A6CA59002B3F36 /* Debug */,
