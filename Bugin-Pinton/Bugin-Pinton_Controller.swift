@@ -29,17 +29,20 @@ class Bugin_Pinton_Controller: UIViewController {
     @IBOutlet weak var immagineStelle: UIImageView!
     @IBOutlet weak var labelPunteggio: UILabel!
     
-    
     @IBOutlet var Zone: UIView!
     
     var punteggio = 0
-    var ishidden = false
+    var ishidden = true
     var divisore = 0
-    
+    let numeri = CharacterSet.decimalDigits
     
     @IBAction func chiudiViewVincita(_ sender: Any) {
         viewVincita.isHidden = true
-        controllaEnable.isEnabled = true
+        if(punteggio != 42){
+            controllaEnable.isEnabled = true
+        }else{
+            indietro((Any).self)
+        }
     }
     
     @IBAction func indietro(_ sender: Any) {
@@ -47,71 +50,78 @@ class Bugin_Pinton_Controller: UIViewController {
     }
     
     @IBAction func controlla(_ sender: Any) {
-        //es 1------------------------------------------------------------------------
-        controllaEnable.isEnabled = false
-        
+        controllaEnable.isEnabled = false//es 1------------------------------------------------------------------------
         self.Zone.transform = CGAffineTransform.init(translationX: 0.0, y: 0.0)
         ishidden = true
-        
         self.view.endEditing(true)
-        
-        
         var count = 0
         for a in risultatoTextField
         {
             risultatoTextField[count].layer.borderWidth = 2
             risultatoTextField[count].layer.cornerRadius = 7
             if Int(a.text!) != nil{
-                print("entrato")
-                if( (a.text == "") || (Int(dividendiLabel[count].text!)!/dividendiLabel[count].tag) != Int(a.text!)!){
-                    risultatoTextField[count].layer.borderColor = UIColor.red.cgColor
-                }else{
-                    risultatoTextField[count].layer.borderColor = UIColor.green.cgColor
-                    risultatoTextField[count].isEnabled = false
-                    punteggio += 1
+                for i in a.text!.unicodeScalars{
+                    if(numeri.contains(i))
+                    {
+                        if( (a.text == "") || (Int(dividendiLabel[count].text!)!/dividendiLabel[count].tag) != Int(a.text!)!){
+                            risultatoTextField[count].layer.borderColor = UIColor.red.cgColor
+                        }else{
+                            risultatoTextField[count].layer.borderColor = UIColor.green.cgColor
+                            risultatoTextField[count].isEnabled = false
+                            punteggio += 1
+                        }
+                    }else{
+                        a.layer.borderColor = UIColor.red.cgColor
+                    }
                 }
             }
             count += 1
         }
-        //es 2---------------------------------------------------------------------------------
-        count = 0
+        count = 0//es 2---------------------------------------------------------------------------------
+        
         for a in risultatoTextField2{
             if(Int(a.text!) != nil){
-                switch (count){
-                case 0...5:if(Int(a.text!) != dividendi[count]){
-                    a.layer.borderColor = UIColor.red.cgColor
-                }else{
-                    a.layer.borderColor = UIColor.green.cgColor
-                    a.isEnabled = false
-                    punteggio += 1
-                }
-                    break
-                case 6...11:
-                    if(Int(a.text!) != divisori[count]){
-                        a.layer.borderColor = UIColor.red.cgColor
+                for i in a.text!.unicodeScalars{
+                    if(numeri.contains(i))
+                    {
+                        switch (count){
+                        case 0...5:if(Int(a.text!) != dividendi[count]){
+                            a.layer.borderColor = UIColor.red.cgColor
+                        }else{
+                            a.layer.borderColor = UIColor.green.cgColor
+                            a.isEnabled = false
+                            punteggio += 1
+                        }
+                            break
+                        case 6...11:
+                            if(Int(a.text!) != divisori[count]){
+                                a.layer.borderColor = UIColor.red.cgColor
+                            }else{
+                                a.layer.borderColor = UIColor.green.cgColor
+                                a.isEnabled = false
+                                punteggio += 1
+                            }
+                            break
+                        case 12...17:if(Int(a.text!) != risultati[count]){
+                            a.layer.borderColor = UIColor.red.cgColor
+                        }else{
+                            a.layer.borderColor = UIColor.green.cgColor
+                            a.isEnabled = false
+                            punteggio += 1
+                        }
+                            break
+                            
+                        default: break
+                        }
                     }else{
-                        a.layer.borderColor = UIColor.green.cgColor
-                        a.isEnabled = false
-                        punteggio += 1
-                }
-                    break
-                case 12...17:if(Int(a.text!) != risultati[count]){
-                    a.layer.borderColor = UIColor.red.cgColor
-                }else{
-                    a.layer.borderColor = UIColor.green.cgColor
-                    a.isEnabled = false
-                    punteggio += 1
-                }
-                break
-
-                default: break
+                        a.layer.borderColor = UIColor.red.cgColor
+                    }
                 }
             }
             a.layer.borderWidth = 2
             a.layer.cornerRadius = 7
             count += 1
         }
-        
         var img=""
         switch(punteggio){
         case 0...6: img = "stella_vuota"
@@ -139,7 +149,6 @@ class Bugin_Pinton_Controller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: Notification.Name.UIKeyboardWillHide, object: nil)
         // Do any additional setup after loading the view, typically from a nib.
         //risultatoTextField[0]
         
@@ -152,7 +161,6 @@ class Bugin_Pinton_Controller: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func keyboardWillAppear(_ sender: Any)
     {
         if(ishidden == true)
@@ -161,16 +169,6 @@ class Bugin_Pinton_Controller: UIViewController {
             ishidden = false
         }
     }
-    
-    @objc func keyboardWillDisappear(_notification: NSNotification)
-    {
-        if(ishidden == false)
-        {
-            self.Zone.transform = CGAffineTransform.init(translationX: 0.0, y: 0.0)
-            ishidden = true
-        }
-    }
-    
 }
 
 func tastieraNumerica(risultatoTextField: Array<UITextField>,risultatoTextField2: Array<UITextField>){
@@ -186,8 +184,7 @@ func tastieraNumerica(risultatoTextField: Array<UITextField>,risultatoTextField2
 
 func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risultatiLabel2: Array<UILabel>,dividendiLabel2: Array<UILabel>, risultatoTextField2: Array<UITextField> )
 {
-    //es 1------------------------------------------------------------------------
-    var controllo = false
+    var controllo = false //es 1------------------------------------------------------------------------
     for a in dividendiLabel
     {
         let i = Int(arc4random_uniform(99)+1)
@@ -198,13 +195,11 @@ func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risul
         default: break
         }
     }
-    //es 2----------------------------------------------------------------------------------
-    var count = 0
+    var count = 0//es 2----------------------------------------------------------------------------------
     for _ in dividendi
     {
         divisori[count] = divisoriDecimali[Int(arc4random_uniform(3))]
         dividendi[count] = Int(arc4random_uniform(9989)+10)
-        
         switch (divisori[count]){
         case 10:    if(dividendi[count] % 10 != 0){
             while(dividendi[count] % 10 != 0)
