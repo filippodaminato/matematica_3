@@ -127,7 +127,6 @@
                     <connections>
                         <outlet property="botLeftPlaceholder" destination="FWM-ZJ-AZ9" id="gYw-r4-aoa"/>
                         <outlet property="es4sx" destination="8bC-Xf-vdC" id="c7e-GG-cFz"/>
-                        <outlet property="prova" destination="O42-x0-rlR" id="NpW-DD-KfP"/>
                         <outlet property="topLeftPlaceholder" destination="TAH-7p-wAF" id="BTK-vw-q1o"/>
                         <outlet property="topRightPlaceholder" destination="m33-i4-oaX" id="h3t-Zb-sS4"/>
                     </connections>

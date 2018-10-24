@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CaldiniMarchioro_Controller: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
