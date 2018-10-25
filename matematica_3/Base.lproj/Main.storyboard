@@ -79,6 +79,14 @@
                                     <segue destination="XJf-zf-qrY" kind="show" id="OHV-5z-bLT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Tq-MBB">
+                                <rect key="frame" x="753" y="658" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="qrV-ml-5T9" kind="show" id="7nB-Hn-dlW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -87,6 +95,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.6953125" y="133.59375"/>
+        </scene>
+        <!--Bau-Danilo-->
+        <scene sceneID="kiJ-E2-det">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bau-Danilo" id="qrV-ml-5T9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xiM-TE-ho7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="-115"/>
         </scene>
         <!--Bonaldo-Xia-->
         <scene sceneID="BU3-HI-fjO">
