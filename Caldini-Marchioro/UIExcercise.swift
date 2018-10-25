@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//▼
 class UIExcercise {
     private var _numSx : UILabel
     private var _segno : UIButton
@@ -39,13 +40,15 @@ class UIExcercise {
         _numSx.textAlignment = NSTextAlignment.center
         _numSx.layer.cornerRadius = 10
         _numSx.layer.masksToBounds = true
+        _numSx.font = _numSx.font.withSize(35)
         
         _segno =
             UIButton(frame: CGRect(x: _numSx.frame.maxX + btnDistance, y: y, width: btnWidth, height: height))
-        _segno.backgroundColor = UIColor.orange
+        _segno.backgroundColor = UIColor.blue
         _segno.layer.cornerRadius = 7
         _segno.layer.masksToBounds = true
         _segno.contentMode = UIView.ContentMode.scaleToFill
+        _segno.titleLabel?.font = _segno.titleLabel?.font.withSize(35)
         
         _numDx =
             UILabel(frame: CGRect(x: _segno.frame.maxX + btnDistance, y: y, width: elementWidth, height: height))
@@ -53,6 +56,7 @@ class UIExcercise {
         _numDx.textAlignment = NSTextAlignment.center
         _numDx.layer.cornerRadius = 10
         _numDx.layer.masksToBounds = true
+        _numDx.font = _numDx.font.withSize(35)
         
         _imgRisultato =
             UIImageView(frame: CGRect(x: _numDx.frame.maxX, y: y, width: imgWidth, height: height))
@@ -79,7 +83,8 @@ class UIExcercise {
         _numSx.text = String(Int.random(in: 0...100))
         _numDx.text = String(Int.random(in: 0...100))
         
-        _segno.setTitle("<", for: UIControl.State.normal)
+        _segno.setTitle("▼", for: UIControl.State.normal)
+        _segno.backgroundColor = UIColor.blue
         
         _imgRisultato.isHidden = true
     }
@@ -127,6 +132,9 @@ class UIExcercise {
         //Cambia il segno in maniera circolare tra '>', '=' e '<'
         //ogni volta che il bottone viene cliccato
         switch sender.currentTitle {
+        case "▼":
+            sender.setTitle("<", for: UIControl.State.normal)
+            sender.backgroundColor = UIColor.green
         case ">":
             sender.setTitle("<", for: UIControl.State.normal)
         case "<":
