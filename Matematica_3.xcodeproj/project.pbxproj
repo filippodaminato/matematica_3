@@ -13,6 +13,9 @@
 		DB19AA672181A4AE00179603 /* Migali-Giacomello-Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19AA662181A4AE00179603 /* Migali-Giacomello-Controller.swift */; };
 		DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */; };
 		DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */; };
+		DBE844042181A7E7004544F7 /* UIExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE844012181A7E7004544F7 /* UIExcercise.swift */; };
+		DBE844052181A7E7004544F7 /* CaldiniMarchioro_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE844022181A7E7004544F7 /* CaldiniMarchioro_Controller.swift */; };
+		DBE844062181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE844032181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard */; };
 		DBF118FD2181994E00DD168D /* Bau-Danilo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF118FC2181994E00DD168D /* Bau-Danilo.storyboard */; };
 		DBF119032181998A00DD168D /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF119022181998A00DD168D /* DraggableImageView.swift */; };
 		DBF119052181999000DD168D /* Bau_DaniloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF119042181999000DD168D /* Bau_DaniloViewController.swift */; };
@@ -57,6 +60,9 @@
 		DB19AA662181A4AE00179603 /* Migali-Giacomello-Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Migali-Giacomello-Controller.swift"; sourceTree = "<group>"; };
 		DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
 		DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
+		DBE844012181A7E7004544F7 /* UIExcercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExcercise.swift; path = ../../UIExcercise.swift; sourceTree = "<group>"; };
+		DBE844022181A7E7004544F7 /* CaldiniMarchioro_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaldiniMarchioro_Controller.swift; sourceTree = "<group>"; };
+		DBE844032181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Caldini-Marchioro_Storyboard.storyboard"; sourceTree = "<group>"; };
 		DBF118FC2181994E00DD168D /* Bau-Danilo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bau-Danilo.storyboard"; sourceTree = "<group>"; };
 		DBF119022181998A00DD168D /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
 		DBF119042181999000DD168D /* Bau_DaniloViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bau_DaniloViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +205,9 @@
 		FACF193620AFFD7A0083D028 /* Caldini-Marchioro */ = {
 			isa = PBXGroup;
 			children = (
+				DBE844032181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard */,
+				DBE844022181A7E7004544F7 /* CaldiniMarchioro_Controller.swift */,
+				DBE844012181A7E7004544F7 /* UIExcercise.swift */,
 			);
 			path = "Caldini-Marchioro";
 			sourceTree = "<group>";
@@ -363,6 +372,7 @@
 				FACF195C20AFFFC90083D028 /* Lazzarin-Baricchio.storyboard in Resources */,
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
+				DBE844062181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */,
+				DBE844042181A7E7004544F7 /* UIExcercise.swift in Sources */,
 				FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */,
 				DBF119032181998A00DD168D /* DraggableImageView.swift in Sources */,
 				FACF194220AFFE5A0083D028 /* Mason-Casagrande_Controller.swift in Sources */,
@@ -396,6 +407,7 @@
 				FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */,
 				DB17A5FE2181A15D0096D2B7 /* Bugin-Pinton_Controller.swift in Sources */,
 				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
+				DBE844052181A7E7004544F7 /* CaldiniMarchioro_Controller.swift in Sources */,
 				FACF194420AFFE710083D028 /* Lazzarin-Baricchio_Controller.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
 			);
