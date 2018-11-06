@@ -78,7 +78,7 @@ class Bugin_Pinton_Controller: UIViewController {
             count += 1
         }
         count = 0//es 2---------------------------------------------------------------------------------
-        var controllo = true
+        var controllo = false
         for a in risultatoTextField2{
             for i in a.text!.unicodeScalars{
                 if(numeri.contains(i))
