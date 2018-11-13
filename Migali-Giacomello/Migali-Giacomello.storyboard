@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 23.png" translatesAutoresizingMaskIntoConstraints="NO" id="XbL-yK-0zU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 23" translatesAutoresizingMaskIntoConstraints="NO" id="XbL-yK-0zU">
                                 <rect key="frame" x="15" y="110" width="994" height="644"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -50,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="-66" width="278" height="698"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-0p-vNs">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-0p-vNs">
                                                 <rect key="frame" x="127" y="157" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -63,7 +63,7 @@
                                                     <action selector="num2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AD5-G0-nle"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-TH-8cb">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-TH-8cb">
                                                 <rect key="frame" x="122" y="456" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -82,7 +82,7 @@
                                         <rect key="frame" x="249" y="-66" width="278" height="698"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-yY-Do8">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-yY-Do8">
                                                 <rect key="frame" x="156" y="447" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -95,7 +95,7 @@
                                                     <action selector="num4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCy-XW-weJ"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="af1-oD-b2H">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="af1-oD-b2H">
                                                 <rect key="frame" x="85" y="232" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -114,7 +114,7 @@
                                         <rect key="frame" x="746" y="-66" width="278" height="698"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="FrL-f4-gh7">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="FrL-f4-gh7">
                                                 <rect key="frame" x="34" y="117" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -127,7 +127,7 @@
                                                     <action selector="num5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJz-m5-isE"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="41D-Iw-RQN">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="41D-Iw-RQN">
                                                 <rect key="frame" x="68" y="320" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -146,7 +146,7 @@
                                         <rect key="frame" x="500" y="-74" width="278" height="698"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="oKj-rJ-m1j">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="oKj-rJ-m1j">
                                                 <rect key="frame" x="80" y="150" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -159,7 +159,7 @@
                                                     <action selector="num7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7R-IU-UG8"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22.png" translatesAutoresizingMaskIntoConstraints="NO" id="doy-80-vjk">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="doy-80-vjk">
                                                 <rect key="frame" x="162" y="492" width="90" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -219,7 +219,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Risorsa 22.png" width="392" height="392"/>
-        <image name="Risorsa 23.png" width="2963" height="1981"/>
+        <image name="Risorsa 22" width="98" height="98"/>
+        <image name="Risorsa 23" width="740.75" height="495.25"/>
     </resources>
 </document>
