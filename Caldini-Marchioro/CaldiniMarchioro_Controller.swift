@@ -39,6 +39,9 @@ class CaldiniMarchioro_Controller: UIViewController {
             ex.check()
         }
     }
+    @IBAction func back(_ sender: Any) {
+         self.dismiss(animated: true) {}
+    }
     
     private func createExcercises() -> Void
     {

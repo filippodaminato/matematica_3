@@ -35,6 +35,9 @@ func CGPointMake(_ x: CGFloat, _ y: CGFloat) -> CGPoint {
 
 class Bau_DaniloViewController: UIViewController{
     
+    @IBAction func back(_ sender: Any) {
+         self.dismiss(animated: true) {}
+    }
     @IBOutlet weak var lblGiuste: UILabel!
     @IBOutlet weak var lblLevel: UILabel!
     @IBOutlet weak var lblErrori: UILabel!

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,74 +18,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9i4-3z-hBs">
-                                <rect key="frame" x="204" y="462" width="72" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="risorsa4" translatesAutoresizingMaskIntoConstraints="NO" id="yO2-yR-jLa">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LAZZARIN"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9i4-3z-hBs">
+                                <rect key="frame" x="298" y="313" width="140" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="r4"/>
                                 <connections>
                                     <segue destination="CTs-Lx-aoC" kind="show" id="LEE-Xi-HYE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVk-sk-ORd">
-                                <rect key="frame" x="427" y="462" width="55" height="30"/>
+                                <rect key="frame" x="778" y="362" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MASON"/>
+                                <state key="normal" backgroundImage="r9"/>
                                 <connections>
                                     <segue destination="cuO-8h-Hk3" kind="show" id="NbV-pa-fbG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irM-ZM-U1v">
-                                <rect key="frame" x="630" y="462" width="58" height="30"/>
+                                <rect key="frame" x="592" y="128" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CALDINI"/>
+                                <state key="normal" backgroundImage="r6"/>
                                 <connections>
                                     <segue destination="dUi-Wm-bNE" kind="show" id="5QU-p3-hD3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zos-Jq-Jnk">
-                                <rect key="frame" x="807" y="462" width="72" height="30"/>
+                                <rect key="frame" x="198" y="505" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BONALDO"/>
+                                <state key="normal" backgroundImage="r5"/>
                                 <connections>
                                     <segue destination="YOf-gf-TB8" kind="show" id="XcW-m8-uIW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B86-XG-iM5">
-                                <rect key="frame" x="411" y="154" width="109" height="68"/>
+                                <rect key="frame" x="298" y="128" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BUGIN-PINTON"/>
+                                <state key="normal" backgroundImage="r2"/>
                                 <connections>
                                     <segue destination="VJ9-dZ-SIE" kind="show" id="yO1-X9-nAi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iv-kz-urH">
-                                <rect key="frame" x="232" y="173" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iv-kz-urH">
+                                <rect key="frame" x="105" y="313" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="JOSE"/>
+                                <state key="normal" backgroundImage="r3"/>
                                 <connections>
                                     <segue destination="7MO-fB-JjX" kind="show" id="K2x-3F-XdP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSm-NX-Zcg">
-                                <rect key="frame" x="634" y="173" width="73" height="30"/>
+                                <rect key="frame" x="105" y="128" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="BARBIERO"/>
+                                <state key="normal" backgroundImage="r1"/>
                                 <connections>
                                     <segue destination="QMT-vy-Hwp" kind="show" id="YJU-tm-M8f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8N-vz-mU9">
-                                <rect key="frame" x="829" y="173" width="50" height="30"/>
+                                <rect key="frame" x="778" y="128" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MIGALI"/>
+                                <state key="normal" backgroundImage="r7"/>
                                 <connections>
                                     <segue destination="XJf-zf-qrY" kind="show" id="OHV-5z-bLT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Tq-MBB">
-                                <rect key="frame" x="753" y="658" width="46" height="30"/>
+                                <rect key="frame" x="592" y="362" width="140" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="r8"/>
                                 <connections>
                                     <segue destination="qrV-ml-5T9" kind="show" id="7nB-Hn-dlW"/>
                                 </connections>
@@ -172,4 +176,16 @@
             <point key="canvasLocation" x="759" y="363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="r1" width="16.133333206176758" height="19.466667175292969"/>
+        <image name="r2" width="16" height="19.466667175292969"/>
+        <image name="r3" width="16.066667556762695" height="19.533332824707031"/>
+        <image name="r4" width="16.066667556762695" height="19.533332824707031"/>
+        <image name="r5" width="16.066667556762695" height="19.533332824707031"/>
+        <image name="r6" width="16.133333206176758" height="19.466667175292969"/>
+        <image name="r7" width="16" height="19.466667175292969"/>
+        <image name="r8" width="16.133333206176758" height="19.466667175292969"/>
+        <image name="r9" width="16.133333206176758" height="19.600000381469727"/>
+        <image name="risorsa4" width="113.26667022705078" height="84.800003051757812"/>
+    </resources>
 </document>

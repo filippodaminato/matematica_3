@@ -76,6 +76,14 @@
                                                     <action selector="num1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eP1-ta-NCh"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9U-8G-7Ad">
+                                                <rect key="frame" x="52" y="639" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nS1-aA-wsP"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhI-56-d8b">

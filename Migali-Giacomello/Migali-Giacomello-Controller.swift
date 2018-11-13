@@ -24,6 +24,9 @@ class MigaliGiacomelloController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func back(_ sender: Any) {
+         self.dismiss(animated: true) {}
+    }
     func generaRandom()
     {
         base = Int(arc4random()%12)

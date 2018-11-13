@@ -16,9 +16,12 @@
 		DB559DFB219AB89E000199AA /* Cella.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB559DFA219AB89E000199AA /* Cella.swift */; };
 		DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */; };
 		DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */; };
+		DB7AB3FE219AD380002F81AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7AB3FD219AD37F002F81AD /* Assets.xcassets */; };
+		DB88FC96219ABCB5001117C9 /* Bonaldo-Xia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB88FC94219ABCB5001117C9 /* Bonaldo-Xia.storyboard */; };
+		DB88FC97219ABCB5001117C9 /* Bonaldo-Xia_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88FC95219ABCB5001117C9 /* Bonaldo-Xia_ViewController.swift */; };
+		DB88FC99219ABD4A001117C9 /* UIExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88FC98219ABD4A001117C9 /* UIExcercise.swift */; };
 		DB9A3178219AB63300914682 /* Mason-Casagrande_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9A3176219AB63300914682 /* Mason-Casagrande_Controller.swift */; };
 		DB9A3179219AB63300914682 /* Mason-Casagrande.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9A3177219AB63300914682 /* Mason-Casagrande.storyboard */; };
-		DBB8E841219AB32D00358934 /* UIExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB8E840219AB32D00358934 /* UIExcercise.swift */; };
 		DBE844052181A7E7004544F7 /* CaldiniMarchioro_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE844022181A7E7004544F7 /* CaldiniMarchioro_Controller.swift */; };
 		DBE844062181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE844032181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard */; };
 		DBF118FD2181994E00DD168D /* Bau-Danilo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF118FC2181994E00DD168D /* Bau-Danilo.storyboard */; };
@@ -27,13 +30,10 @@
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE220A6CA57002B3F36 /* Main.storyboard */; };
-		FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */; };
 		FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */; };
 		FAA9DBF420A6CA59002B3F36 /* matematica_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBF320A6CA59002B3F36 /* matematica_3Tests.swift */; };
 		FAA9DBFF20A6CA59002B3F36 /* matematica_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */; };
-		FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */; };
 		FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */; };
-		FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */; };
 		FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -64,9 +64,12 @@
 		DB559DFA219AB89E000199AA /* Cella.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cella.swift; sourceTree = "<group>"; };
 		DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
 		DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
+		DB7AB3FD219AD37F002F81AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB88FC94219ABCB5001117C9 /* Bonaldo-Xia.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bonaldo-Xia.storyboard"; sourceTree = "<group>"; };
+		DB88FC95219ABCB5001117C9 /* Bonaldo-Xia_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bonaldo-Xia_ViewController.swift"; sourceTree = "<group>"; };
+		DB88FC98219ABD4A001117C9 /* UIExcercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExcercise.swift; path = ../../../.Trash/UIExcercise.swift; sourceTree = "<group>"; };
 		DB9A3176219AB63300914682 /* Mason-Casagrande_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mason-Casagrande_Controller.swift"; sourceTree = "<group>"; };
 		DB9A3177219AB63300914682 /* Mason-Casagrande.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Mason-Casagrande.storyboard"; sourceTree = "<group>"; };
-		DBB8E840219AB32D00358934 /* UIExcercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExcercise.swift; path = ../../UIExcercise.swift; sourceTree = "<group>"; };
 		DBE844022181A7E7004544F7 /* CaldiniMarchioro_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaldiniMarchioro_Controller.swift; sourceTree = "<group>"; };
 		DBE844032181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Caldini-Marchioro_Storyboard.storyboard"; sourceTree = "<group>"; };
 		DBF118FC2181994E00DD168D /* Bau-Danilo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bau-Danilo.storyboard"; sourceTree = "<group>"; };
@@ -76,7 +79,6 @@
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAA9DBE320A6CA57002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA9DBE820A6CA58002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA9DBEA20A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA9DBEF20A6CA59002B3F36 /* matematica_3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +87,7 @@
 		FAA9DBFA20A6CA59002B3F36 /* matematica_3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematica_3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBFE20A6CA59002B3F36 /* matematica_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matematica_3UITests.swift; sourceTree = "<group>"; };
 		FAA9DC0020A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bonaldo-Xia_Controller.swift"; sourceTree = "<group>"; };
 		FACF194920AFFEB30083D028 /* Bolzo-Calderon_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bolzo-Calderon_Controller.swift"; sourceTree = "<group>"; };
-		FACF194C20AFFEF30083D028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "matematica_3/Base.lproj/Bonaldo-Xia.storyboard"; sourceTree = "<group>"; };
 		FACF195320AFFF570083D028 /* Bolzo-Calderon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bolzo-Calderon.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,8 +160,8 @@
 			children = (
 				FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */,
 				FAA9DBE020A6CA57002B3F36 /* ViewController.swift */,
+				DB7AB3FD219AD37F002F81AD /* Assets.xcassets */,
 				FAA9DBE220A6CA57002B3F36 /* Main.storyboard */,
-				FAA9DBE520A6CA58002B3F36 /* Assets.xcassets */,
 				FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */,
 				FAA9DBEA20A6CA59002B3F36 /* Info.plist */,
 			);
@@ -198,8 +198,8 @@
 		FACF193520AFFD5F0083D028 /* Bonaldo-Xia */ = {
 			isa = PBXGroup;
 			children = (
-				FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */,
-				FACF193C20AFFE250083D028 /* Bonaldo-Xia_Controller.swift */,
+				DB88FC95219ABCB5001117C9 /* Bonaldo-Xia_ViewController.swift */,
+				DB88FC94219ABCB5001117C9 /* Bonaldo-Xia.storyboard */,
 			);
 			path = "Bonaldo-Xia";
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 			children = (
 				DBE844032181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard */,
 				DBE844022181A7E7004544F7 /* CaldiniMarchioro_Controller.swift */,
-				DBB8E840219AB32D00358934 /* UIExcercise.swift */,
+				DB88FC98219ABD4A001117C9 /* UIExcercise.swift */,
 			);
 			path = "Caldini-Marchioro";
 			sourceTree = "<group>";
@@ -365,16 +365,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB559DF8219AB874000199AA /* Lazzarin-Baricchio.storyboard in Resources */,
-				FACF194D20AFFEF30083D028 /* Bonaldo-Xia.storyboard in Resources */,
 				FACF195420AFFF570083D028 /* Bolzo-Calderon.storyboard in Resources */,
 				DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */,
 				DBF118FD2181994E00DD168D /* Bau-Danilo.storyboard in Resources */,
 				DB19AA652181A4A500179603 /* Migali-Giacomello.storyboard in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
 				DB9A3179219AB63300914682 /* Mason-Casagrande.storyboard in Resources */,
+				DB88FC96219ABCB5001117C9 /* Bonaldo-Xia.storyboard in Resources */,
 				DB17A5FC2181A1550096D2B7 /* Bugin-Pinton.storyboard in Resources */,
-				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
 				FAA9DBE420A6CA57002B3F36 /* Main.storyboard in Resources */,
+				DB7AB3FE219AD380002F81AD /* Assets.xcassets in Resources */,
 				DBE844062181A7E7004544F7 /* Caldini-Marchioro_Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,13 +401,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */,
-				FACF193D20AFFE250083D028 /* Bonaldo-Xia_Controller.swift in Sources */,
 				DB9A3178219AB63300914682 /* Mason-Casagrande_Controller.swift in Sources */,
 				DB559DF9219AB874000199AA /* Lazzarin-Baricchio_Controller.swift in Sources */,
+				DB88FC99219ABD4A001117C9 /* UIExcercise.swift in Sources */,
 				DBF119032181998A00DD168D /* DraggableImageView.swift in Sources */,
+				DB88FC97219ABCB5001117C9 /* Bonaldo-Xia_ViewController.swift in Sources */,
 				DB19AA672181A4AE00179603 /* Migali-Giacomello-Controller.swift in Sources */,
 				DBF119052181999000DD168D /* Bau_DaniloViewController.swift in Sources */,
-				DBB8E841219AB32D00358934 /* UIExcercise.swift in Sources */,
 				FACF194A20AFFEB30083D028 /* Bolzo-Calderon_Controller.swift in Sources */,
 				DB17A5FE2181A15D0096D2B7 /* Bugin-Pinton_Controller.swift in Sources */,
 				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
@@ -463,14 +463,6 @@
 				FAA9DBE820A6CA58002B3F36 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		FACF194B20AFFEF30083D028 /* Bonaldo-Xia.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FACF194C20AFFEF30083D028 /* Base */,
-			);
-			name = "Bonaldo-Xia.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

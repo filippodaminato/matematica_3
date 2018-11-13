@@ -112,6 +112,9 @@ class BarbieroBazan: UIViewController {
         
     }
     
+    @IBAction func back(_ sender: Any) {
+         self.dismiss(animated: true) {}
+    }
     override func viewDidAppear(_ animated: Bool) {
         // baz
         GenerateNumbersViews()

@@ -20,6 +20,10 @@ class Lazzarin_Baricchio_Controller: UIViewController {
     @IBOutlet weak var tabella: UITableView!
     @IBOutlet weak var conclusione: UIView!
     
+    @IBAction func back(_ sender: Any) {
+         self.dismiss(animated: true) {}
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
