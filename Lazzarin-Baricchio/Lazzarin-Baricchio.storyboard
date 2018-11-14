@@ -343,9 +343,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXS-Dl-Ita">
-                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <rect key="frame" x="20" y="20" width="123" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="backButton"/>
                                 <connections>
                                     <action selector="back:" destination="01J-lp-oVM" eventType="touchUpInside" id="kpE-JQ-K3K"/>
                                 </connections>
@@ -385,6 +385,7 @@
     </scenes>
     <resources>
         <image name="Circle blue" width="98" height="98"/>
+        <image name="backButton" width="123" height="46.733333587646484"/>
         <image name="riprova" width="980" height="866"/>
     </resources>
 </document>

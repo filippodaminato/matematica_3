@@ -121,9 +121,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bt-51-9MM">
-                                <rect key="frame" x="136" y="72" width="46" height="30"/>
+                                <rect key="frame" x="102" y="48" width="123" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="backButton"/>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsO-ET-Rm3"/>
                                 </connections>
@@ -145,6 +145,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="123" height="46.733333587646484"/>
         <image name="bimbi.png" width="340" height="574"/>
         <image name="drittov2.png" width="300" height="304"/>
         <image name="kids-3420032_960_720.png" width="341" height="553"/>

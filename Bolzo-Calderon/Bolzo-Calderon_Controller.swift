@@ -13,8 +13,8 @@ class Bolzo_Calderon_Controller: UIViewController {
 
     
 //    Label
+    @IBOutlet weak var lbl_score: UILabel!
     @IBOutlet weak var num_rand: UILabel!
-    @IBOutlet weak var lbl_result: UILabel!
     @IBOutlet weak var lbl_num: UILabel!
     @IBOutlet weak var lbl_denom: UILabel!
     //    text fields
@@ -22,32 +22,46 @@ class Bolzo_Calderon_Controller: UIViewController {
     @IBOutlet weak var numeratore: UITextField!
 //    buttons
     
-    
+    var score = 1
+
+    @IBAction func exit(_ sender: Any) {
+        self.dismiss(animated: true){}
+    }
     @IBAction func btn_check(_ sender: Any) {
-        if(numeratore.text != "" && denominatore.text != ""){
+        
+        
+        if(numeratore.text != "" && denominatore.text != "" && !containsOnlyLetters(input: numeratore.text!) && !containsOnlyLetters(input: denominatore.text!)){
+            
             
             var alertController = UIAlertController()
-            
             if(Double(numeratore.text!)! == num && Double(denominatore.text!)! == deno){
-                lbl_result.text = "giusto"
                 alertController = UIAlertController(title: "Risultato", message: "Giusto!", preferredStyle: .alert)
+                lbl_score.text = String(score)
                 
+
+                score = score + 1
                 
                 
             }
             else{
-                lbl_result.text = "sbagliato"
                 alertController = UIAlertController(title: "Risultato", message: "Sbagliato!", preferredStyle: .alert)
             }
             
             let action1 = UIAlertAction(title: "Ok", style: .default) { (action:UIAlertAction) in
                 //                    reset function
                 self.prepareGame()
+                self.lbl_num.text = ""
+                self.lbl_denom.text = ""
             }
             
             alertController.addAction(action1)
             self.present(alertController, animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func Aiuto(_ sender: Any) {
+        lbl_num.text = String(num)
+        lbl_denom.text = String(deno)
     }
     
     var num:Double = 0
@@ -71,8 +85,6 @@ class Bolzo_Calderon_Controller: UIViewController {
         numeratore.text = ""
         num = getNumeratore()
         deno = getDenominatore()
-        lbl_num.text = String(num)
-        lbl_denom.text = String(deno)
         startNumber = getStartNumber(numeratore: num, denominatore: deno)
         num_rand.text = String(startNumber)
     }
@@ -93,5 +105,13 @@ class Bolzo_Calderon_Controller: UIViewController {
         return Double(numeratore/denominatore) // Swift 3 version
     }
     
+    func containsOnlyLetters(input: String) -> Bool {
+        for chr in input {
+            if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") ) {
+                return false
+            }
+        }
+        return true
+    }
 
 }

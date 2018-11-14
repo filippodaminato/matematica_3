@@ -912,9 +912,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsc-tA-lDD">
-                                <rect key="frame" x="58" y="47" width="46" height="30"/>
+                                <rect key="frame" x="20" y="39" width="123" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="backButton"/>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25P-jq-FOo"/>
                                 </connections>
@@ -1012,6 +1012,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="123" height="46.733333587646484"/>
         <image name="btnCheck copy" width="191.5" height="64"/>
         <image name="btnRetry copy" width="234.25" height="64"/>
         <image name="nope" width="455" height="498"/>

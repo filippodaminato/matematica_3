@@ -168,9 +168,9 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bR-vg-hV6">
-                                        <rect key="frame" x="8" y="8" width="46" height="30"/>
+                                        <rect key="frame" x="8" y="0.0" width="75" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" backgroundImage="backButton"/>
                                         <connections>
                                             <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7rE-fr-1Wl"/>
                                         </connections>
@@ -463,5 +463,6 @@
         <image name="Risorsa 17.png" width="761" height="251"/>
         <image name="Risorsa 18.png" width="762" height="252"/>
         <image name="Risorsa 25.png" width="543" height="884"/>
+        <image name="backButton" width="123" height="46.733333587646484"/>
     </resources>
 </document>

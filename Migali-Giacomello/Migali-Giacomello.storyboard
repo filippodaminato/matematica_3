@@ -77,9 +77,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9U-8G-7Ad">
-                                                <rect key="frame" x="52" y="639" width="46" height="30"/>
+                                                <rect key="frame" x="14" y="631" width="123" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" backgroundImage="backButton"/>
                                                 <connections>
                                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nS1-aA-wsP"/>
                                                 </connections>
@@ -229,5 +229,6 @@
     <resources>
         <image name="Risorsa 22" width="98" height="98"/>
         <image name="Risorsa 23" width="740.75" height="495.25"/>
+        <image name="backButton" width="123" height="46.733333587646484"/>
     </resources>
 </document>
