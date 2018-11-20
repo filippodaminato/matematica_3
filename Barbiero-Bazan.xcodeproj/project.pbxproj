@@ -20,10 +20,10 @@
 		D535B91D216F28E80010521E /* Risorsa 17.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B916216F28E50010521E /* Risorsa 17.png */; };
 		D535B91F216F28E80010521E /* Risorsa 18.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B918216F28E60010521E /* Risorsa 18.png */; };
 		D535B920216F28E80010521E /* Risorsa 12.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B919216F28E70010521E /* Risorsa 12.png */; };
-		D535B927216F30010010521E /* Risorsa 27.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B923216F2FFE0010521E /* Risorsa 27.png */; };
-		D535B928216F30010010521E /* Risorsa 28.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B924216F2FFF0010521E /* Risorsa 28.png */; };
-		D535B929216F30010010521E /* Risorsa 26.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B925216F2FFF0010521E /* Risorsa 26.png */; };
-		D535B92A216F30010010521E /* Risorsa 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B926216F30000010521E /* Risorsa 25.png */; };
+		D53E56E621A40E29002C9854 /* Risorsa 27.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E221A40E27002C9854 /* Risorsa 27.png */; };
+		D53E56E721A40E29002C9854 /* Risorsa 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E321A40E28002C9854 /* Risorsa 25.png */; };
+		D53E56E821A40E29002C9854 /* Risorsa 26.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E421A40E28002C9854 /* Risorsa 26.png */; };
+		D53E56E921A40E29002C9854 /* Risorsa 28.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E521A40E29002C9854 /* Risorsa 28.png */; };
 		D53E6414210E257A00BA0858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E6413210E257A00BA0858 /* AppDelegate.swift */; };
 		D53E6416210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E6415210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift */; };
 		D53E6419210E257A00BA0858 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53E6417210E257A00BA0858 /* Barbiero-Bazan.storyboard */; };
@@ -46,10 +46,10 @@
 		D535B916216F28E50010521E /* Risorsa 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 17.png"; sourceTree = "<group>"; };
 		D535B918216F28E60010521E /* Risorsa 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 18.png"; sourceTree = "<group>"; };
 		D535B919216F28E70010521E /* Risorsa 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 12.png"; sourceTree = "<group>"; };
-		D535B923216F2FFE0010521E /* Risorsa 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 27.png"; sourceTree = "<group>"; };
-		D535B924216F2FFF0010521E /* Risorsa 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 28.png"; sourceTree = "<group>"; };
-		D535B925216F2FFF0010521E /* Risorsa 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 26.png"; sourceTree = "<group>"; };
-		D535B926216F30000010521E /* Risorsa 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 25.png"; sourceTree = "<group>"; };
+		D53E56E221A40E27002C9854 /* Risorsa 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 27.png"; sourceTree = "<group>"; };
+		D53E56E321A40E28002C9854 /* Risorsa 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 25.png"; sourceTree = "<group>"; };
+		D53E56E421A40E28002C9854 /* Risorsa 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 26.png"; sourceTree = "<group>"; };
+		D53E56E521A40E29002C9854 /* Risorsa 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 28.png"; sourceTree = "<group>"; };
 		D53E6410210E257A00BA0858 /* Barbiero-Bazan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barbiero-Bazan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53E6413210E257A00BA0858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53E6415210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
@@ -108,10 +108,10 @@
 				D535B919216F28E70010521E /* Risorsa 12.png */,
 				D535B916216F28E50010521E /* Risorsa 17.png */,
 				D535B918216F28E60010521E /* Risorsa 18.png */,
-				D535B926216F30000010521E /* Risorsa 25.png */,
-				D535B925216F2FFF0010521E /* Risorsa 26.png */,
-				D535B923216F2FFE0010521E /* Risorsa 27.png */,
-				D535B924216F2FFF0010521E /* Risorsa 28.png */,
+				D53E56E321A40E28002C9854 /* Risorsa 25.png */,
+				D53E56E421A40E28002C9854 /* Risorsa 26.png */,
+				D53E56E221A40E27002C9854 /* Risorsa 27.png */,
+				D53E56E521A40E29002C9854 /* Risorsa 28.png */,
 				D51A85722170A55200521A12 /* 0.png */,
 				D51A85712170A55100521A12 /* 1.png */,
 				D51A85792170A55200521A12 /* 2.png */,
@@ -187,6 +187,7 @@
 			files = (
 				D51A857D2170A55200521A12 /* 3.png in Resources */,
 				D51A85822170A55200521A12 /* 5.png in Resources */,
+				D53E56E921A40E29002C9854 /* Risorsa 28.png in Resources */,
 				D51A857A2170A55200521A12 /* 4.png in Resources */,
 				D53E641E210E257B00BA0858 /* LaunchScreen.storyboard in Resources */,
 				D535B91D216F28E80010521E /* Risorsa 17.png in Resources */,
@@ -196,15 +197,14 @@
 				D51A857B2170A55200521A12 /* 1.png in Resources */,
 				D51A85832170A55200521A12 /* 2.png in Resources */,
 				D595520C21676CE800E33873 /* Risorsa 11.png in Resources */,
-				D535B92A216F30010010521E /* Risorsa 25.png in Resources */,
 				D51A857F2170A55200521A12 /* 9.png in Resources */,
-				D535B927216F30010010521E /* Risorsa 27.png in Resources */,
-				D535B929216F30010010521E /* Risorsa 26.png in Resources */,
 				D51A857C2170A55200521A12 /* 0.png in Resources */,
 				D535B91F216F28E80010521E /* Risorsa 18.png in Resources */,
 				D53E6419210E257A00BA0858 /* Barbiero-Bazan.storyboard in Resources */,
+				D53E56E621A40E29002C9854 /* Risorsa 27.png in Resources */,
+				D53E56E821A40E29002C9854 /* Risorsa 26.png in Resources */,
+				D53E56E721A40E29002C9854 /* Risorsa 25.png in Resources */,
 				D51A857E2170A55200521A12 /* 6.png in Resources */,
-				D535B928216F30010010521E /* Risorsa 28.png in Resources */,
 				D51A85812170A55200521A12 /* 7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
