@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
 
+    @IBAction func btnOptions(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "OptionsBool")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

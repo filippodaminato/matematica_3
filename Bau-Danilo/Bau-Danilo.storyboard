@@ -131,6 +131,6 @@
         <image name="backButton" width="123" height="46.733333587646484"/>
         <image name="chiudi" width="191.5" height="64"/>
         <image name="hlep" width="561.5999755859375" height="697"/>
-        <image name="verifica" width="191.5" height="64"/>
+        <image name="verifica" width="190.5" height="63"/>
     </resources>
 </document>

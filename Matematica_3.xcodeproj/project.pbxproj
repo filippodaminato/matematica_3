@@ -14,6 +14,7 @@
 		DB45A4A0219C10BE00C1612A /* Bolzo-Calderon_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45A49E219C10BE00C1612A /* Bolzo-Calderon_Controller.swift */; };
 		DB45A4A1219C10BE00C1612A /* Bolzo-Calderon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45A49F219C10BE00C1612A /* Bolzo-Calderon.storyboard */; };
 		DB45A4A3219C120300C1612A /* UIExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45A4A2219C120300C1612A /* UIExcercise.swift */; };
+		DB4CC74C21A4087400B8943D /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC74B21A4087400B8943D /* OptionsViewController.swift */; };
 		DB559DF8219AB874000199AA /* Lazzarin-Baricchio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB559DF6219AB873000199AA /* Lazzarin-Baricchio.storyboard */; };
 		DB559DF9219AB874000199AA /* Lazzarin-Baricchio_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB559DF7219AB874000199AA /* Lazzarin-Baricchio_Controller.swift */; };
 		DB559DFB219AB89E000199AA /* Cella.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB559DFA219AB89E000199AA /* Cella.swift */; };
@@ -62,6 +63,7 @@
 		DB45A49E219C10BE00C1612A /* Bolzo-Calderon_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bolzo-Calderon_Controller.swift"; sourceTree = "<group>"; };
 		DB45A49F219C10BE00C1612A /* Bolzo-Calderon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bolzo-Calderon.storyboard"; sourceTree = "<group>"; };
 		DB45A4A2219C120300C1612A /* UIExcercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExcercise.swift; sourceTree = "<group>"; };
+		DB4CC74B21A4087400B8943D /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		DB559DF6219AB873000199AA /* Lazzarin-Baricchio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Lazzarin-Baricchio.storyboard"; sourceTree = "<group>"; };
 		DB559DF7219AB874000199AA /* Lazzarin-Baricchio_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lazzarin-Baricchio_Controller.swift"; sourceTree = "<group>"; };
 		DB559DFA219AB89E000199AA /* Cella.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cella.swift; sourceTree = "<group>"; };
@@ -129,6 +131,8 @@
 		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
+				DB4CC74B21A4087400B8943D /* OptionsViewController.swift */,
+				FAA9DBE020A6CA57002B3F36 /* ViewController.swift */,
 				DBF118FB2181993400DD168D /* Bau-Danilo */,
 				FACF193B20AFFDF70083D028 /* Bolzo-Calderon */,
 				FACF193A20AFFDE80083D028 /* Barbiero-Bazan */,
@@ -159,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */,
-				FAA9DBE020A6CA57002B3F36 /* ViewController.swift */,
 				DB7AB3FD219AD37F002F81AD /* Assets.xcassets */,
 				FAA9DBE220A6CA57002B3F36 /* Main.storyboard */,
 				FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */,
@@ -408,6 +411,7 @@
 				DB88FC97219ABCB5001117C9 /* Bonaldo-Xia_ViewController.swift in Sources */,
 				DB19AA672181A4AE00179603 /* Migali-Giacomello-Controller.swift in Sources */,
 				DBF119052181999000DD168D /* Bau_DaniloViewController.swift in Sources */,
+				DB4CC74C21A4087400B8943D /* OptionsViewController.swift in Sources */,
 				DB17A5FE2181A15D0096D2B7 /* Bugin-Pinton_Controller.swift in Sources */,
 				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
 				DB45A4A0219C10BE00C1612A /* Bolzo-Calderon_Controller.swift in Sources */,
