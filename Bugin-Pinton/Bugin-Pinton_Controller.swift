@@ -54,7 +54,7 @@ class Bugin_Pinton_Controller: UIViewController {
         self.Zone.transform = CGAffineTransform.init(translationX: 0.0, y: 0.0)
         ishidden = true
         self.view.endEditing(true)
-        var count = 0
+        var count = 0, controllo1 = true,appoggio = 0
         for a in risultatoTextField
         {
             risultatoTextField[count].layer.borderWidth = 2
@@ -68,12 +68,19 @@ class Bugin_Pinton_Controller: UIViewController {
                         }else{
                             risultatoTextField[count].layer.borderColor = UIColor.green.cgColor
                             risultatoTextField[count].isEnabled = false
-                            punteggio += 1
+                            controllo1 = true
+                            appoggio += 1
+                            
                         }
                     }else{
                         a.layer.borderColor = UIColor.red.cgColor
                     }
                 }
+                if(appoggio == a.text?.count)
+                {
+                    punteggio += 1
+                }
+                appoggio = 0
             }
             count += 1
         }
@@ -190,6 +197,7 @@ func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risul
     for a in dividendiLabel
     {
         let i = Int(arc4random_uniform(99)+1)
+        
         switch (a.tag){
         case 10: a.text = String(i*10); break
         case 100: a.text = String(i*100); break
