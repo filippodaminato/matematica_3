@@ -7,29 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D51A857A2170A55200521A12 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85702170A55100521A12 /* 4.png */; };
-		D51A857B2170A55200521A12 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85712170A55100521A12 /* 1.png */; };
-		D51A857C2170A55200521A12 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85722170A55200521A12 /* 0.png */; };
-		D51A857D2170A55200521A12 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85732170A55200521A12 /* 3.png */; };
-		D51A857E2170A55200521A12 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85742170A55200521A12 /* 6.png */; };
-		D51A857F2170A55200521A12 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85752170A55200521A12 /* 9.png */; };
-		D51A85802170A55200521A12 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85762170A55200521A12 /* 8.png */; };
-		D51A85812170A55200521A12 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85772170A55200521A12 /* 7.png */; };
-		D51A85822170A55200521A12 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85782170A55200521A12 /* 5.png */; };
-		D51A85832170A55200521A12 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D51A85792170A55200521A12 /* 2.png */; };
-		D535B91D216F28E80010521E /* Risorsa 17.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B916216F28E50010521E /* Risorsa 17.png */; };
-		D535B91F216F28E80010521E /* Risorsa 18.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B918216F28E60010521E /* Risorsa 18.png */; };
-		D535B920216F28E80010521E /* Risorsa 12.png in Resources */ = {isa = PBXBuildFile; fileRef = D535B919216F28E70010521E /* Risorsa 12.png */; };
-		D53E56E621A40E29002C9854 /* Risorsa 27.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E221A40E27002C9854 /* Risorsa 27.png */; };
-		D53E56E721A40E29002C9854 /* Risorsa 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E321A40E28002C9854 /* Risorsa 25.png */; };
-		D53E56E821A40E29002C9854 /* Risorsa 26.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E421A40E28002C9854 /* Risorsa 26.png */; };
-		D53E56E921A40E29002C9854 /* Risorsa 28.png in Resources */ = {isa = PBXBuildFile; fileRef = D53E56E521A40E29002C9854 /* Risorsa 28.png */; };
 		D53E6414210E257A00BA0858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E6413210E257A00BA0858 /* AppDelegate.swift */; };
 		D53E6416210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53E6415210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift */; };
 		D53E6419210E257A00BA0858 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53E6417210E257A00BA0858 /* Barbiero-Bazan.storyboard */; };
 		D53E641B210E257B00BA0858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53E641A210E257B00BA0858 /* Assets.xcassets */; };
 		D53E641E210E257B00BA0858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53E641C210E257B00BA0858 /* LaunchScreen.storyboard */; };
-		D595520C21676CE800E33873 /* Risorsa 11.png in Resources */ = {isa = PBXBuildFile; fileRef = D595520B21676CE800E33873 /* Risorsa 11.png */; };
+		D57DAC6D21A54E0400C76D40 /* Statistiche.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57DAC6C21A54E0400C76D40 /* Statistiche.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +29,6 @@
 		D535B916216F28E50010521E /* Risorsa 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 17.png"; sourceTree = "<group>"; };
 		D535B918216F28E60010521E /* Risorsa 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 18.png"; sourceTree = "<group>"; };
 		D535B919216F28E70010521E /* Risorsa 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 12.png"; sourceTree = "<group>"; };
-		D53E56E221A40E27002C9854 /* Risorsa 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 27.png"; sourceTree = "<group>"; };
-		D53E56E321A40E28002C9854 /* Risorsa 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 25.png"; sourceTree = "<group>"; };
-		D53E56E421A40E28002C9854 /* Risorsa 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 26.png"; sourceTree = "<group>"; };
-		D53E56E521A40E29002C9854 /* Risorsa 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 28.png"; sourceTree = "<group>"; };
 		D53E6410210E257A00BA0858 /* Barbiero-Bazan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barbiero-Bazan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53E6413210E257A00BA0858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53E6415210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
@@ -57,6 +36,11 @@
 		D53E641A210E257B00BA0858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53E641D210E257B00BA0858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53E641F210E257B00BA0858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56C985A21A5B8F30057A7F2 /* Decine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Decine.png; sourceTree = "<group>"; };
+		D56C985C21A5B9E10057A7F2 /* Centesimi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Centesimi.png; sourceTree = "<group>"; };
+		D56C985D21A5B9E10057A7F2 /* Decimi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Decimi.png; sourceTree = "<group>"; };
+		D56C985E21A5B9E10057A7F2 /* Unità.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Unità.png"; sourceTree = "<group>"; };
+		D57DAC6C21A54E0400C76D40 /* Statistiche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistiche.swift; sourceTree = "<group>"; };
 		D595520B21676CE800E33873 /* Risorsa 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 11.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +81,7 @@
 				D53E641A210E257B00BA0858 /* Assets.xcassets */,
 				D53E641C210E257B00BA0858 /* LaunchScreen.storyboard */,
 				D53E641F210E257B00BA0858 /* Info.plist */,
+				D57DAC6C21A54E0400C76D40 /* Statistiche.swift */,
 			);
 			path = "Barbiero-Bazan";
 			sourceTree = "<group>";
@@ -108,10 +93,10 @@
 				D535B919216F28E70010521E /* Risorsa 12.png */,
 				D535B916216F28E50010521E /* Risorsa 17.png */,
 				D535B918216F28E60010521E /* Risorsa 18.png */,
-				D53E56E321A40E28002C9854 /* Risorsa 25.png */,
-				D53E56E421A40E28002C9854 /* Risorsa 26.png */,
-				D53E56E221A40E27002C9854 /* Risorsa 27.png */,
-				D53E56E521A40E29002C9854 /* Risorsa 28.png */,
+				D56C985A21A5B8F30057A7F2 /* Decine.png */,
+				D56C985C21A5B9E10057A7F2 /* Centesimi.png */,
+				D56C985D21A5B9E10057A7F2 /* Decimi.png */,
+				D56C985E21A5B9E10057A7F2 /* Unità.png */,
 				D51A85722170A55200521A12 /* 0.png */,
 				D51A85712170A55100521A12 /* 1.png */,
 				D51A85792170A55200521A12 /* 2.png */,
@@ -185,27 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51A857D2170A55200521A12 /* 3.png in Resources */,
-				D51A85822170A55200521A12 /* 5.png in Resources */,
-				D53E56E921A40E29002C9854 /* Risorsa 28.png in Resources */,
-				D51A857A2170A55200521A12 /* 4.png in Resources */,
 				D53E641E210E257B00BA0858 /* LaunchScreen.storyboard in Resources */,
-				D535B91D216F28E80010521E /* Risorsa 17.png in Resources */,
 				D53E641B210E257B00BA0858 /* Assets.xcassets in Resources */,
-				D535B920216F28E80010521E /* Risorsa 12.png in Resources */,
-				D51A85802170A55200521A12 /* 8.png in Resources */,
-				D51A857B2170A55200521A12 /* 1.png in Resources */,
-				D51A85832170A55200521A12 /* 2.png in Resources */,
-				D595520C21676CE800E33873 /* Risorsa 11.png in Resources */,
-				D51A857F2170A55200521A12 /* 9.png in Resources */,
-				D51A857C2170A55200521A12 /* 0.png in Resources */,
-				D535B91F216F28E80010521E /* Risorsa 18.png in Resources */,
 				D53E6419210E257A00BA0858 /* Barbiero-Bazan.storyboard in Resources */,
-				D53E56E621A40E29002C9854 /* Risorsa 27.png in Resources */,
-				D53E56E821A40E29002C9854 /* Risorsa 26.png in Resources */,
-				D53E56E721A40E29002C9854 /* Risorsa 25.png in Resources */,
-				D51A857E2170A55200521A12 /* 6.png in Resources */,
-				D51A85812170A55200521A12 /* 7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57DAC6D21A54E0400C76D40 /* Statistiche.swift in Sources */,
 				D53E6416210E257A00BA0858 /* Barbiero-Bazan-ViewController.swift in Sources */,
 				D53E6414210E257A00BA0858 /* AppDelegate.swift in Sources */,
 			);

@@ -40,8 +40,6 @@ class DragNumberImageView : UIImageView {
     
     init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int) {
         super.init(frame: .zero)
-        self.layer.cornerRadius = 21.1
-        self.clipsToBounds = true
         rootView = root
         originView = origin
         destinationView = dest
@@ -53,6 +51,8 @@ class DragNumberImageView : UIImageView {
         isPickedUp = true
         self.contentMode = .scaleAspectFill
         self.autoresizesSubviews = true
+        self.layer.cornerRadius = 40
+        self.clipsToBounds = true
         self.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         MoveToView(view: originView!, withDuration: 0, withDelay: 0.5)
     }
@@ -85,10 +85,12 @@ class DragNumberImageView : UIImageView {
     func AnimateDrop() {
         if isPickedUp {
             self.transform = CGAffineTransform(scaleX: 1.2, y: 1.8)
+            currentView?.isHidden = true
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
                 self.transform = .identity
             }){ (true) in
                 self.isPickedUp = false
+                self.currentView?.isHidden = false
             }
         }
     }
@@ -103,23 +105,19 @@ class BarbieroBazan: UIViewController {
     
     var images = [UIImageView]()
     
-    let imagesImage = [#imageLiteral(resourceName: "Risorsa 25.png"), #imageLiteral(resourceName: "Risorsa 26.png"), #imageLiteral(resourceName: "Risorsa 28.png"), #imageLiteral(resourceName: "Risorsa 27.png")]
+    let imagesImage = [UIImage(named: "Decine"), UIImage(named: "Unità"), UIImage(named: "Decimi"), UIImage(named: "Centesimi")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         UpdateContainerViewArrays()
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        // baz
         GenerateNumbersViews()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func UpdateContainerViewArrays() {
@@ -152,7 +150,7 @@ class BarbieroBazan: UIViewController {
             numbersViews[i].isUserInteractionEnabled = true
             numbersViews[i].addGestureRecognizer(NewPanGestureRecognizer())
             //numbersViews[i].backgroundColor = UIColor.red
-            numbersViews[i].image = UIImage(named: "\(val).png")
+            numbersViews[i].image = UIImage(named: "\(val)")
             images[order[i]].image = imagesImage[i]
         }
     }
