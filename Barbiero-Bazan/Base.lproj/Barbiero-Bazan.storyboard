@@ -426,6 +426,23 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wF-FX-VTK">
                                 <rect key="frame" x="0.0" y="24" width="1366" height="80.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m25-Hz-GbH">
+                                        <rect key="frame" x="1269.5" y="12" width="56.5" height="56.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="m25-Hz-GbH" secondAttribute="height" multiplier="1:1" id="7Tu-rO-fHd"/>
+                                        </constraints>
+                                        <state key="normal" image="Help"/>
+                                        <connections>
+                                            <action selector="btnHelpClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Adj-8y-yeY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m25-Hz-GbH" firstAttribute="height" secondItem="1wF-FX-VTK" secondAttribute="height" multiplier="0.7" id="dT4-RR-IzX"/>
+                                    <constraint firstItem="m25-Hz-GbH" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="jQC-t5-RDv"/>
+                                    <constraint firstItem="m25-Hz-GbH" firstAttribute="centerX" secondItem="1wF-FX-VTK" secondAttribute="centerX" multiplier="1.9" id="nzm-R9-lDb"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
@@ -456,10 +473,25 @@
             </objects>
             <point key="canvasLocation" x="32.503660322108345" y="33.3984375"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EUo-C2-LKr">
+            <objects>
+                <viewController id="gkt-qH-xgv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nR0-CP-kto">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QNv-m0-FYG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFu-J7-ioO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="32"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background" width="764" height="573.25"/>
         <image name="Decine" width="136" height="221.5"/>
+        <image name="Help" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Reset" width="190.25" height="62.75"/>
         <image name="Verifica" width="190.5" height="63"/>
     </resources>

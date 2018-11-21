@@ -52,4 +52,16 @@ class Statistiche {
         let def = UserDefaults.standard
         return def.integer(forKey: "Sbagliato" + key.rawValue)
     }
+    
+    static func clearGiusti(forKey key : EsercizioKey) {
+        let def = UserDefaults.standard
+        let str = "Giusto" + key.rawValue
+        def.set(0, forKey: str)
+    }
+    
+    static func clearSbagliati(forKey key : EsercizioKey) {
+        let def = UserDefaults.standard
+        let str = "Sbagliato" + key.rawValue
+        def.set(0, forKey: str)
+    }
 }

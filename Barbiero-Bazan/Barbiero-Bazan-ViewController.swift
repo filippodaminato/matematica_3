@@ -224,6 +224,7 @@ class BarbieroBazan: UIViewController {
     @IBAction func btnVerifica(_ sender: Any) {
         let vinto = CheckCorrectPositions()
         if vinto {
+            Statistiche.aggiungiGiusto(forKey: EsercizioKey.Uno)
             let dialogMessage = UIAlertController(title: "HAI VINTO!", message: "", preferredStyle: .alert)
             let yeah = UIAlertAction(title: "Ricominciamo!", style: .cancel) { (action) -> Void in
                 print("Vinto")
@@ -233,6 +234,7 @@ class BarbieroBazan: UIViewController {
             self.present(dialogMessage, animated: true, completion: nil)
         }
         else {
+            Statistiche.aggiungiSbagliato(forKey: EsercizioKey.Uno)
             let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.\nProva a ricontrollare se hai messo i numeri nella posizione giusta.", preferredStyle: .alert)
             let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
                 print("Sbagliato")
@@ -261,6 +263,10 @@ class BarbieroBazan: UIViewController {
         dialogMessage.addAction(annulla)
         
         self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnHelpClick(_ sender: Any) {
+        // Open Help View
     }
 }
 
