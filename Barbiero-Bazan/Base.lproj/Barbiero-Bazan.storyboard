@@ -473,25 +473,79 @@
             </objects>
             <point key="canvasLocation" x="32.503660322108345" y="33.3984375"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="EUo-C2-LKr">
             <objects>
-                <viewController id="gkt-qH-xgv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="help" id="gkt-qH-xgv" customClass="HelpViewController" customModule="Barbiero_Bazan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nR0-CP-kto">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyb-As-bjO">
+                                <rect key="frame" x="0.0" y="24" width="1366" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come si gioca?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHX-oh-V1e">
+                                        <rect key="frame" x="0.0" y="-39" width="1366" height="160"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="100"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hHX-oh-V1e" secondAttribute="trailing" id="6Rn-9E-SOd"/>
+                                    <constraint firstItem="hHX-oh-V1e" firstAttribute="leading" secondItem="Gyb-As-bjO" secondAttribute="leading" id="IU9-QY-Gma"/>
+                                    <constraint firstItem="hHX-oh-V1e" firstAttribute="centerY" secondItem="Gyb-As-bjO" secondAttribute="centerY" id="wKy-QH-v5n"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-W8-wxW">
+                                <rect key="frame" x="0.0" y="924" width="1366" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="vvA-XB-XRT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prendi i numeri e mettili nelle posizioni giuste per creare il numero." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z8-d9-ueV">
+                                <rect key="frame" x="0.0" y="130" width="1366" height="66"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hold" translatesAutoresizingMaskIntoConstraints="NO" id="8DR-ZH-1h1">
+                                <rect key="frame" x="586" y="459" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.6055222602739726" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.80238655821917804" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QNv-m0-FYG" firstAttribute="trailing" secondItem="3z8-d9-ueV" secondAttribute="trailing" id="Hid-yl-pFO"/>
+                            <constraint firstItem="Gyb-As-bjO" firstAttribute="top" secondItem="QNv-m0-FYG" secondAttribute="top" id="IHA-QF-AH2"/>
+                            <constraint firstItem="6o2-W8-wxW" firstAttribute="leading" secondItem="QNv-m0-FYG" secondAttribute="leading" id="IWI-uv-CA6"/>
+                            <constraint firstItem="QNv-m0-FYG" firstAttribute="bottom" secondItem="6o2-W8-wxW" secondAttribute="bottom" id="PIl-hO-bbE"/>
+                            <constraint firstItem="3z8-d9-ueV" firstAttribute="leading" secondItem="QNv-m0-FYG" secondAttribute="leading" id="TNB-k4-j09"/>
+                            <constraint firstItem="Gyb-As-bjO" firstAttribute="height" secondItem="nR0-CP-kto" secondAttribute="height" multiplier="0.08" id="U7E-0A-gn5"/>
+                            <constraint firstItem="3z8-d9-ueV" firstAttribute="top" secondItem="Gyb-As-bjO" secondAttribute="bottom" constant="24" id="gML-1q-llc"/>
+                            <constraint firstItem="Gyb-As-bjO" firstAttribute="leading" secondItem="QNv-m0-FYG" secondAttribute="leading" id="gon-3U-Nfu"/>
+                            <constraint firstItem="QNv-m0-FYG" firstAttribute="trailing" secondItem="Gyb-As-bjO" secondAttribute="trailing" id="lkk-fa-gU2"/>
+                            <constraint firstItem="QNv-m0-FYG" firstAttribute="trailing" secondItem="6o2-W8-wxW" secondAttribute="trailing" id="v7S-OQ-tIN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QNv-m0-FYG"/>
                     </view>
+                    <connections>
+                        <outlet property="handImageView" destination="8DR-ZH-1h1" id="DVa-eo-Smb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFu-J7-ioO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="32"/>
+            <point key="canvasLocation" x="679.94143484626647" y="32.8125"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="764" height="573.25"/>
         <image name="Decine" width="136" height="221.5"/>
         <image name="Help" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="Hold" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Reset" width="190.25" height="62.75"/>
         <image name="Verifica" width="190.5" height="63"/>
     </resources>
