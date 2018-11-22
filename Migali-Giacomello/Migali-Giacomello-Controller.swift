@@ -108,15 +108,15 @@ class MigaliGiacomelloController: UIViewController {
         else
         {
             let messaggio = String(format: "Il numero che hai toccato non era un multiplo di %2d", base)
-            let alert = UIAlertController(title: "Attento...", message: messaggio, preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Ok, riproviamo", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Attento...", message: messaggio, preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok, riproviamo", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             generaRandom()
         }
         if(contatoreMultipliCorretti == contatoreBottoniGiusti)
         {
-            let alert = UIAlertController(title: "Bravo!", message: "Sei passato al prossimo round...", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Ok!", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Bravo!", message: "Sei passato al prossimo round...", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok!", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             punteggio += 1
             outletPunteggio.text = String(punteggio)

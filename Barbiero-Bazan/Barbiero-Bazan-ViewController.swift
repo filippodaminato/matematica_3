@@ -47,7 +47,7 @@ class DragNumberImageView : UIImageView {
         destinationView = dest
         num = n
         rootView!.addSubview(self)
-        rootView!.bringSubview(toFront: self)
+        rootView!.bringSubviewToFront(self)
         //self.translatesAutoresizingMaskIntoConstraints = false
         self.frame = originView!.frame
         isPickedUp = true
@@ -177,7 +177,7 @@ class BarbieroBazan: UIViewController {
     
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
         if let view = recognizer.view as? DragNumberImageView{
-            view.superview?.bringSubview(toFront: view)
+            view.superview?.bringSubviewToFront(view)
             if recognizer.state == .began {
                 view.AnimatePickUp()
                 view.center = recognizer.location(in: self.view)

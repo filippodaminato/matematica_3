@@ -41,7 +41,7 @@ class DraggableImageView : UIImageView {
     }
     
     @objc func handlePan(nizer: UIPanGestureRecognizer!) {
-        if nizer.state == UIGestureRecognizerState.began {
+        if nizer.state == UIGestureRecognizer.State.began {
             let locationInView = nizer.location(in: superview)
             dragStartPositionRelativeToCenter = CGPoint(x: locationInView.x - center.x, y: locationInView.y - center.y)
             
@@ -56,7 +56,7 @@ class DraggableImageView : UIImageView {
         
         
         
-        if nizer.state == UIGestureRecognizerState.ended{
+        if nizer.state == UIGestureRecognizer.State.ended{
             dragStartPositionRelativeToCenter = nil
             layer.shadowOffset = CGSize(width: 0, height: 3)
             layer.shadowOpacity = 0.5
