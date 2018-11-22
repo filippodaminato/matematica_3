@@ -113,6 +113,8 @@ class BarbieroBazan: UIViewController {
     
     var helpView : HelpViewController?
     
+    @IBOutlet weak var lblTitolo: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UpdateContainerViewArrays()
@@ -123,18 +125,24 @@ class BarbieroBazan: UIViewController {
         let defaults = UserDefaults.standard
         if !defaults.bool(forKey: "FirstTime" + EsercizioKey.Uno.rawValue) {
             defaults.set(true, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
+            defaults.synchronize()
             openHelpView()
         }
         // REMOVE
-        defaults.set(false, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
+        //defaults.set(false, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func backButtonClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: {})
+    }
+    
     func openHelpView() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "help") as? HelpViewController {
+            lblTitolo.isHidden = true
             addChild(controller)
             helpView = controller
             self.view.addSubview(controller.view)
@@ -159,7 +167,6 @@ class BarbieroBazan: UIViewController {
         for i in 0...3 {
             UpdatePercorsiNumberView(index: i, controller: c)
         }
-        // animate verifica click
     }
     
     private func UpdatePercorsiNumberView(index i : Int, controller c : HelpViewController) {
@@ -180,6 +187,7 @@ class BarbieroBazan: UIViewController {
     }
     
     func DismissHelpView() {
+        lblTitolo.isHidden = false
         helpView?.working = false
         helpView?.view.removeFromSuperview()
         GenerateNumbersViews()
