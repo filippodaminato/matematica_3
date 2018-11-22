@@ -179,7 +179,7 @@
                 <viewControllerPlaceholder storyboardName="Bau-Danilo" id="qrV-ml-5T9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xiM-TE-ho7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="-115"/>
+            <point key="canvasLocation" x="747" y="-5"/>
         </scene>
         <!--Bonaldo-Xia-->
         <scene sceneID="BU3-HI-fjO">
@@ -187,7 +187,7 @@
                 <viewControllerPlaceholder storyboardName="Bonaldo-Xia" id="YOf-gf-TB8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbV-Dl-yhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="-1"/>
+            <point key="canvasLocation" x="749" y="34"/>
         </scene>
         <!--Barbiero-Bazan-->
         <scene sceneID="nFY-31-92b">
@@ -243,7 +243,7 @@
                 <viewControllerPlaceholder storyboardName="Caldini-Marchioro_Storyboard" id="dUi-Wm-bNE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCX-B5-iIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="363"/>
+            <point key="canvasLocation" x="781" y="312"/>
         </scene>
     </scenes>
     <resources>
