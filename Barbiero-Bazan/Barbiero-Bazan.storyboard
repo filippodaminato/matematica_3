@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Risorsa 11" translatesAutoresizingMaskIntoConstraints="NO" id="Mtk-S1-GpM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Mtk-S1-GpM">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vb-1g-jCA">
@@ -30,7 +30,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTe-mQ-sVD">
                                                 <rect key="frame" x="0.0" y="29" width="171" height="278"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Risorsa 25.png" translatesAutoresizingMaskIntoConstraints="NO" id="ev4-WJ-ixv">
+                                                    <imageView userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decine" translatesAutoresizingMaskIntoConstraints="NO" id="ev4-WJ-ixv">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="278"/>
                                                     </imageView>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KO-U3-F0g">
@@ -61,7 +61,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLg-wb-vf2">
                                                 <rect key="frame" x="231" y="29" width="171" height="278"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Risorsa 25.png" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-dJ-0Pv">
+                                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decine" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-dJ-0Pv">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="278"/>
                                                     </imageView>
                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8p-tN-iix">
@@ -91,7 +91,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qB-N9-JSU">
                                                 <rect key="frame" x="693" y="29" width="171" height="278"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="24" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Risorsa 25.png" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-aq-nfr">
+                                                    <imageView userInteractionEnabled="NO" tag="24" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decine" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-aq-nfr">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="278"/>
                                                     </imageView>
                                                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kg8-EO-hlj">
@@ -121,7 +121,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aX-qd-nP3">
                                                 <rect key="frame" x="462" y="29" width="171" height="278"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Risorsa 25.png" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-ZF-l4N">
+                                                    <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decine" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-ZF-l4N">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="278"/>
                                                     </imageView>
                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5e-ct-C4x">
@@ -371,7 +371,7 @@
                                                     <constraint firstAttribute="width" secondItem="G4U-Pq-JQQ" secondAttribute="height" multiplier="125:34" id="aZi-Z9-nRM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
-                                                <state key="normal" image="Risorsa 18.png">
+                                                <state key="normal" image="Verifica">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -400,7 +400,7 @@
                                                     <constraint firstAttribute="width" secondItem="mo1-t1-MYv" secondAttribute="height" multiplier="125:34" id="hz7-QN-buJ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
-                                                <state key="normal" image="Risorsa 17.png">
+                                                <state key="normal" image="Reset">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -459,10 +459,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Risorsa 11" width="764" height="573.25"/>
-        <image name="Risorsa 17.png" width="761" height="251"/>
-        <image name="Risorsa 18.png" width="762" height="252"/>
-        <image name="Risorsa 25.png" width="543" height="884"/>
+        <image name="Background" width="764" height="573.25"/>
+        <image name="Decine" width="136" height="221.5"/>
+        <image name="Reset" width="190.25" height="62.75"/>
+        <image name="Verifica" width="190.5" height="63"/>
         <image name="backButton" width="123" height="46.733333587646484"/>
     </resources>
 </document>
