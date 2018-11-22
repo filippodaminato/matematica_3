@@ -9,25 +9,21 @@
 /* Begin PBXBuildFile section */
 		D5F6C29B21A6A21F00F49C31 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C29A21A6A21F00F49C31 /* HelpViewController.swift */; };
 		D5F6C29D21A6A22900F49C31 /* Statistiche.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C29C21A6A22900F49C31 /* Statistiche.swift */; };
-		DB4CC74C21A4087400B8943D /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CC74B21A4087400B8943D /* OptionsViewController.swift */; };
 		DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */; };
 		DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */; };
 		DB7AB3FE219AD380002F81AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7AB3FD219AD37F002F81AD /* Assets.xcassets */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
-		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
 		FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9DBE720A6CA58002B3F36 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5F6C29A21A6A21F00F49C31 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		D5F6C29C21A6A22900F49C31 /* Statistiche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistiche.swift; sourceTree = "<group>"; };
-		DB4CC74B21A4087400B8943D /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
 		DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
 		DB7AB3FD219AD37F002F81AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA9DBE020A6CA57002B3F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAA9DBE820A6CA58002B3F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA9DBEA20A6CA59002B3F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,9 +42,7 @@
 		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
-				DB4CC74B21A4087400B8943D /* OptionsViewController.swift */,
 				D5F6C29C21A6A22900F49C31 /* Statistiche.swift */,
-				FAA9DBE020A6CA57002B3F36 /* ViewController.swift */,
 				FACF193A20AFFDE80083D028 /* Barbiero-Bazan */,
 				FAA9DBDD20A6CA57002B3F36 /* matematica_3 */,
 				FAA9DBDC20A6CA57002B3F36 /* Products */,
@@ -157,8 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */,
-				DB4CC74C21A4087400B8943D /* OptionsViewController.swift in Sources */,
-				FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */,
 				D5F6C29D21A6A22900F49C31 /* Statistiche.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
 				D5F6C29B21A6A21F00F49C31 /* HelpViewController.swift in Sources */,

@@ -13,7 +13,7 @@
         <!--Barbiero Bazan-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BarbieroBazan" customModule="Barbiero_Bazan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BarbieroBazan" customModule="matematica_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,7 +476,7 @@
         <!--Help View Controller-->
         <scene sceneID="EUo-C2-LKr">
             <objects>
-                <viewController storyboardIdentifier="help" id="gkt-qH-xgv" customClass="HelpViewController" customModule="Barbiero_Bazan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="help" id="gkt-qH-xgv" customClass="HelpViewController" customModule="matematica_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nR0-CP-kto">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,8 +485,8 @@
                                 <rect key="frame" x="0.0" y="24" width="1366" height="82"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come si gioca?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHX-oh-V1e">
-                                        <rect key="frame" x="356.5" y="-39" width="653" height="160"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="100"/>
+                                        <rect key="frame" x="373" y="-35" width="620" height="152"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="95"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -528,7 +528,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.74668236301369861" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.85022474315068497" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.80238655821917804" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QNv-m0-FYG" firstAttribute="trailing" secondItem="3z8-d9-ueV" secondAttribute="trailing" id="Hid-yl-pFO"/>
@@ -558,7 +558,7 @@
         <image name="Cancel" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Decine" width="136" height="221.5"/>
         <image name="Help" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="Hold" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="Hold" width="512" height="512"/>
         <image name="Reset" width="190.25" height="62.75"/>
         <image name="Verifica" width="190.5" height="63"/>
     </resources>

@@ -94,6 +94,10 @@ class DragNumberImageView : UIImageView {
             }
         }
     }
+    
+    func Duplica() -> DragNumberImageView {
+        return DragNumberImageView(originView: originView!, destinationView: destinationView!, rootView: rootView!, value: num)
+    }
 }
 
 class BarbieroBazan: UIViewController {
@@ -134,8 +138,16 @@ class BarbieroBazan: UIViewController {
             addChild(controller)
             helpView = controller
             self.view.addSubview(controller.view)
-            controller.addNumView(numView: DragNumberImageView(originView: originViews[0], destinationView: destinationViews[1], rootView: self.view, value: 0))
-            //controller.numView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.8)
+            controller.addNumView(numView: numbersViews[0].Duplica())
+            controller.addNumView(numView: numbersViews[1].Duplica())
+            controller.addNumView(numView: numbersViews[2].Duplica())
+            controller.addNumView(numView: numbersViews[3].Duplica())
+            for v in controller.numView {
+                v.image = UIImage(named: "\(v.num)")
+            }
+            for v in numbersViews {
+                v.image = nil
+            }
             controller.padre = self
             UpdatePercorsi(controller: controller)
             controller.EndAnimation()
@@ -143,22 +155,28 @@ class BarbieroBazan: UIViewController {
     }
     
     func UpdatePercorsi(controller c : HelpViewController) {
+        Percorso.mano = [PassaggioMano]()
+        for i in 0...3 {
+            UpdatePercorsiNumberView(index: i, controller: c)
+        }
+        // animate verifica click
+    }
+    
+    private func UpdatePercorsiNumberView(index i : Int, controller c : HelpViewController) {
+        let originCenter = c.numView[i].originView!.GetCenterInRootView(rootView: self.view)
+        let destinationCenter = c.numView[i].destinationView!.GetCenterInRootView(rootView: self.view)
         // sposta mano su numero
         var tempo = 1.5
-        Percorso.mano[0] = PassaggioMano(passaggio: Passaggio(destinazione: originViews[0].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Aperta)
-        Percorso.numero[0] = Passaggio(destinazione: originViews[0].center, tempo: tempo)
+        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: originCenter, tempo: tempo), stato: .Aperta, trasporta: nil))
         // prendi numero
         tempo = 0.2
-        Percorso.mano[1] = PassaggioMano(passaggio: Passaggio(destinazione: originViews[0].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Chiusa)
-        Percorso.numero[1] = Passaggio(destinazione: originViews[0].center, tempo: tempo)
+        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Chiusa, trasporta: nil))
         // sposta numero e mano su destinazione
         tempo = 1.5
-        Percorso.mano[2] = PassaggioMano(passaggio: Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Chiusa)
-        Percorso.numero[2] = Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo)
+        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: destinationCenter, tempo: tempo), stato: .Chiusa, trasporta: c.numView[i]))
         // lascia numero
         tempo = 0.2
-        Percorso.mano[3] = PassaggioMano(passaggio: Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Aperta)
-        Percorso.numero[3] = Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo)
+        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Aperta, trasporta: nil))
     }
     
     func DismissHelpView() {

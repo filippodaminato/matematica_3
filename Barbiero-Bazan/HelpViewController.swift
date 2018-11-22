@@ -16,61 +16,68 @@ enum StatoMano : String {
 }
 
 class Passaggio {
-    let destination : CGPoint
+    let destinationCenter : CGPoint?
     let tempo : Double
     
-    init(destinazione d : CGPoint, tempo t : Double) {
-        destination = d
+    init(destinazione d : CGPoint?, tempo t : Double) {
+        destinationCenter = d
         tempo = t
     }
     
     init() {
-        destination = CGPoint.zero
+        destinationCenter = CGPoint.zero
         tempo = 0
     }
 }
 
+//class PassaggioMano {
+//    let passaggio : Passaggio
+//    let state : StatoMano
+//
+//    init(passaggio p : Passaggio, stato s : StatoMano) {
+//        passaggio = p
+//        state = s
+//    }
+//
+//    init() {
+//        passaggio = Passaggio()
+//        state = StatoMano.Aperta
+//    }
+//
+//}
+
 class PassaggioMano {
     let passaggio : Passaggio
     let state : StatoMano
+    let trasporta : DragNumberImageView?
     
-    init(passaggio p : Passaggio, stato s : StatoMano) {
+    init(passaggio p : Passaggio, stato s : StatoMano, trasporta t : DragNumberImageView?) {
         passaggio = p
         state = s
+        trasporta = t
     }
     
     init() {
         passaggio = Passaggio()
         state = StatoMano.Aperta
+        trasporta = nil
     }
-    
 }
 
 class Percorso {
-    static var mano : [PassaggioMano] = {
-        var per = [PassaggioMano]()
-        // sposta mano su numero
-        per.append(PassaggioMano())
-        // prendi numero
-        per.append(PassaggioMano())
-        // sposta numero e mano su destinazione
-        per.append(PassaggioMano())
-        // lascia numero
-        per.append(PassaggioMano())
-        return per
-    }()
-    static var numero : [Passaggio] = {
-        var per = [Passaggio]()
-        // sposta mano su numero
-        per.append(Passaggio())
-        // prendi numero
-        per.append(Passaggio())
-        // sposta numero e mano su destinazione
-        per.append(Passaggio())
-        // lascia numero
-        per.append(Passaggio())
-        return per
-    }()
+    static var mano = [PassaggioMano]()
+//    static var numero : [Passaggio] = {
+//        var per = [Passaggio]()
+//        // sposta mano su numero
+//        per.append(Passaggio())
+//        // prendi numero
+//        per.append(Passaggio())
+//        // sposta numero e mano su destinazione
+//        per.append(Passaggio())
+//        // lascia numero
+//        per.append(Passaggio())
+//        return per
+//    }()
 }
 
 class HelpViewController: UIViewController {
@@ -81,7 +88,7 @@ class HelpViewController: UIViewController {
     
     var padre : BarbieroBazan?
     
-    var working = true
+    var working = false
     
     var currentAnimationIndex = 0
     
@@ -99,8 +106,11 @@ class HelpViewController: UIViewController {
         self.view.addSubview(v)
         self.view.bringSubviewToFront(handImageView)
         
-        handImageView.frame = CGRect(x: 0, y: 0, width: v.frame.width / 2, height: v.frame.height / 2)
-        handImageView.center = self.view.center
+        if !working {
+            working = true
+            handImageView.frame = CGRect(x: 0, y: 0, width: v.frame.width / 2, height: v.frame.height / 2)
+            handImageView.center = self.view.center
+        }
     }
     
     func StartAnimation() {
@@ -108,7 +118,9 @@ class HelpViewController: UIViewController {
             // blur in di mano e numero
             UIView.animate(withDuration: 0.5, animations: {
                 self.handImageView.alpha = 1
-                //self.numView?.alpha = 1
+                for v in self.numView {
+                    v.alpha = 0.3
+                }
             }) { (true) in
                 self.Animate()
             }
@@ -120,8 +132,12 @@ class HelpViewController: UIViewController {
         currentAnimationIndex += 1
         
         UIView.animate(withDuration: per.passaggio.tempo, delay: 0.5, animations: {
-            self.handImageView.center = per.passaggio.destination
-            //self.numView?.center = per.passaggio.destination
+            if let c = per.passaggio.destinationCenter {
+                self.handImageView.center = c
+                if let v = per.trasporta {
+                    v.center = c
+                }
+            }
             self.handImageView.image = UIImage(named: per.state.rawValue)
         }) { (true) in
             if self.currentAnimationIndex != Percorso.mano.count {
@@ -138,10 +154,14 @@ class HelpViewController: UIViewController {
         // blur out e completed metti mano in posizione centrale e numero in posizione iniziale
         UIView.animate(withDuration: 0.5, animations: {
             self.handImageView.alpha = 0
-            //self.numView?.alpha = 0
+            for v in self.numView {
+                v.alpha = 0
+            }
         }) { (true) in
             self.handImageView.center = self.view.center
-            //self.numView?.center = (self.numView?.originView!.GetCenterInRootView(rootView: self.padre!.view))!
+            for v in self.numView {
+                v.center = (v.originView?.GetCenterInRootView(rootView: self.padre!.view))!
+            }
             self.StartAnimation()
         }
         
