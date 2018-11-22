@@ -21,47 +21,80 @@ enum EsercizioKey : String {
 }
 
 class Statistiche {
-    static func aggiungiGiusto(forKey key: EsercizioKey, num : Int) {
+    
+    static private let giusto = "Giusto"
+    static private let sbagliato = "Sbagliato"
+
+    // aggiunge valore Giusto o Sbagliato in base a "key" nell'esercizio "k"
+    static private func aggiungi(_ num : Int, key: String, forKey k: EsercizioKey) {
         let def = UserDefaults.standard
-        let str = "Giusto" + key.rawValue
-        let a = def.integer(forKey: str)
-        def.set(a + num, forKey: str)
+        let str = key + k.rawValue
+        let old = def.integer(forKey: str)
+        def.set(old + num, forKey: str)
+        def.synchronize()
+    }
+    
+    static func aggiungiGiusto(_ num : Int, forKey key: EsercizioKey) {
+        aggiungi(num, key: giusto, forKey: key)
     }
     
     static func aggiungiGiusto(forKey key: EsercizioKey) {
-        aggiungiGiusto(forKey: key, num: 1)
+        aggiungiGiusto(1, forKey: key)
     }
     
-    static func aggiungiSbagliato(forKey key: EsercizioKey, num : Int) {
-        let def = UserDefaults.standard
-        let str = "Sbagliato" + key.rawValue
-        let a = def.integer(forKey: str)
-        def.set(a + num, forKey: str)
+    static func aggiungiSbagliato(_ num : Int, forKey key: EsercizioKey) {
+        aggiungi(num, key: sbagliato, forKey: key)
     }
     
     static func aggiungiSbagliato(forKey key: EsercizioKey) {
-        aggiungiSbagliato(forKey: key, num: 1)
+        aggiungiSbagliato(1, forKey: key)
     }
     
-    static func getGiusti(forKey key : EsercizioKey) -> Int {
-        let def = UserDefaults.standard
-        return def.integer(forKey: "Giusto" + key.rawValue)
+    // aggiungi giusti e sbagliato ad esercizio "k"
+    static func aggiungi(giusti: Int, sbagliati: Int, forKey k: EsercizioKey) {
+        aggiungiGiusto(giusti, forKey: k)
+        aggiungiSbagliato(sbagliati, forKey: k)
     }
     
-    static func getSbagliati(forKey key : EsercizioKey) -> Int {
+    // ottiene valore Giusto o Sbagliato in base a "key" nell'esercizio "k"
+    static private func get(key: String, forKey k: EsercizioKey) -> Int {
         let def = UserDefaults.standard
-        return def.integer(forKey: "Sbagliato" + key.rawValue)
+        return def.integer(forKey: key + k.rawValue)
     }
     
-    static func clearGiusti(forKey key : EsercizioKey) {
-        let def = UserDefaults.standard
-        let str = "Giusto" + key.rawValue
-        def.set(0, forKey: str)
+    static func getGiusto(forKey key : EsercizioKey) -> Int {
+        return get(key: giusto, forKey: key)
     }
     
-    static func clearSbagliati(forKey key : EsercizioKey) {
+    static func getSbagliato(forKey key : EsercizioKey) -> Int {
+        return get(key: sbagliato, forKey: key)
+    }
+    
+    // pulisce valore Giusto o Sbagliato in base a "key" nell'esercizio "k"
+    static private func clear(key: String, forKey k: EsercizioKey) {
         let def = UserDefaults.standard
-        let str = "Sbagliato" + key.rawValue
-        def.set(0, forKey: str)
+        def.set(0, forKey: key + k.rawValue)
+        def.synchronize()
+    }
+    
+    static func clearGiusto(forKey key : EsercizioKey) {
+        clear(key: giusto, forKey: key)
+    }
+    
+    static func clearSbagliato(forKey key : EsercizioKey) {
+        clear(key: sbagliato, forKey: key)
+    }
+    
+    // ottiene percentuale giusti
+    static func getPercentualeGiusto(forKey k : EsercizioKey) -> Int {
+        let giusti = getGiusto(forKey: k)
+        let sbagliati = getSbagliato(forKey: k)
+        // (giusti * 100) / (giusti + sbagliati)
+        return Int((giusti * 100) / (giusti + sbagliati))
+    }
+    
+    // ottiene percentuale sbagliati facendo la sottrazione
+    static func getPercentualeSbagliato(forKey k : EsercizioKey) -> Int {
+        return 100 - getPercentualeGiusto(forKey: k)
     }
 }
