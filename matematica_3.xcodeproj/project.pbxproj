@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D5F6C29B21A6A21F00F49C31 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C29A21A6A21F00F49C31 /* HelpViewController.swift */; };
-		D5F6C29D21A6A22900F49C31 /* Statistiche.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C29C21A6A22900F49C31 /* Statistiche.swift */; };
+		D5F6C2A121A6C09300F49C31 /* Statistiche.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C2A021A6C09300F49C31 /* Statistiche.swift */; };
 		DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */; };
 		DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */; };
 		DB7AB3FE219AD380002F81AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7AB3FD219AD37F002F81AD /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		D5F6C29A21A6A21F00F49C31 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		D5F6C29C21A6A22900F49C31 /* Statistiche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistiche.swift; sourceTree = "<group>"; };
+		D5F6C2A021A6C09300F49C31 /* Statistiche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistiche.swift; sourceTree = "<group>"; };
 		DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
 		DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Barbiero-Bazan.storyboard"; sourceTree = "<group>"; };
 		DB7AB3FD219AD37F002F81AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,10 +39,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5F6C2A221A6C0A000F49C31 /* Statistiche */ = {
+			isa = PBXGroup;
+			children = (
+				D5F6C2A021A6C09300F49C31 /* Statistiche.swift */,
+			);
+			path = Statistiche;
+			sourceTree = "<group>";
+		};
 		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
-				D5F6C29C21A6A22900F49C31 /* Statistiche.swift */,
+				D5F6C2A221A6C0A000F49C31 /* Statistiche */,
 				FACF193A20AFFDE80083D028 /* Barbiero-Bazan */,
 				FAA9DBDD20A6CA57002B3F36 /* matematica_3 */,
 				FAA9DBDC20A6CA57002B3F36 /* Products */,
@@ -151,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */,
-				D5F6C29D21A6A22900F49C31 /* Statistiche.swift in Sources */,
+				D5F6C2A121A6C09300F49C31 /* Statistiche.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
 				D5F6C29B21A6A21F00F49C31 /* HelpViewController.swift in Sources */,
 			);
