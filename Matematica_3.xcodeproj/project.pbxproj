@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1092B021A68F060094931B /* Statistiche.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1092AF21A68F060094931B /* Statistiche.storyboard */; };
+		DB1092B221A68F180094931B /* StatisticheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1092B121A68F180094931B /* StatisticheViewController.swift */; };
+		DB1092B521A690100094931B /* Statistiche.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1092B421A6900F0094931B /* Statistiche.swift */; };
 		DB17A5FC2181A1550096D2B7 /* Bugin-Pinton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB17A5FB2181A1550096D2B7 /* Bugin-Pinton.storyboard */; };
 		DB17A5FE2181A15D0096D2B7 /* Bugin-Pinton_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17A5FD2181A15D0096D2B7 /* Bugin-Pinton_Controller.swift */; };
 		DB19AA652181A4A500179603 /* Migali-Giacomello.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB19AA642181A4A500179603 /* Migali-Giacomello.storyboard */; };
@@ -56,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB1092AF21A68F060094931B /* Statistiche.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistiche.storyboard; sourceTree = "<group>"; };
+		DB1092B121A68F180094931B /* StatisticheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticheViewController.swift; sourceTree = "<group>"; };
+		DB1092B421A6900F0094931B /* Statistiche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistiche.swift; sourceTree = "<group>"; };
 		DB17A5FB2181A1550096D2B7 /* Bugin-Pinton.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Bugin-Pinton.storyboard"; sourceTree = "<group>"; };
 		DB17A5FD2181A15D0096D2B7 /* Bugin-Pinton_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bugin-Pinton_Controller.swift"; sourceTree = "<group>"; };
 		DB19AA642181A4A500179603 /* Migali-Giacomello.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Migali-Giacomello.storyboard"; sourceTree = "<group>"; };
@@ -118,6 +124,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB1092B321A68F1D0094931B /* Statistiche */ = {
+			isa = PBXGroup;
+			children = (
+				DB1092AF21A68F060094931B /* Statistiche.storyboard */,
+				DB1092B121A68F180094931B /* StatisticheViewController.swift */,
+				DB1092B421A6900F0094931B /* Statistiche.swift */,
+			);
+			path = Statistiche;
+			sourceTree = "<group>";
+		};
 		DBF118FB2181993400DD168D /* Bau-Danilo */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +147,7 @@
 		FAA9DBD220A6CA57002B3F36 = {
 			isa = PBXGroup;
 			children = (
+				DB1092B321A68F1D0094931B /* Statistiche */,
 				DB4CC74B21A4087400B8943D /* OptionsViewController.swift */,
 				FAA9DBE020A6CA57002B3F36 /* ViewController.swift */,
 				DBF118FB2181993400DD168D /* Bau-Danilo */,
@@ -371,6 +388,7 @@
 				DB63530221805AE40037A356 /* Barbiero-Bazan.storyboard in Resources */,
 				DBF118FD2181994E00DD168D /* Bau-Danilo.storyboard in Resources */,
 				DB45A4A1219C10BE00C1612A /* Bolzo-Calderon.storyboard in Resources */,
+				DB1092B021A68F060094931B /* Statistiche.storyboard in Resources */,
 				DB19AA652181A4A500179603 /* Migali-Giacomello.storyboard in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
 				DB9A3179219AB63300914682 /* Mason-Casagrande.storyboard in Resources */,
@@ -410,6 +428,7 @@
 				DBF119032181998A00DD168D /* DraggableImageView.swift in Sources */,
 				DB88FC97219ABCB5001117C9 /* Bonaldo-Xia_ViewController.swift in Sources */,
 				DB19AA672181A4AE00179603 /* Migali-Giacomello-Controller.swift in Sources */,
+				DB1092B521A690100094931B /* Statistiche.swift in Sources */,
 				DBF119052181999000DD168D /* Bau_DaniloViewController.swift in Sources */,
 				DB4CC74C21A4087400B8943D /* OptionsViewController.swift in Sources */,
 				DB17A5FE2181A15D0096D2B7 /* Bugin-Pinton_Controller.swift in Sources */,
@@ -417,6 +436,7 @@
 				DB45A4A0219C10BE00C1612A /* Bolzo-Calderon_Controller.swift in Sources */,
 				DB559DFB219AB89E000199AA /* Cella.swift in Sources */,
 				DBE844052181A7E7004544F7 /* CaldiniMarchioro_Controller.swift in Sources */,
+				DB1092B221A68F180094931B /* StatisticheViewController.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
