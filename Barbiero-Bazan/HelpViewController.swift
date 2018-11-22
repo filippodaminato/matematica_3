@@ -59,25 +59,25 @@ class Percorso {
         per.append(PassaggioMano())
         return per
     }()
-//    static var numero : [Passaggio] = {
-//        var per = [Passaggio]()
-//        // sposta mano su numero
-//        per.append(Passaggio())
-//        // prendi numero
-//        per.append(Passaggio())
-//        // sposta numero e mano su destinazione
-//        per.append(Passaggio())
-//        // lascia numero
-//        per.append(Passaggio())
-//        return per
-//    }()
+    static var numero : [Passaggio] = {
+        var per = [Passaggio]()
+        // sposta mano su numero
+        per.append(Passaggio())
+        // prendi numero
+        per.append(Passaggio())
+        // sposta numero e mano su destinazione
+        per.append(Passaggio())
+        // lascia numero
+        per.append(Passaggio())
+        return per
+    }()
 }
 
 class HelpViewController: UIViewController {
 
     @IBOutlet weak var handImageView: UIImageView!
     
-    var numView : DragNumberImageView?
+    var numView = [DragNumberImageView]()
     
     var padre : BarbieroBazan?
     
@@ -85,17 +85,22 @@ class HelpViewController: UIViewController {
     
     var currentAnimationIndex = 0
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         handImageView.alpha = 0
     }
     
     func addNumView(numView v : DragNumberImageView) {
-        numView = v
-        numView?.layer.borderWidth = 3
-        numView?.layer.borderColor = UIColor.black.cgColor
-        self.view.addSubview(numView!)
+        numView.append(v)
+        v.layer.borderWidth = 3
+        v.layer.borderColor = UIColor.black.cgColor
+        self.view.addSubview(v)
         self.view.bringSubviewToFront(handImageView)
+        
+        handImageView.frame = CGRect(x: 0, y: 0, width: v.frame.width / 2, height: v.frame.height / 2)
+        handImageView.center = self.view.center
     }
     
     func StartAnimation() {
@@ -103,7 +108,7 @@ class HelpViewController: UIViewController {
             // blur in di mano e numero
             UIView.animate(withDuration: 0.5, animations: {
                 self.handImageView.alpha = 1
-                self.numView?.alpha = 1
+                //self.numView?.alpha = 1
             }) { (true) in
                 self.Animate()
             }
@@ -116,7 +121,7 @@ class HelpViewController: UIViewController {
         
         UIView.animate(withDuration: per.passaggio.tempo, delay: 0.5, animations: {
             self.handImageView.center = per.passaggio.destination
-            self.numView?.center = per.passaggio.destination
+            //self.numView?.center = per.passaggio.destination
             self.handImageView.image = UIImage(named: per.state.rawValue)
         }) { (true) in
             if self.currentAnimationIndex != Percorso.mano.count {
@@ -133,12 +138,16 @@ class HelpViewController: UIViewController {
         // blur out e completed metti mano in posizione centrale e numero in posizione iniziale
         UIView.animate(withDuration: 0.5, animations: {
             self.handImageView.alpha = 0
-            self.numView?.alpha = 0
+            //self.numView?.alpha = 0
         }) { (true) in
             self.handImageView.center = self.view.center
-            self.numView?.center = self.padre!.originViews[0].GetCenterInRootView(rootView: self.padre!.view)
+            //self.numView?.center = (self.numView?.originView!.GetCenterInRootView(rootView: self.padre!.view))!
             self.StartAnimation()
         }
         
+    }
+    
+    @IBAction func btnCancel(_ sender: Any) {
+        padre!.DismissHelpView()
     }
 }

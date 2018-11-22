@@ -112,6 +112,10 @@ class BarbieroBazan: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UpdateContainerViewArrays()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        GenerateNumbersViews()
         let defaults = UserDefaults.standard
         if !defaults.bool(forKey: "FirstTime" + EsercizioKey.Uno.rawValue) {
             defaults.set(true, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
@@ -119,13 +123,6 @@ class BarbieroBazan: UIViewController {
         }
         // REMOVE
         defaults.set(false, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        GenerateNumbersViews()
-        if let a = helpView {
-            self.view.bringSubviewToFront(a.view)
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -147,26 +144,27 @@ class BarbieroBazan: UIViewController {
     
     func UpdatePercorsi(controller c : HelpViewController) {
         // sposta mano su numero
-        var tempo = 2.0
+        var tempo = 1.5
         Percorso.mano[0] = PassaggioMano(passaggio: Passaggio(destinazione: originViews[0].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Aperta)
-        //Percorso.numero[0] = Passaggio(destinazione: originViews[0].center, tempo: tempo)
+        Percorso.numero[0] = Passaggio(destinazione: originViews[0].center, tempo: tempo)
         // prendi numero
-        tempo = 0.5
+        tempo = 0.2
         Percorso.mano[1] = PassaggioMano(passaggio: Passaggio(destinazione: originViews[0].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Chiusa)
-        //Percorso.numero[1] = Passaggio(destinazione: originViews[0].center, tempo: tempo)
+        Percorso.numero[1] = Passaggio(destinazione: originViews[0].center, tempo: tempo)
         // sposta numero e mano su destinazione
-        tempo = 2
+        tempo = 1.5
         Percorso.mano[2] = PassaggioMano(passaggio: Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Chiusa)
-        //Percorso.numero[2] = Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo)
+        Percorso.numero[2] = Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo)
         // lascia numero
-        tempo = 0.5
+        tempo = 0.2
         Percorso.mano[3] = PassaggioMano(passaggio: Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo), stato: StatoMano.Aperta)
-        //Percorso.numero[3] = Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo)
+        Percorso.numero[3] = Passaggio(destinazione: destinationViews[1].GetCenterInRootView(rootView: self.view), tempo: tempo)
     }
     
     func DismissHelpView() {
         helpView?.working = false
         helpView?.view.removeFromSuperview()
+        GenerateNumbersViews()
     }
     
     func UpdateContainerViewArrays() {
