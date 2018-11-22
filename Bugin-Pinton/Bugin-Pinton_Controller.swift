@@ -13,6 +13,7 @@ var divisori: [Int] =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 var risultati: [Int] =  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 var divisoriDecimali: [Int] = [10,100,1000]
 var appearkeyboard = false
+var previousNumber: UInt32? // used in randomNumber()
 
 class Bugin_Pinton_Controller: UIViewController {
     //es 1
@@ -54,7 +55,7 @@ class Bugin_Pinton_Controller: UIViewController {
         self.Zone.transform = CGAffineTransform.init(translationX: 0.0, y: 0.0)
         ishidden = true
         self.view.endEditing(true)
-        var count = 0, controllo1 = true,appoggio = 0
+        var count = 0, controllo1 = true,appoggio = 0, appSbagliato = 0, punteggioSbagliato = 0
         for a in risultatoTextField
         {
             risultatoTextField[count].layer.borderWidth = 2
@@ -65,25 +66,29 @@ class Bugin_Pinton_Controller: UIViewController {
                     {
                         if( (a.text == "") || (Int(dividendiLabel[count].text!)!/dividendiLabel[count].tag) != Int(a.text!)!){
                             risultatoTextField[count].layer.borderColor = UIColor.red.cgColor
+                            appSbagliato += 1
                         }else{
                             risultatoTextField[count].layer.borderColor = UIColor.green.cgColor
                             risultatoTextField[count].isEnabled = false
                             controllo1 = true
                             appoggio += 1
-                            
                         }
                     }else{
                         a.layer.borderColor = UIColor.red.cgColor
                     }
                 }
-                if(appoggio == a.text?.count)
-                {
+                if(appoggio == a.text?.count){
                     punteggio += 1
                 }
+                if (appSbagliato == a.text?.count){
+                    punteggioSbagliato += 1
+                }
                 appoggio = 0
+                appSbagliato = 0
             }
             count += 1
         }
+        
         count = 0//es 2---------------------------------------------------------------------------------
         var controllo = false
         for a in risultatoTextField2{
@@ -99,6 +104,7 @@ class Bugin_Pinton_Controller: UIViewController {
                 switch (count){
                 case 0...5:if(Int(a.text!) != dividendi[count]){
                     a.layer.borderColor = UIColor.red.cgColor
+                    punteggioSbagliato += 1
                 }else{
                     a.layer.borderColor = UIColor.green.cgColor
                     a.isEnabled = false
@@ -108,6 +114,7 @@ class Bugin_Pinton_Controller: UIViewController {
                 case 6...11:
                     if(Int(a.text!) != divisori[count]){
                         a.layer.borderColor = UIColor.red.cgColor
+                        punteggioSbagliato += 1
                     }else{
                         a.layer.borderColor = UIColor.green.cgColor
                         a.isEnabled = false
@@ -116,6 +123,7 @@ class Bugin_Pinton_Controller: UIViewController {
                     break
                 case 12...17:if(Int(a.text!) != risultati[count]){
                     a.layer.borderColor = UIColor.red.cgColor
+                    punteggioSbagliato += 1
                 }else{
                     a.layer.borderColor = UIColor.green.cgColor
                     a.isEnabled = false
@@ -153,7 +161,11 @@ class Bugin_Pinton_Controller: UIViewController {
         immagineStelle.image = UIImage(named: img)
         immagineStelle.contentMode = .scaleAspectFit
         viewVincita.isHidden = false
+        
+        //Statistiche.aggiungi(forKey: .Due, num: punteggio)//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        
         punteggio = 0
+        punteggioSbagliato = 0
     }
     
     override func viewDidLoad() {
@@ -194,16 +206,34 @@ func tastieraNumerica(risultatoTextField: Array<UITextField>,risultatoTextField2
 func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risultatiLabel2: Array<UILabel>,dividendiLabel2: Array<UILabel>, risultatoTextField2: Array<UITextField> )
 {
     var controllo = false //es 1------------------------------------------------------------------------
+    var arr: [Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    var countEs1 = 0, app = true
+    
     for a in dividendiLabel
     {
-        let i = Int(arc4random_uniform(99)+1)
         
-        switch (a.tag){
-        case 10: a.text = String(i*10); break
-        case 100: a.text = String(i*100); break
-        case 1000: a.text = String(i*1000); break
-        default: break
-        }
+       /* while(app){
+            for b in 0...17{
+                if(arr[b] == i && b != countEs1){
+                    app = true
+                    break
+                }else{
+                    app = false
+                    arr[countEs1] = i
+                    countEs1 += 1
+                }
+            }
+            i = Int(arc4random_uniform(99)+1)
+        }*/
+        
+        
+            switch (a.tag){
+            case 10: a.text = String(randomNumber()*10); break
+            case 100: a.text = String(randomNumber()*100); break
+            case 1000: a.text = String(randomNumber()*1000); break
+            default: break
+            }
+        countEs1 += 1
     }
     var count = 0//es 2----------------------------------------------------------------------------------
     for _ in dividendi
@@ -250,6 +280,14 @@ func carica(dividendiLabel: Array<UILabel>,divisoriLabel2: Array<UILabel>, risul
     }
 }
 
+func randomNumber() -> UInt32 {
+    var randomNumber = arc4random_uniform(99)+1
+    while previousNumber == randomNumber {
+        randomNumber = arc4random_uniform(99)+1
+    }
+    previousNumber = randomNumber
+    return randomNumber
+}
 
 
 
