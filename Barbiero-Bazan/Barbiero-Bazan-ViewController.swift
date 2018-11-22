@@ -135,7 +135,7 @@ class BarbieroBazan: UIViewController {
             helpView = controller
             self.view.addSubview(controller.view)
             controller.addNumView(numView: DragNumberImageView(originView: originViews[0], destinationView: destinationViews[1], rootView: self.view, value: 0))
-            controller.numView!.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.8)
+            //controller.numView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.8)
             controller.padre = self
             UpdatePercorsi(controller: controller)
             controller.EndAnimation()
