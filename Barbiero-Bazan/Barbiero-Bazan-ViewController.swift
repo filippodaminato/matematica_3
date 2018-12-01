@@ -102,17 +102,25 @@ class DragNumberImageView : UIImageView {
 
 class BarbieroBazan: UIViewController {
     
+    /// array of the origin views.
     var originViews = [UIView]()
+    
+    /// array of de destination views.
     var destinationViews = [UIView]()
     
+    /// array of the code generated number views.
     var numbersViews = [DragNumberImageView]()
     
+    /// array of the `UIImageView` for **decine, unità, decimi, centesimi**.
     var images = [UIImageView]()
     
+    /// array of the images of **decine, unità, decimi, centesimi**.
     let imagesImage = [UIImage(named: "Decine"), UIImage(named: "Unità"), UIImage(named: "Decimi"), UIImage(named: "Centesimi")]
     
+    /// view of the `HelpViewController`
     var helpView : HelpViewController?
     
+    /// title label
     @IBOutlet weak var lblTitolo: UILabel!
     
     override func viewDidLoad() {
@@ -122,13 +130,10 @@ class BarbieroBazan: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         GenerateNumbersViews()
-        let defaults = UserDefaults.standard
-        if !defaults.bool(forKey: "FirstTime" + EsercizioKey.Uno.rawValue) {
-            defaults.set(true, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
-            defaults.synchronize()
+        if checkFirstTimeOpening() {
             openHelpView()
         }
-        // REMOVE
+        // FIXME:
         //defaults.set(false, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
     }
 
@@ -136,10 +141,32 @@ class BarbieroBazan: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    /**
+     Checks if is the first time that the exercise has been opened
+     
+     - Returns: if it is the first time it has been opened
+     */
+    func checkFirstTimeOpening() -> Bool {
+        let defaults = UserDefaults.standard
+        if !defaults.bool(forKey: "FirstTime" + EsercizioKey.Uno.rawValue) {
+            defaults.set(true, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
+            defaults.synchronize()
+            return true
+        }
+        return false
+    }
+    
+    /**
+     Closes the exercise.
+     */
     @IBAction func backButtonClick(_ sender: Any) {
         self.dismiss(animated: true, completion: {})
     }
     
+    /**
+     Creates an instance of `HelpViewController` and adds it's view on front.
+     
+     */
     func openHelpView() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "help") as? HelpViewController {
             lblTitolo.isHidden = true
@@ -162,6 +189,11 @@ class BarbieroBazan: UIViewController {
         }
     }
     
+    /**
+     Creates the path that `helpView.handImageView` has to follow
+     
+     - Parameter c: is the current instance of `HelpViewController`
+     */
     func UpdatePercorsi(controller c : HelpViewController) {
         Percorso.mano = [PassaggioMano]()
         for i in 0...3 {
@@ -169,6 +201,13 @@ class BarbieroBazan: UIViewController {
         }
     }
     
+    /**
+     Adds the path that `helpView.handImageView` has to follow to move a number view
+     
+     - Parameters:
+        - i: is the index to get the `DragImageView` instance from `c.numView`
+        - c: is the current instance of `HelpViewController`
+     */
     private func UpdatePercorsiNumberView(index i : Int, controller c : HelpViewController) {
         let originCenter = c.numView[i].originView!.GetCenterInRootView(rootView: self.view)
         let destinationCenter = c.numView[i].destinationView!.GetCenterInRootView(rootView: self.view)
@@ -186,6 +225,9 @@ class BarbieroBazan: UIViewController {
         Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Aperta, trasporta: nil))
     }
     
+    /**
+     Closes the `helpView`
+     */
     func DismissHelpView() {
         lblTitolo.isHidden = false
         helpView?.working = false
@@ -193,6 +235,9 @@ class BarbieroBazan: UIViewController {
         GenerateNumbersViews()
     }
     
+    /**
+     Adds the origin, destination and images views to the respective array
+     */
     func UpdateContainerViewArrays() {
         originViews.append(self.view.viewWithTag(1)!)
         originViews.append(self.view.viewWithTag(2)!)

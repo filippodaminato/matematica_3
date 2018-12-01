@@ -30,22 +30,6 @@ class Passaggio {
     }
 }
 
-//class PassaggioMano {
-//    let passaggio : Passaggio
-//    let state : StatoMano
-//
-//    init(passaggio p : Passaggio, stato s : StatoMano) {
-//        passaggio = p
-//        state = s
-//    }
-//
-//    init() {
-//        passaggio = Passaggio()
-//        state = StatoMano.Aperta
-//    }
-//
-//}
-
 class PassaggioMano {
     let passaggio : Passaggio
     let state : StatoMano
@@ -66,18 +50,6 @@ class PassaggioMano {
 
 class Percorso {
     static var mano = [PassaggioMano]()
-//    static var numero : [Passaggio] = {
-//        var per = [Passaggio]()
-//        // sposta mano su numero
-//        per.append(Passaggio())
-//        // prendi numero
-//        per.append(Passaggio())
-//        // sposta numero e mano su destinazione
-//        per.append(Passaggio())
-//        // lascia numero
-//        per.append(Passaggio())
-//        return per
-//    }()
 }
 
 class HelpViewController: UIViewController {
