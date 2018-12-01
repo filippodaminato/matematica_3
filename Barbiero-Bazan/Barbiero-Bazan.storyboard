@@ -492,6 +492,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnHelp" destination="m25-Hz-GbH" id="hVU-Jo-8ha"/>
                         <outlet property="lblTitolo" destination="tVA-26-LeQ" id="8rI-5m-yC7"/>
                     </connections>
                 </viewController>

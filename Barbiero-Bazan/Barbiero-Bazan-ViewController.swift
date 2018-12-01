@@ -123,6 +123,9 @@ class BarbieroBazan: UIViewController {
     /// title label
     @IBOutlet weak var lblTitolo: UILabel!
     
+    /// help button
+    @IBOutlet weak var btnHelp: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UpdateContainerViewArrays()
@@ -133,8 +136,7 @@ class BarbieroBazan: UIViewController {
         if checkFirstTimeOpening() {
             openHelpView()
         }
-        // FIXME:
-        //defaults.set(false, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
+        // FIXME: defaults.set(false, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
     }
 
     override func didReceiveMemoryWarning() {
@@ -170,6 +172,7 @@ class BarbieroBazan: UIViewController {
     func openHelpView() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "help") as? HelpViewController {
             lblTitolo.isHidden = true
+            btnHelp.isHidden = true
             addChild(controller)
             helpView = controller
             self.view.addSubview(controller.view)
@@ -229,6 +232,7 @@ class BarbieroBazan: UIViewController {
      Closes the `helpView`
      */
     func DismissHelpView() {
+        btnHelp.isHidden = false
         lblTitolo.isHidden = false
         helpView?.working = false
         helpView?.view.removeFromSuperview()
