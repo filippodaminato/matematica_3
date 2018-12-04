@@ -64,8 +64,6 @@ class HelpViewController: UIViewController {
     
     var currentAnimationIndex = 0
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         handImageView.alpha = 0
@@ -73,8 +71,6 @@ class HelpViewController: UIViewController {
     
     func addNumView(numView v : DragNumberImageView) {
         numView.append(v)
-        v.layer.borderWidth = 3
-        v.layer.borderColor = UIColor.black.cgColor
         self.view.addSubview(v)
         self.view.bringSubviewToFront(handImageView)
         
@@ -87,6 +83,10 @@ class HelpViewController: UIViewController {
     
     func StartAnimation() {
         if working {
+            for v in numView {
+                v.layer.borderWidth = 3
+                v.layer.borderColor = UIColor.black.cgColor
+            }
             // blur in di mano e numero
             UIView.animate(withDuration: 0.5, animations: {
                 self.handImageView.alpha = 1

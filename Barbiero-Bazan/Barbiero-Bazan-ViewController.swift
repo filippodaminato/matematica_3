@@ -38,7 +38,7 @@ class DragNumberImageView : UIImageView {
     
     var isPickedUp = false
     
-    var borderColor : UIColor? = nil
+    var borderColor : UIColor = UIColor.white
     
     init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int) {
         super.init(frame: .zero)
@@ -48,7 +48,6 @@ class DragNumberImageView : UIImageView {
         num = n
         rootView!.addSubview(self)
         rootView!.bringSubviewToFront(self)
-        //self.translatesAutoresizingMaskIntoConstraints = false
         self.frame = originView!.frame
         isPickedUp = true
         self.contentMode = .scaleAspectFill
@@ -62,7 +61,6 @@ class DragNumberImageView : UIImageView {
     convenience init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int, color c: UIColor) {
         self.init(originView: origin, destinationView: dest, rootView: root, value: n)
         borderColor = c
-        //ChangeColor()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -71,7 +69,7 @@ class DragNumberImageView : UIImageView {
     
     func UpdateColor() {
         self.layer.borderWidth = 3
-        self.layer.borderColor = borderColor?.cgColor
+        self.layer.borderColor = borderColor.cgColor
     }
     
     func ClearColor() {
@@ -328,11 +326,27 @@ class BarbieroBazan: UIViewController {
                 view.center = CGPoint(x:view.center.x + translation.x,y:view.center.y + translation.y)
             }
             if recognizer.state == .ended {
-                //view.Move(toView: view.originView!, withDuration: 0.5, withDelay: 0)
                 CheckDestination(view: view)
+                CheckIfAllDragged()
             }
         }
         recognizer.setTranslation(CGPoint.zero, in: self.view)
+    }
+    
+    func CheckIfAllDragged() {
+        for v in numbersViews {
+            if v.currentView == v.originView {
+                return
+            }
+        }
+        // tutti posizionati
+        // check vittoria
+        if CheckCorrectPositions() {
+            Win()
+        }
+        else {
+            Loose()
+        }
     }
     
     // check if destination view is already occupied
@@ -368,29 +382,37 @@ class BarbieroBazan: UIViewController {
         return true
     }
     
+    func Win() {
+        //Statistiche.aggiungiGiusto(forKey: EsercizioKey.Uno)
+        let dialogMessage = UIAlertController(title: "HAI VINTO!", message: "", preferredStyle: .alert)
+        let yeah = UIAlertAction(title: "Ricominciamo!", style: .cancel) { (action) -> Void in
+            print("Vinto")
+            self.GenerateNumbersViews()
+        }
+        dialogMessage.addAction(yeah)
+        self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
+    func Loose() {
+        //Statistiche.aggiungiSbagliato(forKey: EsercizioKey.Uno)
+        let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.\nProva a ricontrollare se hai messo i numeri nella posizione giusta.", preferredStyle: .alert)
+        let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
+            print("Sbagliato")
+            for i in 0...3 {
+                self.numbersViews[i].Move(toView: self.numbersViews[i].originView!, withDuration: 1, withDelay: 0)
+            }
+        }
+        dialogMessage.addAction(yeah)
+        self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
     @IBAction func btnVerifica(_ sender: Any) {
         let vinto = CheckCorrectPositions()
         if vinto {
-            //Statistiche.aggiungiGiusto(forKey: EsercizioKey.Uno)
-            let dialogMessage = UIAlertController(title: "HAI VINTO!", message: "", preferredStyle: .alert)
-            let yeah = UIAlertAction(title: "Ricominciamo!", style: .cancel) { (action) -> Void in
-                print("Vinto")
-                self.GenerateNumbersViews()
-            }
-            dialogMessage.addAction(yeah)
-            self.present(dialogMessage, animated: true, completion: nil)
+            Win()
         }
         else {
-            //Statistiche.aggiungiSbagliato(forKey: EsercizioKey.Uno)
-            let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.\nProva a ricontrollare se hai messo i numeri nella posizione giusta.", preferredStyle: .alert)
-            let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
-                print("Sbagliato")
-                for i in 0...3 {
-                    self.numbersViews[i].Move(toView: self.numbersViews[i].originView!, withDuration: 1, withDelay: 0)
-                }
-            }
-            dialogMessage.addAction(yeah)
-            self.present(dialogMessage, animated: true, completion: nil)
+            Loose()
         }
     }
     
