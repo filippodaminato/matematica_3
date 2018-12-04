@@ -61,7 +61,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLg-wb-vf2">
                                                 <rect key="frame" x="231" y="22" width="171" height="278.5"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decine" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-dJ-0Pv">
+                                                    <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unità" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-dJ-0Pv">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="278.5"/>
                                                     </imageView>
                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8p-tN-iix">
@@ -91,7 +91,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qB-N9-JSU">
                                                 <rect key="frame" x="693" y="22" width="171" height="278.5"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="24" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decine" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-aq-nfr">
+                                                    <imageView userInteractionEnabled="NO" tag="24" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Centesimi" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-aq-nfr">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="278.5"/>
                                                     </imageView>
                                                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kg8-EO-hlj">
@@ -121,7 +121,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aX-qd-nP3">
                                                 <rect key="frame" x="462" y="22" width="171" height="278.5"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decine" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-ZF-l4N">
+                                                    <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Decimi" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-ZF-l4N">
                                                         <rect key="frame" x="0.0" y="0.0" width="171" height="278.5"/>
                                                     </imageView>
                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5e-ct-C4x">
@@ -542,8 +542,8 @@
                                     <constraint firstAttribute="height" constant="80" id="vvA-XB-XRT"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prendi i numeri e mettili nelle posizioni giuste, poi clicca verifica." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z8-d9-ueV">
-                                <rect key="frame" x="0.0" y="105.5" width="1024" height="130"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prendi i numeri e mettili nelle posizioni giuste." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z8-d9-ueV">
+                                <rect key="frame" x="0.0" y="105.5" width="1024" height="66"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -555,7 +555,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.85022474315068497" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.59912778253424659" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.80238655821917804" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QNv-m0-FYG" firstAttribute="trailing" secondItem="3z8-d9-ueV" secondAttribute="trailing" id="Hid-yl-pFO"/>
@@ -583,10 +583,13 @@
     <resources>
         <image name="Background" width="764" height="573.25"/>
         <image name="Cancel" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="Centesimi" width="136" height="221.5"/>
+        <image name="Decimi" width="136" height="221.5"/>
         <image name="Decine" width="136" height="221.5"/>
         <image name="Help" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Hold" width="512" height="512"/>
         <image name="Reset" width="190.25" height="62.75"/>
+        <image name="Unità" width="136" height="221.5"/>
         <image name="Verifica" width="190.5" height="63"/>
         <image name="backButton" width="123" height="46.733333587646484"/>
     </resources>

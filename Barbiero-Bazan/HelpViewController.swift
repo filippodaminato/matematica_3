@@ -91,7 +91,7 @@ class HelpViewController: UIViewController {
             UIView.animate(withDuration: 0.5, animations: {
                 self.handImageView.alpha = 1
                 for v in self.numView {
-                    v.alpha = 0.3
+                    v.alpha = 1
                 }
             }) { (true) in
                 self.Animate()

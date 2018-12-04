@@ -38,6 +38,8 @@ class DragNumberImageView : UIImageView {
     
     var isPickedUp = false
     
+    var borderColor : UIColor? = nil
+    
     init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int) {
         super.init(frame: .zero)
         rootView = root
@@ -57,8 +59,23 @@ class DragNumberImageView : UIImageView {
         Move(toView: originView!, withDuration: 0, withDelay: 0)
     }
     
+    convenience init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int, color c: UIColor) {
+        self.init(originView: origin, destinationView: dest, rootView: root, value: n)
+        borderColor = c
+        //ChangeColor()
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func UpdateColor() {
+        self.layer.borderWidth = 3
+        self.layer.borderColor = borderColor?.cgColor
+    }
+    
+    func ClearColor() {
+        self.layer.borderColor = UIColor.white.cgColor
     }
     
     func Move(toView view: UIView, withDuration dur: Double, withDelay del: Double) {
@@ -75,10 +92,10 @@ class DragNumberImageView : UIImageView {
             self.transform = CGAffineTransform(scaleX: 0.8, y: 1.2)
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
                 self.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+                self.UpdateColor()
             }) { (true) in
                 self.isPickedUp = true
             }
-            
         }
     }
     
@@ -86,6 +103,9 @@ class DragNumberImageView : UIImageView {
         if isPickedUp {
             self.transform = CGAffineTransform(scaleX: 1.2, y: 1.8)
             currentView?.isHidden = true
+            if currentView == originView {
+                ClearColor()
+            }
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
                 self.transform = .identity
             }){ (true) in
@@ -116,6 +136,10 @@ class BarbieroBazan: UIViewController {
     
     /// array of the images of **decine, unità, decimi, centesimi**.
     let imagesImage = [UIImage(named: "Decine"), UIImage(named: "Unità"), UIImage(named: "Decimi"), UIImage(named: "Centesimi")]
+    
+    /// color array
+    let colorDragView = [UIColor(red: 195/255, green: 62/255, blue: 31/255, alpha: 1), UIColor(red: 102/255, green: 173/255, blue: 249/255, alpha: 1), UIColor.yellow, UIColor(red: 125/255, green: 251/255, blue: 101/255, alpha: 1)]
+    //let colorDragView = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.green]
     
     /// view of the `HelpViewController`
     var helpView : HelpViewController?
@@ -266,12 +290,12 @@ class BarbieroBazan: UIViewController {
         print(random)
         let order = [0, 1, 2, 3].shuffled()
         for i in 0...3 {
-            let val = Int((String)(random[random.index(random.startIndex, offsetBy: i) ]))!
+            let val = Int((String)(random[random.index(random.startIndex, offsetBy: i)]))!
             print(val)
-            numbersViews.append(DragNumberImageView(originView: originViews[order[i]], destinationView: destinationViews[i], rootView: self.view, value: val))
+            let color = colorDragView[i]
+            numbersViews.append(DragNumberImageView(originView: originViews[order[i]], destinationView: destinationViews[i], rootView: self.view, value: val, color: color))
             numbersViews[i].isUserInteractionEnabled = true
             numbersViews[i].addGestureRecognizer(NewPanGestureRecognizer())
-            //numbersViews[i].backgroundColor = UIColor.red
             numbersViews[i].image = UIImage(named: "\(val)")
             images[order[i]].image = imagesImage[i]
         }
@@ -311,6 +335,7 @@ class BarbieroBazan: UIViewController {
         recognizer.setTranslation(CGPoint.zero, in: self.view)
     }
     
+    // check if destination view is already occupied
     func CheckDestination(view: DragNumberImageView) {
         for destV in destinationViews {
             if destV.GetFrameInRootView(rootView: self.view).contains(view.center) {
