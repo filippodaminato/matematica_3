@@ -373,16 +373,8 @@
                                             <action selector="backButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyh-pO-eGg"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Componimi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVA-26-LeQ">
-                                        <rect key="frame" x="481.5" y="-25" width="403.5" height="130"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="80"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="shadowOffset" width="2" height="2"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXU-ey-I7z">
-                                        <rect key="frame" x="1189.5" y="8" width="64" height="64.5"/>
+                                        <rect key="frame" x="651" y="8" width="64" height="64.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="DXU-ey-I7z" secondAttribute="height" multiplier="1:1" id="61w-aw-Kbh"/>
                                         </constraints>
@@ -391,19 +383,49 @@
                                             <action selector="btnReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ca1-4g-9ea"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PeF-mM-pjo">
+                                        <rect key="frame" x="723" y="8" width="64.5" height="64.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zB-D0-3ga">
+                                        <rect key="frame" x="803.5" y="8" width="106" height="64.5"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIY-5c-Rd3">
+                                        <rect key="frame" x="537" y="8" width="106" height="64.5"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bu3-CV-1yO">
+                                        <rect key="frame" x="456.5" y="8" width="64.5" height="64.5"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wIJ-tX-fOs" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="0N0-yl-RvD"/>
+                                    <constraint firstItem="bu3-CV-1yO" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="31G-D2-CCi"/>
+                                    <constraint firstItem="PeF-mM-pjo" firstAttribute="width" secondItem="DXU-ey-I7z" secondAttribute="width" id="6nQ-nH-mli"/>
+                                    <constraint firstItem="bu3-CV-1yO" firstAttribute="width" secondItem="DXU-ey-I7z" secondAttribute="width" id="CLP-Pj-47n"/>
+                                    <constraint firstItem="PeF-mM-pjo" firstAttribute="height" secondItem="DXU-ey-I7z" secondAttribute="height" id="CZE-PZ-4kq"/>
                                     <constraint firstItem="wIJ-tX-fOs" firstAttribute="height" secondItem="1wF-FX-VTK" secondAttribute="height" multiplier="0.6" id="IzP-HH-Puv"/>
+                                    <constraint firstItem="uIY-5c-Rd3" firstAttribute="leading" secondItem="bu3-CV-1yO" secondAttribute="trailing" constant="16" id="JSx-nz-62i"/>
                                     <constraint firstItem="DXU-ey-I7z" firstAttribute="height" secondItem="1wF-FX-VTK" secondAttribute="height" multiplier="0.8" id="KbK-CU-AvK"/>
+                                    <constraint firstItem="PeF-mM-pjo" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="MMH-rz-ghz"/>
                                     <constraint firstItem="wIJ-tX-fOs" firstAttribute="leading" secondItem="1wF-FX-VTK" secondAttribute="leading" constant="16" id="NzY-dk-hna"/>
                                     <constraint firstItem="DXU-ey-I7z" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="Pyq-Xh-hAP"/>
-                                    <constraint firstItem="m25-Hz-GbH" firstAttribute="leading" secondItem="DXU-ey-I7z" secondAttribute="trailing" constant="16" id="WqP-uh-nOR"/>
-                                    <constraint firstItem="tVA-26-LeQ" firstAttribute="centerX" secondItem="1wF-FX-VTK" secondAttribute="centerX" id="YU2-wV-Bu1"/>
+                                    <constraint firstItem="uIY-5c-Rd3" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="SO9-9n-W7J"/>
                                     <constraint firstItem="m25-Hz-GbH" firstAttribute="height" secondItem="1wF-FX-VTK" secondAttribute="height" multiplier="0.7" id="dT4-RR-IzX"/>
+                                    <constraint firstItem="bu3-CV-1yO" firstAttribute="height" secondItem="DXU-ey-I7z" secondAttribute="height" id="ecf-3z-l9x"/>
+                                    <constraint firstItem="1zB-D0-3ga" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="iFR-oO-s8o"/>
+                                    <constraint firstItem="PeF-mM-pjo" firstAttribute="leading" secondItem="DXU-ey-I7z" secondAttribute="trailing" constant="8" id="iqU-vt-8Xe"/>
                                     <constraint firstItem="m25-Hz-GbH" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="jQC-t5-RDv"/>
-                                    <constraint firstItem="tVA-26-LeQ" firstAttribute="centerY" secondItem="1wF-FX-VTK" secondAttribute="centerY" id="mxb-Yr-4ra"/>
+                                    <constraint firstItem="DXU-ey-I7z" firstAttribute="centerX" secondItem="1wF-FX-VTK" secondAttribute="centerX" id="k7Q-mW-5TI"/>
+                                    <constraint firstItem="1zB-D0-3ga" firstAttribute="height" secondItem="PeF-mM-pjo" secondAttribute="height" id="mTE-nI-cnB"/>
                                     <constraint firstItem="m25-Hz-GbH" firstAttribute="centerX" secondItem="1wF-FX-VTK" secondAttribute="centerX" multiplier="1.9" id="nzm-R9-lDb"/>
+                                    <constraint firstItem="DXU-ey-I7z" firstAttribute="leading" secondItem="uIY-5c-Rd3" secondAttribute="trailing" constant="8" id="o4Y-Pg-zth"/>
+                                    <constraint firstItem="uIY-5c-Rd3" firstAttribute="height" secondItem="DXU-ey-I7z" secondAttribute="height" id="pfK-rJ-rMq"/>
+                                    <constraint firstItem="1zB-D0-3ga" firstAttribute="leading" secondItem="PeF-mM-pjo" secondAttribute="trailing" constant="16" id="vaH-hy-Qlk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -429,12 +451,11 @@
                     </view>
                     <connections>
                         <outlet property="btnHelp" destination="m25-Hz-GbH" id="hVU-Jo-8ha"/>
-                        <outlet property="lblTitolo" destination="tVA-26-LeQ" id="8rI-5m-yC7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.2265625" y="32.8125"/>
+            <point key="canvasLocation" x="32.064421669106878" y="32.8125"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="EUo-C2-LKr">
@@ -509,6 +530,8 @@
                     </view>
                     <connections>
                         <outlet property="handImageView" destination="8DR-ZH-1h1" id="DVa-eo-Smb"/>
+                        <outlet property="lblDescrizione" destination="3z8-d9-ueV" id="Foi-Nw-xF8"/>
+                        <outlet property="lblTitolo" destination="hHX-oh-V1e" id="0xB-1k-xkf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFu-J7-ioO" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -56,6 +56,9 @@ class HelpViewController: UIViewController {
 
     @IBOutlet weak var handImageView: UIImageView!
     
+    @IBOutlet weak var lblTitolo: UILabel!
+    @IBOutlet weak var lblDescrizione: UILabel!
+    
     var numView = [DragNumberImageView]()
     
     var padre : BarbieroBazan?

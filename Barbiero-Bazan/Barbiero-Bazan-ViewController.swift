@@ -109,9 +109,13 @@ class DragNumberImageView : UIImageView {
             }){ (true) in
                 self.isPickedUp = false
                 self.currentView?.isHidden = false
-                BarbieroBazan.instance?.CheckIfAllDragged()
+                self.AnimationEnded()
             }
         }
+    }
+    
+    func AnimationEnded() {
+        BarbieroBazan.instance?.CheckIfAllDragged()
     }
     
     func Duplica() -> DragNumberImageView {
@@ -144,9 +148,6 @@ class BarbieroBazan: UIViewController {
     
     /// view of the `HelpViewController`
     var helpView : HelpViewController?
-    
-    /// title label
-    @IBOutlet weak var lblTitolo: UILabel!
     
     /// help button
     @IBOutlet weak var btnHelp: UIButton!
@@ -197,15 +198,20 @@ class BarbieroBazan: UIViewController {
      */
     func openHelpView() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "help") as? HelpViewController {
-            lblTitolo.isHidden = true
             btnHelp.isHidden = true
             addChild(controller)
             helpView = controller
             self.view.addSubview(controller.view)
-            controller.addNumView(numView: numbersViews[0].Duplica())
-            controller.addNumView(numView: numbersViews[1].Duplica())
-            controller.addNumView(numView: numbersViews[2].Duplica())
-            controller.addNumView(numView: numbersViews[3].Duplica())
+            for i in 0...3 {
+                let numView = numbersViews[i]
+                controller.addNumView(numView: numView.Duplica())
+                numView.removeFromSuperview()
+            }
+            numbersViews.removeAll()
+//            controller.addNumView(numView: numbersViews[0].Duplica())
+//            controller.addNumView(numView: numbersViews[1].Duplica())
+//            controller.addNumView(numView: numbersViews[2].Duplica())
+//            controller.addNumView(numView: numbersViews[3].Duplica())
             for v in controller.numView {
                 v.image = UIImage(named: "\(v.num)")
             }
@@ -259,7 +265,6 @@ class BarbieroBazan: UIViewController {
      */
     func DismissHelpView() {
         btnHelp.isHidden = false
-        lblTitolo.isHidden = false
         helpView?.working = false
         helpView?.view.removeFromSuperview()
         GenerateNumbersViews()
@@ -402,11 +407,12 @@ class BarbieroBazan: UIViewController {
         let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.\nProva a ricontrollare se hai messo i numeri nella posizione giusta.", preferredStyle: .alert)
         let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
             print("Sbagliato")
+            // FIXME: togliere questo e ricominciare il gioco da capo come reset
             for i in 0...3 {
                 let view = self.numbersViews[i]
                 view.AnimatePickUp()
                 view.Move(toView: view.originView!, withDuration: 1, withDelay: 0)
-                view.AnimateDrop()
+                //view.AnimateDrop()
             }
         }
         dialogMessage.addAction(yeah)
