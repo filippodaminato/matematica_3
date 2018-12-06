@@ -103,6 +103,11 @@ class HelpViewController: UIViewController {
         let per = Percorso.mano[currentAnimationIndex]
         currentAnimationIndex += 1
         
+        if let v = per.trasporta {
+            self.view.bringSubviewToFront(v)
+        }
+        self.view.bringSubviewToFront(handImageView)
+        
         UIView.animate(withDuration: per.passaggio.tempo, delay: 0.5, animations: {
             if let c = per.passaggio.destinationCenter {
                 self.handImageView.center = c

@@ -68,7 +68,7 @@ class DragNumberImageView : UIImageView {
     }
     
     func UpdateColor() {
-        self.layer.borderWidth = 3
+        self.layer.borderWidth = 5
         self.layer.borderColor = borderColor.cgColor
     }
     
@@ -78,7 +78,7 @@ class DragNumberImageView : UIImageView {
     
     func Move(toView view: UIView, withDuration dur: Double, withDelay del: Double) {
         currentView = view
-        UIView.animate(withDuration: dur, delay: del, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
+        UIView.animate(withDuration: dur, delay: del, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [],  animations: {
             self.center = view.GetCenterInRootView(rootView: self.rootView!)
         }) { (true) in
             self.AnimateDrop()
@@ -109,6 +109,7 @@ class DragNumberImageView : UIImageView {
             }){ (true) in
                 self.isPickedUp = false
                 self.currentView?.isHidden = false
+                BarbieroBazan.instance?.CheckIfAllDragged()
             }
         }
     }
@@ -119,6 +120,8 @@ class DragNumberImageView : UIImageView {
 }
 
 class BarbieroBazan: UIViewController {
+    
+    static var instance : BarbieroBazan? = nil
     
     /// array of the origin views.
     var originViews = [UIView]()
@@ -150,6 +153,7 @@ class BarbieroBazan: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        BarbieroBazan.instance = self
         UpdateContainerViewArrays()
     }
     
@@ -327,7 +331,7 @@ class BarbieroBazan: UIViewController {
             }
             if recognizer.state == .ended {
                 CheckDestination(view: view)
-                CheckIfAllDragged()
+                //CheckIfAllDragged()
             }
         }
         recognizer.setTranslation(CGPoint.zero, in: self.view)
@@ -399,7 +403,10 @@ class BarbieroBazan: UIViewController {
         let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
             print("Sbagliato")
             for i in 0...3 {
-                self.numbersViews[i].Move(toView: self.numbersViews[i].originView!, withDuration: 1, withDelay: 0)
+                let view = self.numbersViews[i]
+                view.AnimatePickUp()
+                view.Move(toView: view.originView!, withDuration: 1, withDelay: 0)
+                view.AnimateDrop()
             }
         }
         dialogMessage.addAction(yeah)
