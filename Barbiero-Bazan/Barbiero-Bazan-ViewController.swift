@@ -8,124 +8,12 @@
 
 import UIKit
 
-extension UIView {
-    func GetFrameInRootView(rootView: UIView) -> CGRect{
-        let newOrigin = GetOriginInRootView(rootView: rootView)
-        return CGRect(x: newOrigin.x, y: newOrigin.y, width: self.frame.width, height: self.frame.height)
-    }
-    
-    func GetOriginInRootView(rootView: UIView) -> CGPoint{
-        return rootView.convert(self.frame.origin, from: self.superview)
-    }
-    
-    func GetCenterInRootView(rootView: UIView) -> CGPoint{
-        return rootView.convert(self.center, from: self.superview)
-    }
-}
-
-class DragNumberImageView : UIImageView {
-    
-    var num : Int = 0
-    
-    var rootView : UIView? = nil
-    
-    // view di origine del drag
-    var originView : UIView? = nil
-    
-    var destinationView : UIView? = nil
-    
-    var currentView : UIView? = nil
-    
-    var isPickedUp = false
-    
-    var borderColor : UIColor = UIColor.white
-    
-    init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int) {
-        super.init(frame: .zero)
-        rootView = root
-        originView = origin
-        destinationView = dest
-        num = n
-        rootView!.addSubview(self)
-        rootView!.bringSubviewToFront(self)
-        self.frame = originView!.frame
-        isPickedUp = true
-        self.contentMode = .scaleAspectFill
-        self.autoresizesSubviews = true
-        self.layer.cornerRadius = 40
-        self.clipsToBounds = true
-        self.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-        Move(toView: originView!, withDuration: 0, withDelay: 0)
-    }
-    
-    convenience init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int, color c: UIColor) {
-        self.init(originView: origin, destinationView: dest, rootView: root, value: n)
-        borderColor = c
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    func UpdateColor() {
-        self.layer.borderWidth = 5
-        self.layer.borderColor = borderColor.cgColor
-    }
-    
-    func ClearColor() {
-        self.layer.borderColor = UIColor.white.cgColor
-    }
-    
-    func Move(toView view: UIView, withDuration dur: Double, withDelay del: Double) {
-        currentView = view
-        UIView.animate(withDuration: dur, delay: del, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [],  animations: {
-            self.center = view.GetCenterInRootView(rootView: self.rootView!)
-        }) { (true) in
-            self.AnimateDrop()
-        }
-    }
-    
-    func AnimatePickUp() {
-        if !isPickedUp {
-            self.transform = CGAffineTransform(scaleX: 0.8, y: 1.2)
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
-                self.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-                self.UpdateColor()
-            }) { (true) in
-                self.isPickedUp = true
-            }
-        }
-    }
-    
-    func AnimateDrop() {
-        if isPickedUp {
-            self.transform = CGAffineTransform(scaleX: 1.2, y: 1.8)
-            currentView?.isHidden = true
-            if currentView == originView {
-                ClearColor()
-            }
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
-                self.transform = .identity
-            }){ (true) in
-                self.isPickedUp = false
-                self.currentView?.isHidden = false
-                self.AnimationEnded()
-            }
-        }
-    }
-    
-    func AnimationEnded() {
-        BarbieroBazan.instance?.CheckIfAllDragged()
-    }
-    
-    func Duplica() -> DragNumberImageView {
-        return DragNumberImageView(originView: originView!, destinationView: destinationView!, rootView: rootView!, value: num)
-    }
-}
-
 class BarbieroBazan: UIViewController {
     
     static var instance : BarbieroBazan? = nil
+    
+    var gameEnded = false
+    var helpViewOpen = false
     
     /// array of the origin views.
     var originViews = [UIView]()
@@ -152,14 +40,22 @@ class BarbieroBazan: UIViewController {
     /// help button
     @IBOutlet weak var btnHelp: UIButton!
     
+    @IBOutlet weak var btnReset: UIButton!
+    
+    @IBOutlet weak var topView: UIView!
+    
+    @IBOutlet weak var wrongImageView: UIImageView!
+    @IBOutlet weak var rightImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         BarbieroBazan.instance = self
+        wrongImageView.image = UIImage(cgImage: UIImage(named: "Sbagliato")!.cgImage!, scale: CGFloat(1.0), orientation: .down)
         UpdateContainerViewArrays()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        GenerateNumbersViews()
+        Reset()
         if checkFirstTimeOpening() {
             openHelpView()
         }
@@ -198,7 +94,8 @@ class BarbieroBazan: UIViewController {
      */
     func openHelpView() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "help") as? HelpViewController {
-            btnHelp.isHidden = true
+            helpViewOpen = true
+            topView.isHidden = true
             addChild(controller)
             helpView = controller
             self.view.addSubview(controller.view)
@@ -208,10 +105,6 @@ class BarbieroBazan: UIViewController {
                 numView.removeFromSuperview()
             }
             numbersViews.removeAll()
-//            controller.addNumView(numView: numbersViews[0].Duplica())
-//            controller.addNumView(numView: numbersViews[1].Duplica())
-//            controller.addNumView(numView: numbersViews[2].Duplica())
-//            controller.addNumView(numView: numbersViews[3].Duplica())
             for v in controller.numView {
                 v.image = UIImage(named: "\(v.num)")
             }
@@ -244,8 +137,8 @@ class BarbieroBazan: UIViewController {
         - c: is the current instance of `HelpViewController`
      */
     private func UpdatePercorsiNumberView(index i : Int, controller c : HelpViewController) {
-        let originCenter = c.numView[i].originView!.GetCenterInRootView(rootView: self.view)
-        let destinationCenter = c.numView[i].destinationView!.GetCenterInRootView(rootView: self.view)
+        let originCenter = c.numView[i].originView.GetCenterInRootView(rootView: self.view)
+        let destinationCenter = c.numView[i].destinationView.GetCenterInRootView(rootView: self.view)
         // sposta mano su numero
         var tempo = 1.5
         Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: originCenter, tempo: tempo), stato: .Aperta, trasporta: nil))
@@ -264,10 +157,11 @@ class BarbieroBazan: UIViewController {
      Closes the `helpView`
      */
     func DismissHelpView() {
-        btnHelp.isHidden = false
+        topView.isHidden = false
+        helpViewOpen = false
         helpView?.working = false
         helpView?.view.removeFromSuperview()
-        GenerateNumbersViews()
+        Reset()
     }
     
     /**
@@ -324,6 +218,9 @@ class BarbieroBazan: UIViewController {
     }
     
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
+        if gameEnded {
+            return
+        }
         if let view = recognizer.view as? DragNumberImageView{
             view.superview?.bringSubviewToFront(view)
             if recognizer.state == .began {
@@ -349,13 +246,7 @@ class BarbieroBazan: UIViewController {
             }
         }
         // tutti posizionati
-        // check vittoria
-        if CheckCorrectPositions() {
-            Win()
-        }
-        else {
-            Loose()
-        }
+        EndGame(vinto: CheckCorrectPositions())
     }
     
     // check if destination view is already occupied
@@ -364,7 +255,7 @@ class BarbieroBazan: UIViewController {
             if destV.GetFrameInRootView(rootView: self.view).contains(view.center) {
                 for dragV in numbersViews {
                     if dragV.currentView == destV {
-                        view.Move(toView: view.originView!, withDuration: 0.5, withDelay: 0)
+                        view.Move(toView: view.originView, withDuration: 0.5, withDelay: 0)
                         return
                     }
                 }
@@ -372,7 +263,7 @@ class BarbieroBazan: UIViewController {
                 return
             }
         }
-        view.Move(toView: view.originView!, withDuration: 0.5, withDelay: 0)
+        view.Move(toView: view.originView, withDuration: 0.5, withDelay: 0)
     }
     
     func NewPanGestureRecognizer() -> UIPanGestureRecognizer {
@@ -384,7 +275,7 @@ class BarbieroBazan: UIViewController {
     
     func CheckCorrectPositions() -> Bool {
         for v in numbersViews {
-            if (v.currentView! != v.destinationView!) {
+            if (v.currentView! != v.destinationView) {
                 return false
             }
         }
@@ -393,10 +284,10 @@ class BarbieroBazan: UIViewController {
     
     func Win() {
         //Statistiche.aggiungiGiusto(forKey: EsercizioKey.Uno)
+        // DO WIN ANIMATION AND RIGHT HAND ANIMATION
         let dialogMessage = UIAlertController(title: "HAI VINTO!", message: "", preferredStyle: .alert)
         let yeah = UIAlertAction(title: "Ricominciamo!", style: .cancel) { (action) -> Void in
             print("Vinto")
-            self.GenerateNumbersViews()
         }
         dialogMessage.addAction(yeah)
         self.present(dialogMessage, animated: true, completion: nil)
@@ -404,47 +295,38 @@ class BarbieroBazan: UIViewController {
     
     func Loose() {
         //Statistiche.aggiungiSbagliato(forKey: EsercizioKey.Uno)
-        let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.\nProva a ricontrollare se hai messo i numeri nella posizione giusta.", preferredStyle: .alert)
+        // DO LOOSE ANIMATION AND LEFT HAND ANIMATION
+        let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.", preferredStyle: .alert)
         let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
             print("Sbagliato")
-            // FIXME: togliere questo e ricominciare il gioco da capo come reset
-            for i in 0...3 {
-                let view = self.numbersViews[i]
-                view.AnimatePickUp()
-                view.Move(toView: view.originView!, withDuration: 1, withDelay: 0)
-                //view.AnimateDrop()
-            }
         }
         dialogMessage.addAction(yeah)
         self.present(dialogMessage, animated: true, completion: nil)
     }
     
-    @IBAction func btnVerifica(_ sender: Any) {
-        let vinto = CheckCorrectPositions()
+    func Reset() {
+        btnReset.isHidden = true
+        gameEnded = false
+        btnHelp.isHidden = false
+        btnHelp.setImage(UIImage(named: "Help"), for: .normal)
+        GenerateNumbersViews()
+    }
+    
+    func EndGame(vinto: Bool) {
         if vinto {
             Win()
+            btnHelp.isHidden = true
         }
         else {
             Loose()
+            btnHelp.setImage(UIImage(named: "Idea"), for: .normal)
         }
+        btnReset.isHidden = false
+        gameEnded = true
     }
     
     @IBAction func btnReset(_ sender: Any) {
-        let dialogMessage = UIAlertController(title: "Attenzione", message: "Sei sicuro di voler ricominciare la partita?", preferredStyle: .alert)
-        
-        let si = UIAlertAction(title: "Si", style: .default, handler: { (action) -> Void in
-            print("Si")
-            self.GenerateNumbersViews()
-        })
-        
-        let annulla = UIAlertAction(title: "Annulla", style: .cancel) { (action) -> Void in
-            print("Annullato")
-        }
-        
-        dialogMessage.addAction(si)
-        dialogMessage.addAction(annulla)
-        
-        self.present(dialogMessage, animated: true, completion: nil)
+        Reset()
     }
     
     @IBAction func btnHelpClick(_ sender: Any) {

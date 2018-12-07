@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5975A0421BB0D9A0001E3AA /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5975A0321BB0D9A0001E3AA /* Classes.swift */; };
 		D5F6C29B21A6A21F00F49C31 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C29A21A6A21F00F49C31 /* HelpViewController.swift */; };
 		D5F6C2A121A6C09300F49C31 /* Statistiche.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F6C2A021A6C09300F49C31 /* Statistiche.swift */; };
 		DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5975A0321BB0D9A0001E3AA /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		D5F6C29A21A6A21F00F49C31 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		D5F6C2A021A6C09300F49C31 /* Statistiche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistiche.swift; sourceTree = "<group>"; };
 		DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Barbiero-Bazan-ViewController.swift"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				DB63530121805AE40037A356 /* Barbiero-Bazan.storyboard */,
 				D5F6C29A21A6A21F00F49C31 /* HelpViewController.swift */,
 				DB6352FF21805AAD0037A356 /* Barbiero-Bazan-ViewController.swift */,
+				D5975A0321BB0D9A0001E3AA /* Classes.swift */,
 			);
 			path = "Barbiero-Bazan";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				DB63530021805AAD0037A356 /* Barbiero-Bazan-ViewController.swift in Sources */,
 				D5F6C2A121A6C09300F49C31 /* Statistiche.swift in Sources */,
 				FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */,
+				D5975A0421BB0D9A0001E3AA /* Classes.swift in Sources */,
 				D5F6C29B21A6A21F00F49C31 /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

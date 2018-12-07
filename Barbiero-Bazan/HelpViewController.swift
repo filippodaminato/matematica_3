@@ -8,56 +8,15 @@
 
 import UIKit
 
-enum StatoMano : String {
-    case Aperta = "Hold"
-    case Chiusa = "Drag"
-    case Indice = "Select"
-    case Click = "Click"
-}
-
-class Passaggio {
-    let destinationCenter : CGPoint?
-    let tempo : Double
-    
-    init(destinazione d : CGPoint?, tempo t : Double) {
-        destinationCenter = d
-        tempo = t
-    }
-    
-    init() {
-        destinationCenter = CGPoint.zero
-        tempo = 0
-    }
-}
-
-class PassaggioMano {
-    let passaggio : Passaggio
-    let state : StatoMano
-    let trasporta : DragNumberImageView?
-    
-    init(passaggio p : Passaggio, stato s : StatoMano, trasporta t : DragNumberImageView?) {
-        passaggio = p
-        state = s
-        trasporta = t
-    }
-    
-    init() {
-        passaggio = Passaggio()
-        state = StatoMano.Aperta
-        trasporta = nil
-    }
-}
-
-class Percorso {
-    static var mano = [PassaggioMano]()
-}
-
 class HelpViewController: UIViewController {
 
     @IBOutlet weak var handImageView: UIImageView!
     
     @IBOutlet weak var lblTitolo: UILabel!
     @IBOutlet weak var lblDescrizione: UILabel!
+    
+    let titoloText = ["Come si gioca?", "Soluzione corretta"]
+    let descrizioneText = ["Prendi i numeri e mettili nelle posizioni giuste.", "Così è come avresti dovuto svolgere l'esercizio."]
     
     var numView = [DragNumberImageView]()
     
@@ -70,6 +29,14 @@ class HelpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         handImageView.alpha = 0
+        if BarbieroBazan.instance!.gameEnded {
+            lblTitolo.text = titoloText[1]
+            lblDescrizione.text = descrizioneText[1]
+        }
+        else {
+            lblTitolo.text = titoloText[0]
+            lblDescrizione.text = descrizioneText[0]
+        }
     }
     
     func addNumView(numView v : DragNumberImageView) {
@@ -140,7 +107,7 @@ class HelpViewController: UIViewController {
         }) { (true) in
             self.handImageView.center = self.view.center
             for v in self.numView {
-                v.center = (v.originView?.GetCenterInRootView(rootView: self.padre!.view))!
+                v.center = (v.originView.GetCenterInRootView(rootView: self.padre!.view))
             }
             self.StartAnimation()
         }
