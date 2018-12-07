@@ -31,16 +31,16 @@ enum StatoMano : String {
 }
 
 class Passaggio {
-    let destinationCenter : CGPoint?
+    let destinationView : UIView?
     let tempo : Double
     
-    init(destinazione d : CGPoint?, tempo t : Double) {
-        destinationCenter = d
+    init(destinazione d : UIView?, tempo t : Double) {
+        destinationView = d
         tempo = t
     }
     
     init() {
-        destinationCenter = CGPoint.zero
+        destinationView = UIView()
         tempo = 0
     }
 }
@@ -63,10 +63,6 @@ class PassaggioMano {
     }
 }
 
-class Percorso {
-    static var mano = [PassaggioMano]()
-}
-
 class DragNumberImageView : UIImageView {
     
     var num : Int = 0
@@ -82,7 +78,7 @@ class DragNumberImageView : UIImageView {
     
     var isPickedUp = false
     
-    var borderColor : UIColor = UIColor.white
+    var borderColor = UIColor.white
     
     init(originView origin: UIView, destinationView dest: UIView, rootView root: UIView, value n: Int) {
         super.init(frame: .zero)
@@ -148,6 +144,9 @@ class DragNumberImageView : UIImageView {
             if currentView == originView {
                 ClearColor()
             }
+            else {
+                UpdateColor()
+            }
             UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [],  animations: {
                 self.transform = .identity
             }){ (true) in
@@ -164,11 +163,7 @@ class DragNumberImageView : UIImageView {
         }
     }
     
-    func Duplica() -> DragNumberImageView {
-        return DragNumberImageView(originView: originView, destinationView: destinationView, rootView: rootView, value: num)
-    }
-    
-    func FullDuplicate() -> DragNumberImageView {
+    func Duplicate() -> DragNumberImageView {
         return DragNumberImageView(originView: originView, destinationView: destinationView, rootView: rootView, value: num, color: borderColor)
     }
 }

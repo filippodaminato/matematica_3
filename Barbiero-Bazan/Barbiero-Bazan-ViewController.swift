@@ -99,58 +99,7 @@ class BarbieroBazan: UIViewController {
             addChild(controller)
             helpView = controller
             self.view.addSubview(controller.view)
-            for i in 0...3 {
-                let numView = numbersViews[i]
-                controller.addNumView(numView: numView.Duplica())
-                numView.removeFromSuperview()
-            }
-            numbersViews.removeAll()
-            for v in controller.numView {
-                v.image = UIImage(named: "\(v.num)")
-            }
-            for v in numbersViews {
-                v.image = nil
-            }
-            controller.padre = self
-            UpdatePercorsi(controller: controller)
-            controller.EndAnimation()
         }
-    }
-    
-    /**
-     Creates the path that `helpView.handImageView` has to follow
-     
-     - Parameter c: is the current instance of `HelpViewController`
-     */
-    func UpdatePercorsi(controller c : HelpViewController) {
-        Percorso.mano = [PassaggioMano]()
-        for i in 0...3 {
-            UpdatePercorsiNumberView(index: i, controller: c)
-        }
-    }
-    
-    /**
-     Adds the path that `helpView.handImageView` has to follow to move a number view
-     
-     - Parameters:
-        - i: is the index to get the `DragImageView` instance from `c.numView`
-        - c: is the current instance of `HelpViewController`
-     */
-    private func UpdatePercorsiNumberView(index i : Int, controller c : HelpViewController) {
-        let originCenter = c.numView[i].originView.GetCenterInRootView(rootView: self.view)
-        let destinationCenter = c.numView[i].destinationView.GetCenterInRootView(rootView: self.view)
-        // sposta mano su numero
-        var tempo = 1.5
-        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: originCenter, tempo: tempo), stato: .Aperta, trasporta: nil))
-        // prendi numero
-        tempo = 0.2
-        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Chiusa, trasporta: nil))
-        // sposta numero e mano su destinazione
-        tempo = 1.5
-        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: destinationCenter, tempo: tempo), stato: .Chiusa, trasporta: c.numView[i]))
-        // lascia numero
-        tempo = 0.2
-        Percorso.mano.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Aperta, trasporta: nil))
     }
     
     /**
