@@ -51,7 +51,6 @@ class Mason_Casagrande_Controller: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: Notification.Name.UIKeyboardWillHide, object: nil)
         Vittoria.isHidden = true
-        Azzera.isHidden = true
         Controlla.isHidden = false
         self.AggiungiBottoneKeyboard()
         self.GeneraRandom()
@@ -346,7 +345,6 @@ class Mason_Casagrande_Controller: UIViewController {
             item.text = ""
         }
         self.GeneraRandom()
-        Azzera.isHidden = true
         Controlla.isHidden = false
     }
 
@@ -489,7 +487,6 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
     
     @IBAction func buttonQuizNew(_ sender: Any) {
         CheckButton.isHidden = false
-        buttonQuizNew.isHidden = true
         for item in arrayTextFieldQuizN
         {
             if(item.isEnabled == true)
