@@ -52,9 +52,14 @@ class BarbieroBazan: UIViewController {
         BarbieroBazan.instance = self
         wrongImageView.image = UIImage(cgImage: UIImage(named: "Sbagliato")!.cgImage!, scale: CGFloat(1.0), orientation: .down)
         UpdateContainerViewArrays()
+        if let controller = storyboard?.instantiateViewController(withIdentifier: "menu") as? MenuViewController {
+            addChild(controller)
+            self.view.addSubview(controller.view)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        return;
         Reset()
         if checkFirstTimeOpening() {
             openHelpView()

@@ -9,6 +9,9 @@
 import UIKit
 
 class HelpViewController: UIViewController {
+    
+    let helpTime = 1.5
+    let solutionTime = 1.0
 
     @IBOutlet weak var handImageView: UIImageView!
     
@@ -16,7 +19,7 @@ class HelpViewController: UIViewController {
     @IBOutlet weak var lblDescrizione: UILabel!
     
     let titoloText = ["Come si gioca?", "Soluzione corretta"]
-    let descrizioneText = ["Prendi i numeri e mettili nelle posizioni giuste.", "Così è come l'esercizio avrebbe dovuto essere."]
+    let descrizioneText = ["Prendi i numeri e mettili nelle posizioni giuste.", "Così è come l'esercizio avrebbe dovuto essere svolto."]
     
     var numView = [DragNumberImageView]()
     
@@ -81,13 +84,13 @@ class HelpViewController: UIViewController {
         for i in 0...3 {
             if instance.gameEnded {
                 // creare percorso giusto per sistemare errori
-                let val = UpdatePercorsiGiusti(index: i)
-                if !retry {
+                let val = UpdatePercorsiGiusti(index: i, tempo: solutionTime)
+                if val {
                     retry = val
                 }
             }
             else {
-                UpdatePercorsiNumberView(index: i)
+                UpdatePercorsiNumberView(index: i, tempo: helpTime)
             }
         }
         if retry {
@@ -95,15 +98,16 @@ class HelpViewController: UIViewController {
         }
     }
     
-    func UpdatePercorsiGiusti(index i : Int) -> Bool{
+    func UpdatePercorsiGiusti(index i : Int, tempo t: Double) -> Bool{
+        var val = false
         if numView[i].currentView != numView[i].destinationView {
             // sposta mano su numero
-            var tempo = 1.5
+            var tempo = t
             percorso.append(PassaggioMano(passaggio: Passaggio(destinazione: numView[i].currentView, tempo: tempo), stato: .Aperta, trasporta: nil))
             // prendi numero
             tempo = 0.2
             percorso.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Chiusa, trasporta: nil))
-            tempo = 1.5
+            tempo = t
             // check if destination is free
             if IsDestinationFree(destination: numView[i].destinationView) {
                 // destination free, move there
@@ -114,13 +118,13 @@ class HelpViewController: UIViewController {
                 // destination occupied, return to origin
                 percorso.append(PassaggioMano(passaggio: Passaggio(destinazione: numView[i].originView, tempo: tempo), stato: .Chiusa, trasporta: numView[i]))
                 numView[i].currentView = numView[i].originView
-                return true
+                val = true
             }
             // lascia numero
             tempo = 0.2
             percorso.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Aperta, trasporta: nil))
         }
-        return false
+        return val
     }
     
     /**
@@ -130,15 +134,15 @@ class HelpViewController: UIViewController {
      - i: is the index to get the `DragImageView` instance from `c.numView`
      - c: is the current instance of `HelpViewController`
      */
-    private func UpdatePercorsiNumberView(index i : Int) {
+    private func UpdatePercorsiNumberView(index i : Int, tempo t: Double) {
         // sposta mano su numero
-        var tempo = 1.5
+        var tempo = t
         percorso.append(PassaggioMano(passaggio: Passaggio(destinazione: numView[i].currentView, tempo: tempo), stato: .Aperta, trasporta: nil))
         // prendi numero
         tempo = 0.2
         percorso.append(PassaggioMano(passaggio: Passaggio(destinazione: nil, tempo: tempo), stato: .Chiusa, trasporta: nil))
         // sposta numero e mano su destinazione
-        tempo = 1.5
+        tempo = t
         percorso.append(PassaggioMano(passaggio: Passaggio(destinazione: numView[i].destinationView, tempo: tempo), stato: .Chiusa, trasporta: numView[i]))
         // lascia numero
         tempo = 0.2
