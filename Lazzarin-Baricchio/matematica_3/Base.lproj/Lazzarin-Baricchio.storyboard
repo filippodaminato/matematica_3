@@ -22,7 +22,7 @@
                                 <rect key="frame" x="709.5" y="6" width="2" height="762"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="9bW-OA-yfj" secondAttribute="height" multiplier="1:381" id="TCf-Rc-VIf"/>
+                                    <constraint firstAttribute="width" constant="2" id="d6l-ck-Y6a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -31,29 +31,26 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMg-Tc-8R0" userLabel="ViewStatistiche">
                                 <rect key="frame" x="716" y="66" width="308" height="702"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="STATISTICHE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDe-XV-xRZ">
-                                        <rect key="frame" x="25" y="-0.5" width="258" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATISTICHE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDe-XV-xRZ">
+                                        <rect key="frame" x="25" y="11" width="272.5" height="45"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="mDe-XV-xRZ" secondAttribute="height" multiplier="251:33" id="uZc-7I-oNQ"/>
+                                            <constraint firstAttribute="width" secondItem="mDe-XV-xRZ" secondAttribute="height" multiplier="200:33" id="uZc-7I-oNQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DIVISORI MANCANTI:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUA-wS-GBo">
-                                        <rect key="frame" x="27" y="87.5" width="233" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIVISORI MANCANTI:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUA-wS-GBo">
+                                        <rect key="frame" x="27" y="87.5" width="222" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="rUA-wS-GBo" secondAttribute="height" multiplier="111:20" id="dOi-bo-jbl"/>
+                                            <constraint firstAttribute="width" secondItem="rUA-wS-GBo" secondAttribute="height" multiplier="111:20" id="59U-ZL-Ru5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMM-Dn-UTb">
-                                        <rect key="frame" x="25" y="202.5" width="258" height="46.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="sMM-Dn-UTb" secondAttribute="height" multiplier="251:45" id="4p1-bn-KHx"/>
-                                        </constraints>
+                                        <rect key="frame" x="25" y="204" width="256" height="45"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -62,7 +59,7 @@
                                         <rect key="frame" x="13" y="263" width="282" height="390"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="VuQ-iw-qGv" secondAttribute="height" multiplier="47:65" id="TuI-Gi-t8E"/>
+                                            <constraint firstAttribute="width" secondItem="VuQ-iw-qGv" secondAttribute="height" multiplier="47:65" id="YN9-5b-0x0"/>
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="6Ao-Ls-xlt" customClass="Cella" customModule="matematica_3" customModuleProvider="target">
@@ -133,10 +130,10 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P3-iC-iA1">
-                                        <rect key="frame" x="268" y="91.5" width="20" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P3-iC-iA1">
+                                        <rect key="frame" x="257" y="85" width="19.5" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="2P3-iC-iA1" secondAttribute="height" multiplier="19:33" id="BU2-OV-7IM"/>
+                                            <constraint firstAttribute="width" secondItem="2P3-iC-iA1" secondAttribute="height" multiplier="19:45" id="uKj-1K-ZOx"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
                                         <nil key="textColor"/>
@@ -145,231 +142,216 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.70200479670000004" blue="0.01955704166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="VuQ-iw-qGv" secondAttribute="bottom" constant="49" id="3w9-OH-7mw"/>
-                                    <constraint firstAttribute="trailing" secondItem="sMM-Dn-UTb" secondAttribute="trailing" constant="25" id="7Uw-jf-bjt"/>
-                                    <constraint firstAttribute="trailing" secondItem="VuQ-iw-qGv" secondAttribute="trailing" constant="13" id="SOf-3M-2TQ"/>
-                                    <constraint firstItem="VuQ-iw-qGv" firstAttribute="leading" secondItem="FMg-Tc-8R0" secondAttribute="leading" constant="13" id="deh-MW-SpX"/>
-                                    <constraint firstItem="rUA-wS-GBo" firstAttribute="top" secondItem="mDe-XV-xRZ" secondAttribute="bottom" constant="43" id="hO1-1X-Mhr"/>
-                                    <constraint firstItem="2P3-iC-iA1" firstAttribute="top" secondItem="mDe-XV-xRZ" secondAttribute="bottom" constant="47" id="igq-3j-14i"/>
-                                    <constraint firstItem="VuQ-iw-qGv" firstAttribute="top" secondItem="sMM-Dn-UTb" secondAttribute="bottom" constant="14" id="o2G-3f-Yog"/>
-                                    <constraint firstItem="sMM-Dn-UTb" firstAttribute="leading" secondItem="FMg-Tc-8R0" secondAttribute="leading" constant="25" id="q8g-xC-OF1"/>
-                                    <constraint firstItem="2P3-iC-iA1" firstAttribute="leading" secondItem="rUA-wS-GBo" secondAttribute="trailing" constant="8" id="tOA-I6-HDs"/>
-                                    <constraint firstItem="sMM-Dn-UTb" firstAttribute="top" secondItem="2P3-iC-iA1" secondAttribute="bottom" constant="66" id="xuQ-ut-ygH"/>
+                                    <constraint firstItem="mDe-XV-xRZ" firstAttribute="leading" secondItem="FMg-Tc-8R0" secondAttribute="leading" constant="25" id="0Jj-I1-0aQ"/>
+                                    <constraint firstItem="rUA-wS-GBo" firstAttribute="leading" secondItem="FMg-Tc-8R0" secondAttribute="leading" constant="27" id="3D5-22-4LS"/>
+                                    <constraint firstItem="2P3-iC-iA1" firstAttribute="leading" secondItem="rUA-wS-GBo" secondAttribute="trailing" constant="8" id="5Fq-BD-CxB"/>
+                                    <constraint firstItem="mDe-XV-xRZ" firstAttribute="top" secondItem="FMg-Tc-8R0" secondAttribute="top" constant="11" id="8VL-Rb-CZY"/>
+                                    <constraint firstItem="sMM-Dn-UTb" firstAttribute="top" secondItem="rUA-wS-GBo" secondAttribute="bottom" constant="76.5" id="FRR-nz-ZNZ"/>
+                                    <constraint firstItem="VuQ-iw-qGv" firstAttribute="top" secondItem="sMM-Dn-UTb" secondAttribute="bottom" constant="14" id="HkO-33-jtu"/>
+                                    <constraint firstAttribute="bottom" secondItem="VuQ-iw-qGv" secondAttribute="bottom" constant="49" id="NyS-pd-7Vf"/>
+                                    <constraint firstItem="sMM-Dn-UTb" firstAttribute="leading" secondItem="FMg-Tc-8R0" secondAttribute="leading" constant="25" id="U2q-19-zCz"/>
+                                    <constraint firstItem="VuQ-iw-qGv" firstAttribute="leading" secondItem="FMg-Tc-8R0" secondAttribute="leading" constant="13" id="WTL-E9-01x"/>
+                                    <constraint firstAttribute="trailing" secondItem="2P3-iC-iA1" secondAttribute="trailing" constant="31.5" id="nWl-OS-EdH"/>
+                                    <constraint firstItem="rUA-wS-GBo" firstAttribute="top" secondItem="mDe-XV-xRZ" secondAttribute="bottom" constant="31.5" id="nn1-Wl-TpF"/>
+                                    <constraint firstAttribute="trailing" secondItem="VuQ-iw-qGv" secondAttribute="trailing" constant="13" id="oKd-5t-VEc"/>
+                                    <constraint firstAttribute="trailing" secondItem="sMM-Dn-UTb" secondAttribute="trailing" constant="27" id="w2R-Sj-ZBB"/>
+                                    <constraint firstItem="2P3-iC-iA1" firstAttribute="top" secondItem="mDe-XV-xRZ" secondAttribute="bottom" constant="29" id="zXl-Pv-1BA"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ki-hQ-FNF" userLabel="ViewGioco">
                                 <rect key="frame" x="0.0" y="160" width="702" height="608"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42h-mi-RUn">
-                                        <rect key="frame" x="86" y="27" width="98" height="98"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="erP-Ls-6mh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKX-Iq-AVc">
-                                        <rect key="frame" x="236" y="27" width="98" height="98"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ue2-ru-Uiz">
+                                        <rect key="frame" x="57" y="10" width="588" height="588"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEl-lO-9zW">
+                                                <rect key="frame" x="320" y="20" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="Q4G-uP-XTh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSj-6N-axM">
+                                                <rect key="frame" x="20" y="470" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="MN1-eY-rLQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKX-Iq-AVc">
+                                                <rect key="frame" x="170" y="20" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="OI4-P6-htN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xP-9o-Gz0">
+                                                <rect key="frame" x="320" y="470" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="mLw-hV-EIY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-M2-93e">
+                                                <rect key="frame" x="470" y="470" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="rpq-JP-Udq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42h-mi-RUn">
+                                                <rect key="frame" x="20" y="20" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="erP-Ls-6mh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ia-jS-oUg">
+                                                <rect key="frame" x="320" y="320" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="X28-Cf-E7E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeR-ub-wJb">
+                                                <rect key="frame" x="170" y="470" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="hwG-c2-Agu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-ES-T4Q">
+                                                <rect key="frame" x="320" y="170" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="qgS-vn-dYY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-wJ-5dJ">
+                                                <rect key="frame" x="470" y="320" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="aIA-Hr-3Ki"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btX-RH-4gt">
+                                                <rect key="frame" x="470" y="170" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="AWu-3B-F50"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3o-d6-jA7">
+                                                <rect key="frame" x="20" y="320" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="C1u-lB-wIM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oe-tN-Dfv">
+                                                <rect key="frame" x="20" y="170" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="bZ5-XR-bWV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCi-9e-nhj">
+                                                <rect key="frame" x="470" y="20" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="ZrT-Qq-XDi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwV-5n-c6b">
+                                                <rect key="frame" x="170" y="170" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="yTm-RF-tNq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f98-dl-yAS">
+                                                <rect key="frame" x="170" y="320" width="98" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                                <state key="normal" title="0" backgroundImage="Circle blue.png">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="4Pk-u8-fyc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.70200479670000004" blue="0.01955704166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="PKX-Iq-AVc" secondAttribute="height" multiplier="1:1" id="Gam-1L-EbO"/>
+                                            <constraint firstAttribute="height" constant="588" id="faB-WL-nLA"/>
+                                            <constraint firstAttribute="width" constant="588" id="tH5-ho-ufW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="OI4-P6-htN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEl-lO-9zW">
-                                        <rect key="frame" x="386" y="27" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="HEl-lO-9zW" secondAttribute="height" multiplier="1:1" id="IkG-qB-hCP"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="Q4G-uP-XTh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCi-9e-nhj">
-                                        <rect key="frame" x="536" y="27" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="FCi-9e-nhj" secondAttribute="height" multiplier="1:1" id="D7q-CX-sf0"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="ZrT-Qq-XDi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oe-tN-Dfv">
-                                        <rect key="frame" x="86" y="177" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="2Oe-tN-Dfv" secondAttribute="height" multiplier="1:1" id="GDU-uQ-roz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="bZ5-XR-bWV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwV-5n-c6b">
-                                        <rect key="frame" x="236" y="177" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="QwV-5n-c6b" secondAttribute="height" multiplier="1:1" id="nxA-cK-uUL"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="yTm-RF-tNq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-ES-T4Q">
-                                        <rect key="frame" x="386" y="177" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="CpF-ES-T4Q" secondAttribute="height" multiplier="1:1" id="lIO-Cu-ldR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="qgS-vn-dYY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btX-RH-4gt">
-                                        <rect key="frame" x="536" y="177" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="btX-RH-4gt" secondAttribute="height" multiplier="1:1" id="fbm-36-R82"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="AWu-3B-F50"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3o-d6-jA7">
-                                        <rect key="frame" x="86" y="327" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="z3o-d6-jA7" secondAttribute="height" multiplier="1:1" id="kDK-NS-gMi"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="C1u-lB-wIM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f98-dl-yAS">
-                                        <rect key="frame" x="236" y="327" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="f98-dl-yAS" secondAttribute="height" multiplier="1:1" id="RqD-34-jec"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="4Pk-u8-fyc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ia-jS-oUg">
-                                        <rect key="frame" x="386" y="327" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="3Ia-jS-oUg" secondAttribute="height" multiplier="1:1" id="Ujn-UC-0KB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="X28-Cf-E7E"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-wJ-5dJ">
-                                        <rect key="frame" x="536" y="327" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="2zI-wJ-5dJ" secondAttribute="height" multiplier="1:1" id="yTw-L0-8dc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="aIA-Hr-3Ki"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSj-6N-axM">
-                                        <rect key="frame" x="86" y="477" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="wSj-6N-axM" secondAttribute="height" multiplier="1:1" id="nvw-km-rpO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="MN1-eY-rLQ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeR-ub-wJb">
-                                        <rect key="frame" x="236" y="477" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="CeR-ub-wJb" secondAttribute="height" multiplier="1:1" id="zjB-gH-Dd5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="hwG-c2-Agu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xP-9o-Gz0">
-                                        <rect key="frame" x="386" y="477" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="1xP-9o-Gz0" secondAttribute="height" multiplier="1:1" id="Mf5-8Z-Cdw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="mLw-hV-EIY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-M2-93e">
-                                        <rect key="frame" x="536" y="477" width="98" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="v3H-M2-93e" secondAttribute="height" multiplier="1:1" id="Wif-l2-Wn4"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                        <state key="normal" title="0" backgroundImage="Circle blue.png">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="azioneDivisori:" destination="01J-lp-oVM" eventType="touchUpInside" id="rpq-JP-Udq"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzh-sa-kNo">
-                                        <rect key="frame" x="0.0" y="0.0" width="702" height="608"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="997.5" height="864"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HAI TROVATO TUTTI I DIVISORI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8C-3l-Msb">
-                                                <rect key="frame" x="88.5" y="281.5" width="525" height="45"/>
+                                                <rect key="frame" x="236.5" y="409.5" width="525" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="B8C-3l-Msb" secondAttribute="height" multiplier="35:3" id="GB2-Jt-UYe"/>
                                                 </constraints>
@@ -388,79 +370,44 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.70200479670000004" blue="0.01955704166" alpha="0.75305008559999997" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="f98-dl-yAS" firstAttribute="top" secondItem="QwV-5n-c6b" secondAttribute="bottom" constant="52" id="1rS-hO-qtd"/>
-                                    <constraint firstItem="QwV-5n-c6b" firstAttribute="top" secondItem="PKX-Iq-AVc" secondAttribute="bottom" constant="52" id="AfR-6z-n1x"/>
-                                    <constraint firstItem="1xP-9o-Gz0" firstAttribute="leading" secondItem="CeR-ub-wJb" secondAttribute="trailing" constant="52" id="C3j-qD-rTg"/>
-                                    <constraint firstAttribute="trailing" secondItem="2zI-wJ-5dJ" secondAttribute="trailing" constant="68" id="Cfi-zd-ZV4"/>
-                                    <constraint firstItem="42h-mi-RUn" firstAttribute="top" secondItem="2Ki-hQ-FNF" secondAttribute="top" constant="27" id="EbY-UE-ZHX"/>
-                                    <constraint firstItem="CeR-ub-wJb" firstAttribute="leading" secondItem="wSj-6N-axM" secondAttribute="trailing" constant="52" id="EpH-Cb-EJu"/>
-                                    <constraint firstAttribute="trailing" secondItem="v3H-M2-93e" secondAttribute="trailing" constant="68" id="I3I-ge-Omd"/>
-                                    <constraint firstItem="wSj-6N-axM" firstAttribute="leading" secondItem="2Ki-hQ-FNF" secondAttribute="leading" constant="86" id="IXY-0X-tm2"/>
-                                    <constraint firstItem="CpF-ES-T4Q" firstAttribute="top" secondItem="HEl-lO-9zW" secondAttribute="bottom" constant="52" id="JLh-Oc-qp2"/>
-                                    <constraint firstItem="PKX-Iq-AVc" firstAttribute="top" secondItem="2Ki-hQ-FNF" secondAttribute="top" constant="27" id="Rkn-Ng-YDO"/>
-                                    <constraint firstAttribute="bottom" secondItem="1xP-9o-Gz0" secondAttribute="bottom" constant="33" id="SG7-V4-cKD"/>
-                                    <constraint firstAttribute="bottom" secondItem="CeR-ub-wJb" secondAttribute="bottom" constant="33" id="Tm1-gv-WmI"/>
-                                    <constraint firstItem="PKX-Iq-AVc" firstAttribute="leading" secondItem="42h-mi-RUn" secondAttribute="trailing" constant="52" id="Tp5-6x-Ysp"/>
-                                    <constraint firstAttribute="trailing" secondItem="rzh-sa-kNo" secondAttribute="trailing" id="Vn8-pK-3rj"/>
-                                    <constraint firstItem="wSj-6N-axM" firstAttribute="top" secondItem="z3o-d6-jA7" secondAttribute="bottom" constant="52" id="WZz-Q5-WbC"/>
-                                    <constraint firstAttribute="width" secondItem="2Ki-hQ-FNF" secondAttribute="height" multiplier="351:304" id="X1e-uW-qZc"/>
-                                    <constraint firstAttribute="trailing" secondItem="btX-RH-4gt" secondAttribute="trailing" constant="68" id="Yh2-ZL-AVQ"/>
-                                    <constraint firstItem="z3o-d6-jA7" firstAttribute="leading" secondItem="2Ki-hQ-FNF" secondAttribute="leading" constant="86" id="ZbN-P0-VSM"/>
-                                    <constraint firstItem="42h-mi-RUn" firstAttribute="leading" secondItem="2Ki-hQ-FNF" secondAttribute="leading" constant="86" id="acd-mr-g1e"/>
-                                    <constraint firstItem="btX-RH-4gt" firstAttribute="top" secondItem="FCi-9e-nhj" secondAttribute="bottom" constant="52" id="bFH-Tr-yDj"/>
-                                    <constraint firstItem="2Oe-tN-Dfv" firstAttribute="leading" secondItem="2Ki-hQ-FNF" secondAttribute="leading" constant="86" id="bOF-F5-hJ1"/>
-                                    <constraint firstItem="FCi-9e-nhj" firstAttribute="top" secondItem="2Ki-hQ-FNF" secondAttribute="top" constant="27" id="ba6-Dn-Cnd"/>
-                                    <constraint firstAttribute="trailing" secondItem="FCi-9e-nhj" secondAttribute="trailing" constant="68" id="eQC-R2-KH6"/>
-                                    <constraint firstAttribute="bottom" secondItem="rzh-sa-kNo" secondAttribute="bottom" id="fOQ-Dc-LOv"/>
-                                    <constraint firstItem="3Ia-jS-oUg" firstAttribute="top" secondItem="CpF-ES-T4Q" secondAttribute="bottom" constant="52" id="gvl-BG-2X9"/>
-                                    <constraint firstItem="CpF-ES-T4Q" firstAttribute="leading" secondItem="QwV-5n-c6b" secondAttribute="trailing" constant="52" id="hGB-Y0-s8t"/>
-                                    <constraint firstItem="rzh-sa-kNo" firstAttribute="top" secondItem="2Ki-hQ-FNF" secondAttribute="top" id="haf-Ju-lPz"/>
-                                    <constraint firstItem="btX-RH-4gt" firstAttribute="leading" secondItem="CpF-ES-T4Q" secondAttribute="trailing" constant="52" id="jY6-WM-Ais"/>
-                                    <constraint firstItem="1xP-9o-Gz0" firstAttribute="top" secondItem="3Ia-jS-oUg" secondAttribute="bottom" constant="52" id="jaD-5V-Ie1"/>
-                                    <constraint firstItem="v3H-M2-93e" firstAttribute="leading" secondItem="1xP-9o-Gz0" secondAttribute="trailing" constant="52" id="kwN-NW-l3V"/>
-                                    <constraint firstItem="rzh-sa-kNo" firstAttribute="leading" secondItem="2Ki-hQ-FNF" secondAttribute="leading" id="mp8-Jf-HsG"/>
-                                    <constraint firstItem="v3H-M2-93e" firstAttribute="top" secondItem="2zI-wJ-5dJ" secondAttribute="bottom" constant="52" id="qYm-wb-uY9"/>
-                                    <constraint firstItem="HEl-lO-9zW" firstAttribute="top" secondItem="2Ki-hQ-FNF" secondAttribute="top" constant="27" id="rWe-h6-bLJ"/>
-                                    <constraint firstItem="CeR-ub-wJb" firstAttribute="top" secondItem="f98-dl-yAS" secondAttribute="bottom" constant="52" id="rqc-Za-577"/>
-                                    <constraint firstItem="QwV-5n-c6b" firstAttribute="leading" secondItem="2Oe-tN-Dfv" secondAttribute="trailing" constant="52" id="sF2-WT-0VC"/>
-                                    <constraint firstAttribute="bottom" secondItem="v3H-M2-93e" secondAttribute="bottom" constant="33" id="tGu-Xl-wJ1"/>
-                                    <constraint firstItem="HEl-lO-9zW" firstAttribute="leading" secondItem="PKX-Iq-AVc" secondAttribute="trailing" constant="52" id="uCN-U2-GxZ"/>
-                                    <constraint firstItem="FCi-9e-nhj" firstAttribute="leading" secondItem="HEl-lO-9zW" secondAttribute="trailing" constant="52" id="w3U-AC-bRp"/>
-                                    <constraint firstItem="2zI-wJ-5dJ" firstAttribute="top" secondItem="btX-RH-4gt" secondAttribute="bottom" constant="52" id="w7c-Vk-BLf"/>
-                                    <constraint firstItem="3Ia-jS-oUg" firstAttribute="leading" secondItem="f98-dl-yAS" secondAttribute="trailing" constant="52" id="w9O-I6-Cku"/>
-                                    <constraint firstItem="2zI-wJ-5dJ" firstAttribute="leading" secondItem="3Ia-jS-oUg" secondAttribute="trailing" constant="52" id="wCb-o2-qdb"/>
-                                    <constraint firstItem="f98-dl-yAS" firstAttribute="leading" secondItem="z3o-d6-jA7" secondAttribute="trailing" constant="52" id="zA0-oa-7hS"/>
-                                    <constraint firstAttribute="bottom" secondItem="wSj-6N-axM" secondAttribute="bottom" constant="33" id="zZr-oe-9wE"/>
-                                    <constraint firstItem="2Oe-tN-Dfv" firstAttribute="top" secondItem="42h-mi-RUn" secondAttribute="bottom" constant="52" id="zc3-aZ-4mM"/>
-                                    <constraint firstItem="z3o-d6-jA7" firstAttribute="top" secondItem="2Oe-tN-Dfv" secondAttribute="bottom" constant="52" id="zxO-hP-fpD"/>
+                                    <constraint firstAttribute="width" secondItem="2Ki-hQ-FNF" secondAttribute="height" multiplier="351:304" id="1lc-Pg-Dgm"/>
+                                    <constraint firstItem="ue2-ru-Uiz" firstAttribute="centerX" secondItem="2Ki-hQ-FNF" secondAttribute="centerX" id="G0l-Xx-kRd"/>
+                                    <constraint firstItem="ue2-ru-Uiz" firstAttribute="centerY" secondItem="2Ki-hQ-FNF" secondAttribute="centerY" id="iIH-Bm-jkd"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="rzh-sa-kNo"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLc-yM-EZq" userLabel="ViewIntestazione">
                                 <rect key="frame" x="20" y="45" width="682" height="115"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1C-hd-Ogj">
-                                        <rect key="frame" x="424" y="34" width="19" height="46"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lng-WD-8KC">
+                                        <rect key="frame" x="173" y="14" width="336" height="87"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1C-hd-Ogj">
+                                                <rect key="frame" x="293" y="20" width="19" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TROVA I DIVISORI DI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyY-9f-8Hy">
+                                                <rect key="frame" x="20" y="20" width="251" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.70200479670000004" blue="0.01955704166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="K1C-hd-Ogj" secondAttribute="height" multiplier="19:46" id="rub-7J-551"/>
+                                            <constraint firstAttribute="width" secondItem="lng-WD-8KC" secondAttribute="height" multiplier="166:43" id="ubh-xu-6du"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TROVA I DIVISORI DI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyY-9f-8Hy">
-                                        <rect key="frame" x="151" y="34" width="251" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="kyY-9f-8Hy" secondAttribute="height" multiplier="251:45" id="FzI-8p-0g1"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="28"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54K-EW-Toz">
-                                        <rect key="frame" x="540" y="14" width="85" height="85"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="54K-EW-Toz" secondAttribute="height" multiplier="1:1" id="SJN-ob-89b"/>
-                                        </constraints>
+                                        <rect key="frame" x="540" y="14" width="85" height="87"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
                                         <state key="normal" backgroundImage="riprova.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -472,35 +419,35 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.70200479670000004" blue="0.01955704166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="K1C-hd-Ogj" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="top" constant="34" id="11B-ff-kAG"/>
-                                    <constraint firstItem="kyY-9f-8Hy" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="top" constant="34" id="5RX-8S-UhE"/>
-                                    <constraint firstItem="54K-EW-Toz" firstAttribute="leading" secondItem="K1C-hd-Ogj" secondAttribute="trailing" constant="97" id="IeZ-Q3-hbt"/>
-                                    <constraint firstAttribute="bottom" secondItem="54K-EW-Toz" secondAttribute="bottom" constant="16" id="NEj-A6-CH1"/>
-                                    <constraint firstAttribute="bottom" secondItem="kyY-9f-8Hy" secondAttribute="bottom" constant="36" id="Ses-Q6-234"/>
-                                    <constraint firstItem="kyY-9f-8Hy" firstAttribute="leading" secondItem="eLc-yM-EZq" secondAttribute="leading" constant="151" id="WPU-2Z-uSF"/>
-                                    <constraint firstItem="54K-EW-Toz" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="top" constant="14" id="XCZ-i4-UaA"/>
-                                    <constraint firstAttribute="bottom" secondItem="K1C-hd-Ogj" secondAttribute="bottom" constant="35" id="Zs1-PO-Qwe"/>
-                                    <constraint firstAttribute="trailing" secondItem="54K-EW-Toz" secondAttribute="trailing" constant="57" id="jHa-gM-Bub"/>
-                                    <constraint firstItem="K1C-hd-Ogj" firstAttribute="leading" secondItem="kyY-9f-8Hy" secondAttribute="trailing" constant="22" id="yBg-IB-8fm"/>
-                                    <constraint firstAttribute="width" secondItem="eLc-yM-EZq" secondAttribute="height" multiplier="682:115" id="zNQ-vs-ECY"/>
+                                    <constraint firstItem="lng-WD-8KC" firstAttribute="centerX" secondItem="eLc-yM-EZq" secondAttribute="centerX" id="57Q-98-LeH"/>
+                                    <constraint firstAttribute="trailing" secondItem="54K-EW-Toz" secondAttribute="trailing" constant="57" id="76w-LF-aKw"/>
+                                    <constraint firstItem="lng-WD-8KC" firstAttribute="centerY" secondItem="eLc-yM-EZq" secondAttribute="centerY" id="8fU-tA-Rff"/>
+                                    <constraint firstItem="54K-EW-Toz" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="top" constant="14" id="BCi-BI-2yO"/>
+                                    <constraint firstAttribute="bottom" secondItem="lng-WD-8KC" secondAttribute="bottom" constant="14" id="BJP-MI-Fqv"/>
+                                    <constraint firstItem="54K-EW-Toz" firstAttribute="leading" secondItem="lng-WD-8KC" secondAttribute="trailing" constant="31" id="KTR-yP-hLu"/>
+                                    <constraint firstAttribute="bottom" secondItem="54K-EW-Toz" secondAttribute="bottom" constant="14" id="OLz-Ts-bhA"/>
+                                    <constraint firstAttribute="width" secondItem="eLc-yM-EZq" secondAttribute="height" multiplier="682:115" id="jyW-0I-2zx"/>
+                                    <constraint firstItem="lng-WD-8KC" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="top" constant="14" id="jz1-mr-jJg"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.70200479670000004" blue="0.01955704166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9bW-OA-yfj" firstAttribute="leading" secondItem="2Ki-hQ-FNF" secondAttribute="trailing" constant="7.5" id="1oa-3d-hMH"/>
-                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="B1c-Vp-TEU"/>
-                            <constraint firstItem="2Ki-hQ-FNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Drk-gG-t2p"/>
-                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JEQ-Zl-pZo"/>
-                            <constraint firstItem="eLc-yM-EZq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="TNk-JI-kI8"/>
-                            <constraint firstAttribute="bottom" secondItem="9bW-OA-yfj" secondAttribute="bottom" id="YcD-vr-Wq5"/>
-                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="leading" secondItem="9bW-OA-yfj" secondAttribute="trailing" constant="4.5" id="bQi-LN-5rQ"/>
-                            <constraint firstItem="eLc-yM-EZq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iri-ND-3sh"/>
-                            <constraint firstItem="2Ki-hQ-FNF" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="bottom" id="mlO-GU-VZg"/>
-                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tJ6-XS-mwZ"/>
-                            <constraint firstItem="9bW-OA-yfj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="6" id="w3P-vl-avE"/>
-                            <constraint firstItem="2Ki-hQ-FNF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wtX-1s-l0G"/>
+                            <constraint firstItem="9bW-OA-yfj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="6" id="1z5-pq-ixj"/>
+                            <constraint firstItem="eLc-yM-EZq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="2cx-nY-2Rz"/>
+                            <constraint firstItem="2Ki-hQ-FNF" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="bottom" id="8JL-Xz-1sX"/>
+                            <constraint firstAttribute="bottom" secondItem="9bW-OA-yfj" secondAttribute="bottom" id="AMJ-w5-ekP"/>
+                            <constraint firstItem="2Ki-hQ-FNF" firstAttribute="top" secondItem="eLc-yM-EZq" secondAttribute="bottom" id="ArL-nO-jx0"/>
+                            <constraint firstItem="eLc-yM-EZq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Blv-HJ-FPi"/>
+                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="leading" secondItem="9bW-OA-yfj" secondAttribute="trailing" constant="4.5" id="FYh-By-mzL"/>
+                            <constraint firstItem="9bW-OA-yfj" firstAttribute="leading" secondItem="eLc-yM-EZq" secondAttribute="trailing" constant="7.5" id="V0L-Wr-j3k"/>
+                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="XqU-kQ-fJR"/>
+                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="adH-2L-7KN"/>
+                            <constraint firstItem="2Ki-hQ-FNF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hAx-lh-SRe"/>
+                            <constraint firstItem="FMg-Tc-8R0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rCp-4c-LbJ"/>
+                            <constraint firstItem="9bW-OA-yfj" firstAttribute="leading" secondItem="2Ki-hQ-FNF" secondAttribute="trailing" constant="7.5" id="rfx-c5-VuO"/>
+                            <constraint firstItem="2Ki-hQ-FNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wXQ-f4-6Sj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
