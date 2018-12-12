@@ -192,7 +192,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-AP-LhN">
-                                        <rect key="frame" x="524" y="322" width="145" height="50"/>
+                                        <rect key="frame" x="524" y="332" width="145" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Risorsa 32.png"/>
                                         <connections>
@@ -726,10 +726,6 @@
                                         <rect key="frame" x="673" y="657" width="182" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pannocchia.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKK-1c-3SX">
-                                        <rect key="frame" x="854" y="67" width="137" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pannocchia.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJH-Vt-Adx">
                                         <rect key="frame" x="8" y="122" width="137" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1031,10 +1027,6 @@
                                         <rect key="frame" x="182" y="667" width="151" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fattoria.png" translatesAutoresizingMaskIntoConstraints="NO" id="HaK-4W-UuY">
-                                        <rect key="frame" x="768" y="252" width="225" height="163"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TRATTORE MOLTIPLICATORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-iq-1RJ">
                                         <rect key="frame" x="346" y="25" width="332" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1050,7 +1042,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-xm-Hvg">
-                                        <rect key="frame" x="308" y="685" width="145" height="50"/>
+                                        <rect key="frame" x="359" y="685" width="145" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Risorsa 31.png"/>
                                         <connections>
@@ -1058,7 +1050,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49H-ss-CUj">
-                                        <rect key="frame" x="499" y="681" width="145" height="50"/>
+                                        <rect key="frame" x="524" y="685" width="145" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Risorsa 32.png"/>
                                         <connections>
@@ -1066,21 +1058,39 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot7-Xf-GJb">
-                                        <rect key="frame" x="322" y="328" width="145" height="50"/>
+                                        <rect key="frame" x="359" y="332" width="145" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Risorsa 31.png"/>
                                         <connections>
                                             <action selector="ControllaRis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o1-ps-rRt"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fattoria.png" translatesAutoresizingMaskIntoConstraints="NO" id="HaK-4W-UuY">
+                                        <rect key="frame" x="780" y="238" width="225" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ERRORI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJv-2V-bsF">
+                                        <rect key="frame" x="210" y="354" width="141" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ERRORI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvQ-Js-emR">
+                                        <rect key="frame" x="871" y="82" width="127" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1024" id="FN3-TC-O9d"/>
                                     <constraint firstAttribute="height" constant="768" id="ozq-sy-KCK"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2q9-lx-ZPo">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2q9-lx-ZPo">
+                                <rect key="frame" x="950" y="0.0" width="74" height="68"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luw-40-IfF">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
@@ -1139,6 +1149,8 @@
                         <outlet property="Azzera" destination="kXE-AP-LhN" id="D4Z-kn-NHj"/>
                         <outlet property="CheckButton" destination="hvU-xm-Hvg" id="oAE-xA-ewY"/>
                         <outlet property="Controlla" destination="ot7-Xf-GJb" id="D1I-RI-WC6"/>
+                        <outlet property="Errories1" destination="lvQ-Js-emR" id="oFN-T4-3ka"/>
+                        <outlet property="Errories2" destination="bJv-2V-bsF" id="vzz-Ki-nJe"/>
                         <outlet property="Stella1" destination="c4Q-yC-TKr" id="oGc-49-mXx"/>
                         <outlet property="Stella2" destination="w34-e2-zYc" id="sVw-eH-vL1"/>
                         <outlet property="Stella3" destination="Ue1-JD-2NA" id="CU6-5X-SQw"/>

@@ -17,6 +17,8 @@ class Mason_Casagrande_Controller: UIViewController {
     @IBOutlet weak var Stella4: UIImageView!
     @IBOutlet weak var Stella5: UIImageView!
     @IBOutlet weak var Vittoria: UIView!
+    @IBOutlet weak var Errories1: UILabel!
+    @IBOutlet weak var Errories2: UILabel!
     
     @IBOutlet var arrayLabelD : Array<UILabel> = []
     @IBOutlet var arrayLabelC : Array<UILabel> = []
@@ -34,6 +36,10 @@ class Mason_Casagrande_Controller: UIViewController {
     var moltiplicatore : [Int] = []
     var result : [Int] = []
     var hiddenkeyboard = true
+    var valorierraties1 = 0
+    var valorierraties2 = 0
+    var salvataggiovalories1 = true
+    var salvataggiovalories2 = true
     var posizioneFinale : [CGPoint] = [
         CGPoint(x: 179, y: 213),
         CGPoint(x: 314, y: 213),
@@ -249,6 +255,10 @@ class Mason_Casagrande_Controller: UIViewController {
                     arrayTextFieldD[cont].layer.borderWidth = 2
                     arrayTextFieldD[cont].layer.borderColor = UIColor.red.cgColor
                     cont = cont + 1
+                    if(salvataggiovalories1 == true)
+                    {
+                        valorierraties1 = valorierraties1 + 1
+                    }
                 }
             }
             else
@@ -276,6 +286,10 @@ class Mason_Casagrande_Controller: UIViewController {
                     arrayTextFieldC[cont].layer.borderWidth = 2
                     arrayTextFieldC[cont].layer.borderColor = UIColor.red.cgColor
                     cont = cont + 1
+                    if(salvataggiovalories1 == true)
+                    {
+                        valorierraties1 = valorierraties1 + 1
+                    }
                 }
             }
             else
@@ -303,6 +317,10 @@ class Mason_Casagrande_Controller: UIViewController {
                     arrayTextFieldM[cont].layer.borderWidth = 2
                     arrayTextFieldM[cont].layer.borderColor = UIColor.red.cgColor
                     cont = cont + 1
+                    if(salvataggiovalories1 == true)
+                    {
+                        valorierraties1 = valorierraties1 + 1
+                    }
                 }
             }
             else
@@ -312,8 +330,15 @@ class Mason_Casagrande_Controller: UIViewController {
                 cont = cont + 1
             }
         }
+        salvataggiovalories1 = false
+        
         if (sbagliato != true)
         {
+            salvataggiovalories1 = true
+            Errories1.text = ("ERRORI: " + (String)(valorierraties1))
+            Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties1)
+            Statistiche.aggiungiSbagliato(.19,num: valorierraties1)
+            valorierraties1 = 0
             Controlla.isHidden = true
             Azzera.isHidden = false
             Vittoria.isHidden = false
@@ -326,6 +351,7 @@ class Mason_Casagrande_Controller: UIViewController {
     }
     
     @IBAction func NuovoRandom(_ sender: Any) {
+        Errories1.text = "ERRORI:"
         for item in arrayTextFieldD
         {
             item.layer.borderWidth = 0
@@ -412,6 +438,10 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
                     item.layer.borderWidth = 2
                     item.layer.borderColor = UIColor.red.cgColor
                     controlla = true
+                    if(salvataggiovalories2 == true)
+                    {
+                        valorierraties2 = valorierraties2 + 1
+                    }
                 }
             }
             }
@@ -441,6 +471,10 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
                     item.layer.borderWidth = 2
                     item.layer.borderColor = UIColor.red.cgColor
                     controlla = true
+                    if(salvataggiovalories2 == true)
+                    {
+                        valorierraties2 = valorierraties2 + 1
+                    }
                 }
             }
             }
@@ -469,13 +503,23 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
                     item.layer.borderWidth = 2
                     item.layer.borderColor = UIColor.red.cgColor
                     controlla = true
+                    if(salvataggiovalories2 == true)
+                    {
+                        valorierraties2 = valorierraties2 + 1
+                    }
                 }
             }
             }
             i = i + 1
         }
+        salvataggiovalories2 = false
         if(controlla != true)
         {
+            salvataggiovalories2 = true
+            Errories2.text = ("ERRORI: " + (String)(valorierraties2))
+            Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties2)
+            Statistiche.aggiungiSbagliato(.19,num: valorierraties2)
+            valorierraties2 = 0
             Vittoria.isHidden = false
             Animazione()
             buttonQuizNew.isHidden = false
@@ -486,6 +530,7 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
     @IBOutlet weak var CheckButton: UIButton!
     
     @IBAction func buttonQuizNew(_ sender: Any) {
+        Errories2.text = "ERRORI:"
         CheckButton.isHidden = false
         for item in arrayTextFieldQuizN
         {
