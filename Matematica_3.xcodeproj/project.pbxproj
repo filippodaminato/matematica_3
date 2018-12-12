@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD06626D21C1B1F700CBBE46 /* 596dbc5eed07ad6118f9990a.png in Resources */ = {isa = PBXBuildFile; fileRef = DD06626C21C1B1F600CBBE46 /* 596dbc5eed07ad6118f9990a.png */; };
+		DD06627121C1B5AE00CBBE46 /* grass-303857_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = DD06627021C1B5AE00CBBE46 /* grass-303857_960_720.png */; };
+		DD06627521C1B96800CBBE46 /* IL-TRATTORE-MOLTIPLICATO-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD06627421C1B96700CBBE46 /* IL-TRATTORE-MOLTIPLICATO-2.png */; };
+		DD06627721C1BA0400CBBE46 /* TROVA-IL-VALORE-MANCANTE.png in Resources */ = {isa = PBXBuildFile; fileRef = DD06627621C1BA0300CBBE46 /* TROVA-IL-VALORE-MANCANTE.png */; };
+		DD06627D21C1BF8F00CBBE46 /* HAI-COMPLETATO-LESERCIZ.png in Resources */ = {isa = PBXBuildFile; fileRef = DD06627C21C1BF8E00CBBE46 /* HAI-COMPLETATO-LESERCIZ.png */; };
 		DD3CE5712170C9F50038F7D8 /* Stella.png in Resources */ = {isa = PBXBuildFile; fileRef = DD3CE5702170C9F40038F7D8 /* Stella.png */; };
 		DD425C2A2170C3B3003517B2 /* Risorsa 32.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C272170C3B0003517B2 /* Risorsa 32.png */; };
 		DD425C2B2170C3B3003517B2 /* Risorsa 30.png in Resources */ = {isa = PBXBuildFile; fileRef = DD425C282170C3B1003517B2 /* Risorsa 30.png */; };
@@ -14,9 +19,7 @@
 		DD52B2B52170F267006F37B3 /* Risorsa 88.png in Resources */ = {isa = PBXBuildFile; fileRef = DD52B2B42170F265006F37B3 /* Risorsa 88.png */; };
 		DDCBEC7E21BDC4E700DDE931 /* maiale.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCBEC7921BDC4DF00DDE931 /* maiale.png */; };
 		DDCBEC7F21BDC4E700DDE931 /* trattore.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCBEC7A21BDC4E100DDE931 /* trattore.png */; };
-		DDCBEC8021BDC4E700DDE931 /* fattoria.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCBEC7B21BDC4E300DDE931 /* fattoria.png */; };
 		DDCBEC8121BDC4E700DDE931 /* pannocchia.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCBEC7C21BDC4E400DDE931 /* pannocchia.png */; };
-		DDCBEC8221BDC4E700DDE931 /* pecora.png in Resources */ = {isa = PBXBuildFile; fileRef = DDCBEC7D21BDC4E600DDE931 /* pecora.png */; };
 		DDCBEC8C21BDCD8900DDE931 /* verde-claro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDCBEC8B21BDCD8700DDE931 /* verde-claro.jpg */; };
 		FAA9DBDF20A6CA57002B3F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */; };
 		FAA9DBE120A6CA57002B3F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9DBE020A6CA57002B3F36 /* ViewController.swift */; };
@@ -47,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD06626C21C1B1F600CBBE46 /* 596dbc5eed07ad6118f9990a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 596dbc5eed07ad6118f9990a.png; sourceTree = "<group>"; };
+		DD06627021C1B5AE00CBBE46 /* grass-303857_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grass-303857_960_720.png"; sourceTree = "<group>"; };
+		DD06627421C1B96700CBBE46 /* IL-TRATTORE-MOLTIPLICATO-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IL-TRATTORE-MOLTIPLICATO-2.png"; sourceTree = "<group>"; };
+		DD06627621C1BA0300CBBE46 /* TROVA-IL-VALORE-MANCANTE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TROVA-IL-VALORE-MANCANTE.png"; sourceTree = "<group>"; };
+		DD06627C21C1BF8E00CBBE46 /* HAI-COMPLETATO-LESERCIZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HAI-COMPLETATO-LESERCIZ.png"; sourceTree = "<group>"; };
 		DD3CE5702170C9F40038F7D8 /* Stella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stella.png; sourceTree = "<group>"; };
 		DD425C272170C3B0003517B2 /* Risorsa 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 32.png"; sourceTree = "<group>"; };
 		DD425C282170C3B1003517B2 /* Risorsa 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 30.png"; sourceTree = "<group>"; };
@@ -54,9 +62,7 @@
 		DD52B2B42170F265006F37B3 /* Risorsa 88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Risorsa 88.png"; sourceTree = "<group>"; };
 		DDCBEC7921BDC4DF00DDE931 /* maiale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maiale.png; sourceTree = "<group>"; };
 		DDCBEC7A21BDC4E100DDE931 /* trattore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trattore.png; sourceTree = "<group>"; };
-		DDCBEC7B21BDC4E300DDE931 /* fattoria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fattoria.png; sourceTree = "<group>"; };
 		DDCBEC7C21BDC4E400DDE931 /* pannocchia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pannocchia.png; sourceTree = "<group>"; };
-		DDCBEC7D21BDC4E600DDE931 /* pecora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pecora.png; sourceTree = "<group>"; };
 		DDCBEC8B21BDCD8700DDE931 /* verde-claro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "verde-claro.jpg"; sourceTree = "<group>"; };
 		FAA9DBDB20A6CA57002B3F36 /* matematica_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematica_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9DBDE20A6CA57002B3F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,17 +161,20 @@
 		FACF193720AFFD880083D028 /* Mason-Casagrande */ = {
 			isa = PBXGroup;
 			children = (
+				DD06627C21C1BF8E00CBBE46 /* HAI-COMPLETATO-LESERCIZ.png */,
+				DD06627421C1B96700CBBE46 /* IL-TRATTORE-MOLTIPLICATO-2.png */,
+				DD06627621C1BA0300CBBE46 /* TROVA-IL-VALORE-MANCANTE.png */,
 				DDCBEC8B21BDCD8700DDE931 /* verde-claro.jpg */,
-				DDCBEC7B21BDC4E300DDE931 /* fattoria.png */,
 				DDCBEC7921BDC4DF00DDE931 /* maiale.png */,
 				DDCBEC7C21BDC4E400DDE931 /* pannocchia.png */,
-				DDCBEC7D21BDC4E600DDE931 /* pecora.png */,
 				DDCBEC7A21BDC4E100DDE931 /* trattore.png */,
 				DD3CE5702170C9F40038F7D8 /* Stella.png */,
 				DD425C282170C3B1003517B2 /* Risorsa 30.png */,
 				DD425C292170C3B2003517B2 /* Risorsa 31.png */,
 				DD425C272170C3B0003517B2 /* Risorsa 32.png */,
 				DD52B2B42170F265006F37B3 /* Risorsa 88.png */,
+				DD06626C21C1B1F600CBBE46 /* 596dbc5eed07ad6118f9990a.png */,
+				DD06627021C1B5AE00CBBE46 /* grass-303857_960_720.png */,
 				FACF195020AFFF3D0083D028 /* Mason-Casagrande.storyboard */,
 				FACF194120AFFE5A0083D028 /* Mason-Casagrande_Controller.swift */,
 			);
@@ -277,13 +286,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDCBEC7F21BDC4E700DDE931 /* trattore.png in Resources */,
+				DD06627121C1B5AE00CBBE46 /* grass-303857_960_720.png in Resources */,
 				FACF195220AFFF3D0083D028 /* Mason-Casagrande.storyboard in Resources */,
 				DD3CE5712170C9F50038F7D8 /* Stella.png in Resources */,
+				DD06627D21C1BF8F00CBBE46 /* HAI-COMPLETATO-LESERCIZ.png in Resources */,
 				FAA9DBE920A6CA58002B3F36 /* LaunchScreen.storyboard in Resources */,
-				DDCBEC8221BDC4E700DDE931 /* pecora.png in Resources */,
 				DDCBEC8C21BDCD8900DDE931 /* verde-claro.jpg in Resources */,
+				DD06627721C1BA0400CBBE46 /* TROVA-IL-VALORE-MANCANTE.png in Resources */,
 				FAA9DBE620A6CA58002B3F36 /* Assets.xcassets in Resources */,
-				DDCBEC8021BDC4E700DDE931 /* fattoria.png in Resources */,
+				DD06627521C1B96800CBBE46 /* IL-TRATTORE-MOLTIPLICATO-2.png in Resources */,
+				DD06626D21C1B1F700CBBE46 /* 596dbc5eed07ad6118f9990a.png in Resources */,
 				DDCBEC8121BDC4E700DDE931 /* pannocchia.png in Resources */,
 				DDCBEC7E21BDC4E700DDE931 /* maiale.png in Resources */,
 				DD425C2C2170C3B3003517B2 /* Risorsa 31.png in Resources */,

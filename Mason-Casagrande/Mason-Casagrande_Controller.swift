@@ -336,8 +336,8 @@ class Mason_Casagrande_Controller: UIViewController {
         {
             salvataggiovalories1 = true
             Errories1.text = ("ERRORI: " + (String)(valorierraties1))
-            Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties1)
-            Statistiche.aggiungiSbagliato(.19,num: valorierraties1)
+            //Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties1)
+            //Statistiche.aggiungiSbagliato(.19,num: valorierraties1)
             valorierraties1 = 0
             Controlla.isHidden = true
             Azzera.isHidden = false
@@ -517,8 +517,8 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
         {
             salvataggiovalories2 = true
             Errories2.text = ("ERRORI: " + (String)(valorierraties2))
-            Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties2)
-            Statistiche.aggiungiSbagliato(.19,num: valorierraties2)
+            //Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties2)
+            //Statistiche.aggiungiSbagliato(.19,num: valorierraties2)
             valorierraties2 = 0
             Vittoria.isHidden = false
             Animazione()
