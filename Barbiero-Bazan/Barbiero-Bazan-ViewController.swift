@@ -14,6 +14,17 @@ class BarbieroBazan: UIViewController {
     
     var gameEnded = false
     var helpViewOpen = false
+    var allenamento = false
+    var maxNumTentativi = 2
+    var tentativi = 0
+    
+    var giusti = 0
+    var sbagliati = 0
+    
+    var defaultGameTime = 120
+    var gameTime = 0
+    
+    var timer : Timer? = nil
     
     /// array of the origin views.
     var originViews = [UIView]()
@@ -37,6 +48,8 @@ class BarbieroBazan: UIViewController {
     /// view of the `HelpViewController`
     var helpView : HelpViewController?
     
+    var menuView : MenuViewController?
+    
     /// help button
     @IBOutlet weak var btnHelp: UIButton!
     
@@ -47,28 +60,34 @@ class BarbieroBazan: UIViewController {
     @IBOutlet weak var wrongImageView: UIImageView!
     @IBOutlet weak var rightImageView: UIImageView!
     
+    @IBOutlet weak var lblTimer: UILabel!
+    @IBOutlet weak var lblSbagliati: UILabel!
+    @IBOutlet weak var lblGiusti: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         BarbieroBazan.instance = self
         wrongImageView.image = UIImage(cgImage: UIImage(named: "Sbagliato")!.cgImage!, scale: CGFloat(1.0), orientation: .down)
         UpdateContainerViewArrays()
-        if let controller = storyboard?.instantiateViewController(withIdentifier: "menu") as? MenuViewController {
-            addChild(controller)
-            self.view.addSubview(controller.view)
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        return;
-        Reset()
-        if checkFirstTimeOpening() {
-            openHelpView()
-        }
-        // FIXME: defaults.set(false, forKey: "FirstTime" + EsercizioKey.Uno.rawValue)
+        OpenMenu()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func OpenMenu() {
+        if menuView == nil {
+            if let controller = storyboard?.instantiateViewController(withIdentifier: "menu") as? MenuViewController {
+                menuView = controller
+            }
+        }
+        if let menu = menuView {
+            addChild(menu)
+            self.view.addSubview(menu.view)
+            //self.view.bringSubviewToFront(menu.view)
+        }
     }
     
     /**
@@ -90,12 +109,12 @@ class BarbieroBazan: UIViewController {
      Closes the exercise.
      */
     @IBAction func backButtonClick(_ sender: Any) {
-        self.dismiss(animated: true, completion: {})
+        timer?.invalidate()
+        OpenMenu()
     }
     
     /**
      Creates an instance of `HelpViewController` and adds it's view on front.
-     
      */
     func openHelpView() {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "help") as? HelpViewController {
@@ -187,7 +206,6 @@ class BarbieroBazan: UIViewController {
             }
             if recognizer.state == .ended {
                 CheckDestination(view: view)
-                //CheckIfAllDragged()
             }
         }
         recognizer.setTranslation(CGPoint.zero, in: self.view)
@@ -195,7 +213,7 @@ class BarbieroBazan: UIViewController {
     
     func CheckIfAllDragged() {
         for v in numbersViews {
-            if v.currentView == v.originView {
+            if v.currentView == v.originView || v.isPickedUp {
                 return
             }
         }
@@ -237,54 +255,204 @@ class BarbieroBazan: UIViewController {
     }
     
     func Win() {
-        //Statistiche.aggiungiGiusto(forKey: EsercizioKey.Uno)
-        // DO WIN ANIMATION AND RIGHT HAND ANIMATION
-        let dialogMessage = UIAlertController(title: "HAI VINTO!", message: "", preferredStyle: .alert)
-        let yeah = UIAlertAction(title: "Ricominciamo!", style: .cancel) { (action) -> Void in
-            print("Vinto")
+        giusti += 1
+        if allenamento {
+            self.view.AnimateTextWithImage(text: "Bravo!", image: UIImage(), time: 2.5)
         }
-        dialogMessage.addAction(yeah)
-        self.present(dialogMessage, animated: true, completion: nil)
+        AnimateWin(0)
+        //Statistiche.aggiungiGiusto(forKey: EsercizioKey.Uno)
+        lblGiusti.text = String(giusti)
     }
     
     func Loose() {
-        //Statistiche.aggiungiSbagliato(forKey: EsercizioKey.Uno)
-        // DO LOOSE ANIMATION AND LEFT HAND ANIMATION
-        let dialogMessage = UIAlertController(title: "Sbagliato", message: "Non preoccuparti, ce la puoi fare.", preferredStyle: .alert)
-        let yeah = UIAlertAction(title: "OK, riproviamo!", style: .cancel) { (action) -> Void in
-            print("Sbagliato")
+        sbagliati += 1
+        if allenamento {
+            self.view.AnimateTextWithImage(text: "Hai sbagliato", image: UIImage(), time: 2.5)
         }
-        dialogMessage.addAction(yeah)
-        self.present(dialogMessage, animated: true, completion: nil)
+        AnimateLoose(0)
+        //Statistiche.aggiungiSbagliato(forKey: EsercizioKey.Uno)
+        lblSbagliati.text = String(sbagliati)
+    }
+    
+    private func AnimateWin(_ i : Int) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.rightImageView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        }) { (true) in
+            UIView.animate(withDuration: 0.3, animations: {
+                self.rightImageView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }) { (true) in
+                if i < 3 {
+                    self.AnimateWin(i + 1)
+                }
+            }
+        }
+        
+    }
+    
+    private func AnimateLoose(_ i : Int) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.wrongImageView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        }) { (true) in
+            UIView.animate(withDuration: 0.3, animations: {
+                self.wrongImageView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }) { (true) in
+                if i < 3 {
+                    self.AnimateLoose(i + 1)
+                }
+            }
+        }
+    }
+    
+    private func AnimateReset(delay d : Double) {
+        UIView.animate(withDuration: 0.5, delay: d, options: [.curveEaseIn, .allowUserInteraction], animations: {
+            self.btnReset.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
+        }) { (true) in
+            UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseOut, .allowUserInteraction], animations: {
+                self.btnReset.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi * 2))
+            }, completion: { (true) in
+                self.btnReset.transform = CGAffineTransform(rotationAngle: 0)
+                if self.gameEnded {
+                    self.AnimateReset(delay: 1)
+                }
+            })
+        }
+    }
+    
+    private func AnimateHelp(delay d : Double) {
+        UIView.animate(withDuration: 0.5, delay: d, options: [.curveEaseIn, .allowUserInteraction], animations: {
+            self.btnHelp.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }) { (true) in
+            UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseOut, .allowUserInteraction], animations: {
+                self.btnHelp.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: { (true) in
+                if self.gameEnded {
+                    self.AnimateHelp(delay: 1)
+                }
+            })
+        }
+    }
+    
+    func dismissMenu(allenamento a : Bool) {
+        if let menu = menuView {
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
+                menu.view.alpha = 0
+            }) { (true) in
+                menu.view.removeFromSuperview()
+                menu.view.alpha = 1
+            }
+        }
+        giusti = 0
+        sbagliati = 0
+        lblGiusti.text = "0"
+        lblSbagliati.text = "0"
+        if a {
+            StartAllenamento()
+        }
+        else {
+            StartSfida()
+        }
+    }
+    
+    func StartAllenamento() {
+        allenamento = true
+        lblTimer.isHidden = true
+        Reset()
+    }
+    
+    func StartSfida() {
+        allenamento = false
+        lblTimer.isHidden = false
+        Reset()
+        StartTimer()
     }
     
     func Reset() {
+        if allenamento {
+            btnHelp.isHidden = false
+            lblTimer.isHidden = true
+            btnHelp.setImage(UIImage(named: "Help"), for: .normal)
+        }
+        else {
+            btnHelp.isHidden = true
+            lblTimer.isHidden = false
+            giusti = 0
+            sbagliati = 0
+            lblGiusti.text = "0"
+            lblSbagliati.text = "0"
+            lblTimer.text = "02:00"
+        }
         btnReset.isHidden = true
         gameEnded = false
-        btnHelp.isHidden = false
-        btnHelp.setImage(UIImage(named: "Help"), for: .normal)
+        tentativi = 0
         GenerateNumbersViews()
+    }
+    
+    func StartTimer() {
+        gameTime = defaultGameTime
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
+    }
+    
+    @objc func handleTimer() {
+        gameTime -= 1
+        lblTimer.text = timeString(time: TimeInterval(gameTime))
+        if gameTime <= 0 {
+            timer?.invalidate()
+            AnimateReset(delay: 3)
+            btnReset.isHidden = false
+            gameEnded = true
+        }
+    }
+    
+    func timeString(time:TimeInterval) -> String {
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format: "%02i:%02i", minutes, seconds)
     }
     
     func EndGame(vinto: Bool) {
         if vinto {
+            tentativi = 0
             Win()
             btnHelp.isHidden = true
+            if !allenamento {
+                Reset()
+                return
+            }
         }
         else {
+            if allenamento {
+                tentativi += 1
+                if tentativi < maxNumTentativi {
+                    self.view.AnimateTextWithImage(text: "Ritenta!", image: UIImage(), time: 1.5)
+                    AnimateLoose(5)
+                    return
+                }
+                btnHelp.setImage(UIImage(named: "Idea"), for: .normal)
+                AnimateHelp(delay: 3)
+            }
+            else {
+                Reset()
+                Loose()
+                return
+            }
             Loose()
-            btnHelp.setImage(UIImage(named: "Idea"), for: .normal)
+            tentativi = 0
         }
+        AnimateReset(delay: 3)
         btnReset.isHidden = false
         gameEnded = true
     }
     
     @IBAction func btnReset(_ sender: Any) {
+        if !allenamento {
+            StartTimer()
+        }
         Reset()
     }
     
     @IBAction func btnHelpClick(_ sender: Any) {
         openHelpView()
     }
+    
 }
 

@@ -14,16 +14,17 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     @IBAction func btnEsciClick(_ sender: Any) {
-        self.dismiss(animated: true, completion: {})
+        BarbieroBazan.instance?.dismiss(animated: true, completion: {})
     }
     
     @IBAction func btnSfidaClick(_ sender: Any) {
+        BarbieroBazan.instance?.dismissMenu(allenamento: false)
     }
     
     @IBAction func btnAllenamentoClick(_ sender: Any) {
+        BarbieroBazan.instance?.dismissMenu(allenamento: true)
     }
 }

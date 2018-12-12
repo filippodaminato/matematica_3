@@ -19,7 +19,7 @@ class HelpViewController: UIViewController {
     @IBOutlet weak var lblDescrizione: UILabel!
     
     let titoloText = ["Come si gioca?", "Soluzione corretta"]
-    let descrizioneText = ["Prendi i numeri e mettili nelle posizioni giuste.", "Così è come l'esercizio avrebbe dovuto essere svolto."]
+    let descrizioneText = ["Prendi i numeri e mettili nelle posizioni giuste.", ""]
     
     var numView = [DragNumberImageView]()
     

@@ -21,6 +21,48 @@ extension UIView {
     func GetCenterInRootView(rootView: UIView) -> CGPoint{
         return rootView.convert(self.center, from: self.superview)
     }
+    
+    func AnimateTextWithImage(text s : String, image img : UIImage, time t : Double) {
+        let view = UIView()
+        view.frame = self.frame
+        view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5)
+        self.addSubview(view)
+        let label = UILabel()
+        label.font = UIFont(name: "Noteworthy", size: 200)
+        label.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height * 0.2)
+        label.center = self.center
+        label.textAlignment = .center
+        label.text = s
+        self.addSubview(label)
+        label.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+        view.alpha = 0
+        label.alpha = 0
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            view.alpha = 1
+            label.alpha = 1
+        }) { (true) in
+            UIView.animate(withDuration: t * (2 / 6), delay: 0, options: .curveEaseOut, animations: {
+                label.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            }) { (true) in
+                UIView.animate(withDuration: t / 3, delay: 0, options: .curveLinear, animations: {
+                    label.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+                }, completion: { (true) in
+                    UIView.animate(withDuration: t * (2 / 6), delay: 0, options: .curveEaseIn, animations: {
+                        label.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
+                        label.alpha = 0
+                    }, completion: { (true) in
+                        UIView.animate(withDuration: 0.2, animations: {
+                            view.alpha = 0
+                        }, completion: { (true) in
+                            label.removeFromSuperview()
+                            view.removeFromSuperview()
+                        })
+                    })
+                })
+            }
+        }
+    }
 }
 
 enum StatoMano : String {
@@ -86,8 +128,6 @@ class DragNumberImageView : UIImageView {
         originView = origin
         destinationView = dest
         num = n
-        rootView.addSubview(self)
-        rootView.bringSubviewToFront(self)
         self.frame = originView.frame
         isPickedUp = true
         self.contentMode = .scaleAspectFill
@@ -95,6 +135,8 @@ class DragNumberImageView : UIImageView {
         self.layer.cornerRadius = 40
         self.clipsToBounds = true
         self.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        rootView.addSubview(self)
+        rootView.bringSubviewToFront(self)
         Move(toView: originView, withDuration: 0, withDelay: 0)
     }
     
