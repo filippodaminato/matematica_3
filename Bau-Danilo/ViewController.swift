@@ -23,7 +23,8 @@ var giafatto = false
 var virgola : UIImageView = UIImageView.init()
 var contErrori=0
 var contGiustiTotali = 0
-
+var width = CGFloat(0)
+var height = CGFloat(0)
 
 func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
     return CGRect(x: x, y: y, width: width, height: height)
@@ -35,38 +36,18 @@ func CGPointMake(_ x: CGFloat, _ y: CGFloat) -> CGPoint {
 
 class ViewController: UIViewController{
     
+    @IBOutlet weak var ErroriView: UIView!
+    @IBOutlet weak var GiusteView: UIView!
+    @IBOutlet weak var sfondoOutlet: UIImageView!
     @IBOutlet weak var lblGiuste: UILabel!
-    @IBOutlet weak var lblLevel: UILabel!
     @IBOutlet weak var lblErrori: UILabel!
-    @IBOutlet weak var lblSpieg: UILabel!
-    @IBOutlet weak var btnChiudiout: UIButton!
-    @IBAction func btnChiudiact(_ sender: Any) {
-        btnChiudiout.isHidden = true
-        lblSpieg.isHidden = true
-    }
-    @IBAction func btnHelp(_ sender: Any) {
-        btnChiudiout.isHidden = false
-        lblSpieg.isHidden = false
-    }
     
     @IBAction func btnCheck(_ sender: Any) {
         
         for i in offset...level + offset - 1{
             if(!risposte[i]){
                 contErrori+=1
-                lblErrori.text = String(contErrori) + "/3"
-                if contErrori == 3{
-                    if level > 1{
-                        level-=1
-                        if(level < 4){
-                            poss-=1
-                        }
-                        else{
-                            poss+=1
-                        }
-                    }
-                    lblErrori.text = "0/3"
-                }
+                lblErrori.text = "Errori: " + String(contErrori)
                 for i in 0...6{
                     risposte[i] = false
                 }
@@ -78,42 +59,36 @@ class ViewController: UIViewController{
             risposte[i] = false
         }
         contGiustiTotali+=1
-        lblGiusti.text = String(contGiustiTotali) + "/5"
-        if(contGiustiTotali==5){
-            contGiustiTotali = 0
-            contErrori = 0
-            lblGiusti.text = "0/5"
-            lblErrori.text = "0/3"
-            level+=1
-            lblLivello.text = String(level - 1)
-            if(level<4){
-                poss+=1
-            }
-            else{
-                poss-=1
-            }
-            if level==8{
-                //codice che fa quando vinci
-            }
-        }
+        lblGiusti.text = "Giuste: " + String(contGiustiTotali)
         DisponiNumeri()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lblGiusti = lblGiuste
-        lblLivello = lblLevel
         
-        var x = 196
+        width = UIScreen.main.bounds.width
+        height = UIScreen.main.bounds.height
+        
+        var numerino = 9
+        
+        if(UIApplication.shared.statusBarOrientation.isLandscape){
+            numerino = 18
+        }
+        
+        
+        var pezzettino = (width * 13 / 100)
+        
+        var x = width / 9
         
         var lab : UIImageView = UIImageView.init()
         
         for i in 0...6{
-            lab = UIImageView(frame: CGRectMake(0, 0, 90, 150))
-            lab.center = CGPointMake(CGFloat(x), 620)
+            lab = UIImageView(frame: CGRectMake(0, 0, width * 9 / 100, height * 11 / 60))
+            lab.center = CGPointMake(CGFloat(x), height * 7 / 10)
             self.view.addSubview(lab)
             ImageViewSimbolini.insert(lab, at: i)
-            x+=120
+            x = x + pezzettino
         }
         DisponiNumeri()
         
@@ -153,6 +128,8 @@ class ViewController: UIViewController{
         giafatto = true
         
         
+        level = Int(arc4random_uniform(UInt32(7))) + 1
+        
         if(level < 5){
             offset = (Int(arc4random_uniform(UInt32(poss))) + 4 - level)
         }
@@ -160,16 +137,15 @@ class ViewController: UIViewController{
             offset = (Int(arc4random_uniform(UInt32(8-level))))
         }
         
-        
         var array : [Int] = [0, 0, 0, 0, 0, 0, 0]
         
         array.insert(Int(arc4random_uniform(9) + 1), at: offset)
-        
-        for i in offset + 1...(level + offset - 1)
-        {
-            array.insert(Int(arc4random_uniform(10)), at: Int(i))
+        if(level != 1){
+            for i in offset + 1...(level + offset - 1)
+            {
+                array.insert(Int(arc4random_uniform(10)), at: Int(i))
+            }
         }
-        
         var a = 0, b = 0, c = ""
         
         for i in 0...99{
@@ -179,35 +155,37 @@ class ViewController: UIViewController{
             arrayChar[a] = arrayChar[b]
             arrayChar[b] = c
         }
-        var x = 256 + 100 * offset
+        
+        var x = width / 4 + width / 10 * CGFloat(offset)
+        
         var cont = 0
         
         for i in offset...offset + level - 1{
             if(i==4){
-                virgola = UIImageView.init(frame: CGRectMake(0, 0, 15, 30))
+                virgola = UIImageView.init(frame: CGRectMake(0, 0, width / 1000 * 13, height / 1000 * 36))
                 virgola.image = UIImage(named: "virgola.png")
-                virgola.center = CGPointMake(CGFloat(Float(x)) - 60, 280)
+                virgola.center = CGPointMake(CGFloat(Float(x)) - width / 97 * 5, height / 3)
                 self.view.addSubview(virgola)
             }
             let label2 = UIImageView.init(image: UIImage(named: "retro.png"))
-            label2.frame = CGRectMake(0, 0, 100, 135)
-            label2.center = CGPointMake(CGFloat(Float(x)), 250)
+            label2.frame = CGRectMake(0, 0, width / 100 * 9, height / 100 * 16)
+            label2.center = CGPointMake(CGFloat(Float(x)), height / 10 * 3)
             self.view.addSubview(label2)
             arrayImm3.insert(label2, at: cont)
             let label1 = UIImageView.init(image: (UIImage(named: String(array[i]) + ".png")))
-            label1.frame = CGRectMake(0, 0, 75, 75)
-            label1.center = CGPointMake(CGFloat(Float(x)), 250)
+            label1.frame = CGRectMake(0, 0, width / 100 * 7, height / 100 * 9)
+            label1.center = CGPointMake(CGFloat(Float(x)), height / 10 * 3)
             self.view.addSubview(label1)
             arrayImm2.insert(label1, at: cont)
             let label = DraggableImageView.init(image: (UIImage(named: String(array[i]) + ".png")))
-            label.frame = CGRectMake(0, 0, 70, 70)
-            label.center = CGPointMake(CGFloat(Float(x)), 250)
+            label.frame = CGRectMake(0, 0, width / 100 * 7, height / 100 * 9)
+            label.center = CGPointMake(CGFloat(Float(x)), height / 10 * 3)
             label.image = UIImage(named: String(array[i]) + ".png")
             label.tag = i
             self.view.addSubview(label)
             arrayImm.insert(label, at: cont)
             cont+=1
-            x+=100
+            x += width / 11
         }
         
         for i in 0...6{
@@ -216,3 +194,4 @@ class ViewController: UIViewController{
         }
     }
 }
+

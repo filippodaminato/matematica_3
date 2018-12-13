@@ -56,29 +56,31 @@ class DraggableImageView : UIImageView {
         
         
         
+        var width = UIScreen.main.bounds.width
+        var height = UIScreen.main.bounds.height
         if nizer.state == UIGestureRecognizerState.ended{
             dragStartPositionRelativeToCenter = nil
             layer.shadowOffset = CGSize(width: 0, height: 3)
             layer.shadowOpacity = 0.5
             layer.shadowRadius = 2
             
-            if(locationInView.y < 696 && locationInView.y > 544){
-                var x = 196
+            if(locationInView.y < height / 100 * 85 && locationInView.y > height / 100 * 61){
+                var x = width / 9
                 for i in 0...6{
-                    if(Int(locationInView.x) >= x - 45 && Int(locationInView.x) <= x + 45){
+                    if(CGFloat(locationInView.x) >= x - width / 1000 * 4 && CGFloat(locationInView.x) <= x + width / 1000 * 4){
                         self.center = CGPoint(x: x,
-                                              y: 644)
+                                              y: height / 100 * 73)
                         if(corresponding(charr : arrayChar[i]) == self.tag){
                             risposte[self.tag] = true
                         }
                         return
                     }
-                    x+=120
+                    x += (width * 13 / 100)
                 }
             }
             
-            self.center = CGPoint(x: 256 + 100 * self.tag,
-                                  y: 250)
+            self.center = CGPoint(x: width / 4 + width / 10 * CGFloat(self.tag),
+                                  y: height / 10 * 3)
             return
         }
         

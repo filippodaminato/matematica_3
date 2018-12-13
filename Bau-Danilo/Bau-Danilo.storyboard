@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_5" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,104 +20,109 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GiocoMatematica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="matematica_32" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sfondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lbc-MS-TRA">
-                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sfondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lbc-MS-TRA">
+                                <rect key="frame" x="-446" y="-66.5" width="1267" height="800"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lbc-MS-TRA" secondAttribute="height" multiplier="1900:1200" id="cTL-xE-X9M"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT2-CB-BJs">
-                                <rect key="frame" x="410" y="384" width="263" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT2-CB-BJs">
+                                <rect key="frame" x="131.5" y="316.5" width="112.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mT2-CB-BJs" secondAttribute="height" multiplier="30:9" id="Uug-4l-8Nr"/>
+                                </constraints>
                                 <state key="normal" image="verifica.png"/>
                                 <connections>
                                     <action selector="btnCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWF-HP-DtS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Giuste: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apw-Eg-OCG">
-                                <rect key="frame" x="450" y="69" width="107" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Livello: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09Q-WK-alv">
-                                <rect key="frame" x="147" y="69" width="122" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB3-dj-mVm">
-                                <rect key="frame" x="573" y="74" width="85" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Errori: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObO-ch-AUl">
-                                <rect key="frame" x="774" y="70" width="118" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqp-qQ-RL0">
-                                <rect key="frame" x="890" y="74" width="99" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxC-1g-AeW">
-                                <rect key="frame" x="20" y="321" width="88" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <size key="titleShadowOffset" width="100" height="20"/>
-                                <state key="normal" backgroundImage="hlep.png">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnHelp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEy-CK-RFB"/>
-                                </connections>
-                            </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ordine corretto: k, h, da, u, d, c, m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OId-Da-DY9">
-                                <rect key="frame" x="270" y="314" width="573" height="206"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.82336597711267601" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-G3-Qua">
-                                <rect key="frame" x="713" y="471" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="chiudi.png"/>
-                                <connections>
-                                    <action selector="btnChiudiact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KK8-fq-tuf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glR-un-oXA">
-                                <rect key="frame" x="277" y="77" width="42" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTj-G8-YGl">
+                                <rect key="frame" x="187.5" y="20" width="187" height="46.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sfondinio.png" translatesAutoresizingMaskIntoConstraints="NO" id="YfN-zI-2B9">
+                                        <rect key="frame" x="23.5" y="2.5" width="140.5" height="41.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Errori: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObO-ch-AUl">
+                                        <rect key="frame" x="52" y="3" width="83.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ObO-ch-AUl" firstAttribute="centerY" secondItem="HTj-G8-YGl" secondAttribute="centerY" id="AXJ-sg-lka"/>
+                                    <constraint firstItem="YfN-zI-2B9" firstAttribute="height" secondItem="HTj-G8-YGl" secondAttribute="height" multiplier="0.9" id="AuZ-8N-a26"/>
+                                    <constraint firstItem="YfN-zI-2B9" firstAttribute="centerX" secondItem="HTj-G8-YGl" secondAttribute="centerX" id="DGH-sV-8aS"/>
+                                    <constraint firstItem="YfN-zI-2B9" firstAttribute="centerY" secondItem="HTj-G8-YGl" secondAttribute="centerY" id="KL7-Br-kFQ"/>
+                                    <constraint firstItem="ObO-ch-AUl" firstAttribute="centerX" secondItem="HTj-G8-YGl" secondAttribute="centerX" id="Pwb-ue-XB8"/>
+                                    <constraint firstItem="YfN-zI-2B9" firstAttribute="width" secondItem="HTj-G8-YGl" secondAttribute="width" multiplier="0.75" id="hHr-JP-0H1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Qm-CY-n0N">
+                                <rect key="frame" x="0.0" y="20" width="187.5" height="46.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sfondinio.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ahh-JT-nRy">
+                                        <rect key="frame" x="23.5" y="2.5" width="141" height="42"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giuste: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apw-Eg-OCG">
+                                        <rect key="frame" x="51" y="3.5" width="86" height="40"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Apw-Eg-OCG" firstAttribute="centerX" secondItem="5Qm-CY-n0N" secondAttribute="centerX" id="4h4-ON-W1T"/>
+                                    <constraint firstItem="Ahh-JT-nRy" firstAttribute="centerX" secondItem="5Qm-CY-n0N" secondAttribute="centerX" id="Pxh-sY-iUr"/>
+                                    <constraint firstItem="Ahh-JT-nRy" firstAttribute="height" secondItem="5Qm-CY-n0N" secondAttribute="height" multiplier="0.9" id="W7J-xm-lfD"/>
+                                    <constraint firstItem="Apw-Eg-OCG" firstAttribute="centerY" secondItem="5Qm-CY-n0N" secondAttribute="centerY" id="YOj-0t-cAV"/>
+                                    <constraint firstAttribute="width" secondItem="5Qm-CY-n0N" secondAttribute="height" multiplier="597:148" id="iEi-6C-f1S"/>
+                                    <constraint firstItem="Ahh-JT-nRy" firstAttribute="centerY" secondItem="5Qm-CY-n0N" secondAttribute="centerY" id="mCA-J9-Mcy"/>
+                                    <constraint firstItem="Ahh-JT-nRy" firstAttribute="width" secondItem="5Qm-CY-n0N" secondAttribute="width" multiplier="0.75" id="yRC-V9-PxX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.56116598995237388" green="0.089824109048368461" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mT2-CB-BJs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Fv-uh-o0H"/>
+                            <constraint firstItem="Lbc-MS-TRA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1.2" id="4fo-fa-VWf"/>
+                            <constraint firstItem="HTj-G8-YGl" firstAttribute="leading" secondItem="5Qm-CY-n0N" secondAttribute="trailing" id="9Pb-av-P2S"/>
+                            <constraint firstItem="5Qm-CY-n0N" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="AXV-VH-Zxv"/>
+                            <constraint firstItem="Lbc-MS-TRA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BME-Gj-xUE"/>
+                            <constraint firstItem="HTj-G8-YGl" firstAttribute="height" secondItem="5Qm-CY-n0N" secondAttribute="height" id="Gve-XN-XaO"/>
+                            <constraint firstItem="5Qm-CY-n0N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LL9-0q-52t"/>
+                            <constraint firstItem="HTj-G8-YGl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N0S-xJ-aQj"/>
+                            <constraint firstItem="HTj-G8-YGl" firstAttribute="width" secondItem="5Qm-CY-n0N" secondAttribute="width" id="YGt-gi-s5a"/>
+                            <constraint firstItem="5Qm-CY-n0N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="ay0-OA-0eB"/>
+                            <constraint firstItem="Lbc-MS-TRA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fLg-E9-Mid"/>
+                            <constraint firstItem="mT2-CB-BJs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sbk-IA-tBy"/>
+                            <constraint firstItem="mT2-CB-BJs" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.3" id="z4j-0m-MOh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="btnChiudiout" destination="aGj-G3-Qua" id="e37-D9-6nL"/>
-                        <outlet property="lblErrori" destination="oqp-qQ-RL0" id="xiq-K3-Qdt"/>
-                        <outlet property="lblGiuste" destination="gB3-dj-mVm" id="Ypv-yx-8jc"/>
-                        <outlet property="lblLevel" destination="glR-un-oXA" id="bPh-04-Hhd"/>
-                        <outlet property="lblSpieg" destination="OId-Da-DY9" id="6Uf-wN-SE1"/>
+                        <outlet property="ErroriView" destination="HTj-G8-YGl" id="bXY-za-Rg3"/>
+                        <outlet property="GiusteView" destination="5Qm-CY-n0N" id="N0m-c7-6eH"/>
+                        <outlet property="lblErrori" destination="ObO-ch-AUl" id="OBr-AG-Nwz"/>
+                        <outlet property="lblGiuste" destination="Apw-Eg-OCG" id="vC2-sj-l2O"/>
+                        <outlet property="sfondoOutlet" destination="Lbc-MS-TRA" id="nSD-mA-VxL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,9 +131,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Sfondo.png" width="3056" height="2294"/>
-        <image name="chiudi.png" width="766" height="256"/>
-        <image name="hlep.png" width="780" height="968"/>
+        <image name="Sfondinio.png" width="885" height="297"/>
+        <image name="Sfondo.jpg" width="2880" height="1800"/>
         <image name="verifica.png" width="766" height="256"/>
     </resources>
 </document>
