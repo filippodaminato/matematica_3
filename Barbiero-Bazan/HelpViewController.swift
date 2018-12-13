@@ -47,7 +47,8 @@ class HelpViewController: UIViewController {
         }
         CreatePersonalDragImageViews()
         UpdatePercorsi()
-        EndAnimation()
+        ResetPositions()
+        StartAnimation()
     }
     
     func CreatePersonalDragImageViews() {
@@ -57,12 +58,6 @@ class HelpViewController: UIViewController {
             numView.append(v)
             if instance.gameEnded {
                 v.currentView = instance.numbersViews[i].currentView
-//                if v.currentView == v.destinationView {
-//                    v.UpdateColor()
-//                }
-//                else {
-//                    v.ClearColor()
-//                }
             }
             self.view.addSubview(v)
             initialViews.append(v.currentView!)
@@ -202,26 +197,29 @@ class HelpViewController: UIViewController {
     
     private func EndAnimation() {
         // blur out e completed metti mano in posizione centrale e numero in posizione iniziale
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseInOut, animations: {
             self.handImageView.alpha = 0
             for v in self.numView {
                 v.alpha = 0
             }
         }) { (true) in
-            self.handImageView.center = self.view.center
-            for i in 0...3 {
-                self.numView[i].center = self.initialViews[i].GetCenterInRootView(rootView: self.instance.view)
-                self.numView[i].currentView = self.initialViews[i]
-                if self.numView[i].currentView != self.numView[i].originView{
-                    self.numView[i].UpdateColor()
-                }
-                else {
-                    self.numView[i].ClearColor()
-                }
-            }
+            self.ResetPositions()
             self.StartAnimation()
         }
-        
+    }
+    
+    func ResetPositions() {
+        handImageView.center = self.view.center
+        for i in 0...3 {
+            numView[i].center = self.initialViews[i].GetCenterInRootView(rootView: instance.view)
+            numView[i].currentView = self.initialViews[i]
+            if numView[i].currentView != numView[i].originView{
+                numView[i].UpdateColor()
+            }
+            else {
+                numView[i].ClearColor()
+            }
+        }
     }
     
     func IsDestinationFree(destination v : UIView) -> Bool{

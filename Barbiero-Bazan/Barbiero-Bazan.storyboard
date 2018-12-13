@@ -364,11 +364,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIJ-tX-fOs">
-                                        <rect key="frame" x="16" y="16.5" width="131.5" height="49"/>
+                                        <rect key="frame" x="16" y="16.5" width="107" height="49"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="wIJ-tX-fOs" secondAttribute="height" multiplier="123:46" id="gj3-g4-PeC"/>
+                                            <constraint firstAttribute="width" secondItem="wIJ-tX-fOs" secondAttribute="height" multiplier="100:46" id="gj3-g4-PeC"/>
                                         </constraints>
-                                        <state key="normal" image="backButton"/>
+                                        <state key="normal" image="Menu"/>
                                         <connections>
                                             <action selector="backButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyh-pO-eGg"/>
                                         </connections>
@@ -730,20 +730,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Allenamento" width="288.73828125" height="288.73828125"/>
+        <image name="Allenamento" width="70.3125" height="70.3125"/>
         <image name="Background" width="764" height="573.25"/>
         <image name="Cancel" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Centesimi" width="136" height="221.5"/>
         <image name="Decimi" width="136" height="221.5"/>
         <image name="Decine" width="136" height="221.5"/>
-        <image name="Esci" width="288.73828125" height="288.73828125"/>
+        <image name="Esci" width="70.3125" height="70.3125"/>
         <image name="Giusto" width="512" height="512"/>
         <image name="Help" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Hold" width="512" height="512"/>
+        <image name="Menu" width="103.78125" height="46.7578125"/>
         <image name="Restart" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Sbagliato" width="512" height="512"/>
-        <image name="Sfida" width="288.73828125" height="288.73828125"/>
+        <image name="Sfida" width="70.3125" height="70.3125"/>
         <image name="Unità" width="136" height="221.5"/>
-        <image name="backButton" width="123" height="46.733333587646484"/>
     </resources>
 </document>

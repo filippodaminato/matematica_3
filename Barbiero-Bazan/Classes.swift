@@ -29,7 +29,7 @@ extension UIView {
         self.addSubview(view)
         let label = UILabel()
         label.font = UIFont(name: "Noteworthy", size: 200)
-        label.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height * 0.2)
+        label.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         label.center = self.center
         label.textAlignment = .center
         label.text = s
@@ -42,13 +42,13 @@ extension UIView {
             view.alpha = 1
             label.alpha = 1
         }) { (true) in
-            UIView.animate(withDuration: t * (2 / 6), delay: 0, options: .curveEaseOut, animations: {
+            UIView.animate(withDuration: t * (2 / 6), delay: 0, options: .curveLinear, animations: {
                 label.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             }) { (true) in
                 UIView.animate(withDuration: t / 3, delay: 0, options: .curveLinear, animations: {
                     label.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
                 }, completion: { (true) in
-                    UIView.animate(withDuration: t * (2 / 6), delay: 0, options: .curveEaseIn, animations: {
+                    UIView.animate(withDuration: t * (2 / 6), delay: 0, options: .curveLinear, animations: {
                         label.transform = CGAffineTransform(scaleX: 1.8, y: 1.8)
                         label.alpha = 0
                     }, completion: { (true) in

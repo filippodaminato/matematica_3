@@ -381,6 +381,10 @@ class BarbieroBazan: UIViewController {
             lblSbagliati.text = "0"
             lblTimer.text = "02:00"
         }
+        Restart()
+    }
+    
+    func Restart() {
         btnReset.isHidden = true
         gameEnded = false
         tentativi = 0
@@ -415,7 +419,7 @@ class BarbieroBazan: UIViewController {
             Win()
             btnHelp.isHidden = true
             if !allenamento {
-                Reset()
+                Restart()
                 return
             }
         }
@@ -423,16 +427,18 @@ class BarbieroBazan: UIViewController {
             if allenamento {
                 tentativi += 1
                 if tentativi < maxNumTentativi {
-                    self.view.AnimateTextWithImage(text: "Ritenta!", image: UIImage(), time: 1.5)
+                    self.view.AnimateTextWithImage(text: "Riprova!", image: UIImage(), time: 1.5)
                     AnimateLoose(5)
                     return
                 }
+                btnHelp.isHidden = false
                 btnHelp.setImage(UIImage(named: "Idea"), for: .normal)
                 AnimateHelp(delay: 3)
             }
             else {
-                Reset()
+                
                 Loose()
+                Restart()
                 return
             }
             Loose()
@@ -446,8 +452,13 @@ class BarbieroBazan: UIViewController {
     @IBAction func btnReset(_ sender: Any) {
         if !allenamento {
             StartTimer()
+            Reset()
         }
-        Reset()
+        else {
+//            Reset()
+            Restart()
+        }
+        
     }
     
     @IBAction func btnHelpClick(_ sender: Any) {
