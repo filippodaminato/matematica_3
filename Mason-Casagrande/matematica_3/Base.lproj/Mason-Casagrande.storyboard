@@ -635,10 +635,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="596dbc5eed07ad6118f9990a.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJH-Vt-Adx">
-                                        <rect key="frame" x="733" y="25" width="260" height="342"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V38-hs-BZg">
                                         <rect key="frame" x="657" y="105" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1033,7 +1029,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ERRORI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvQ-Js-emR">
-                                        <rect key="frame" x="630" y="343" width="127" height="28"/>
+                                        <rect key="frame" x="630" y="343" width="285" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
@@ -1071,12 +1067,16 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ERRORI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJv-2V-bsF">
-                                        <rect key="frame" x="630" y="692" width="141" height="28"/>
+                                        <rect key="frame" x="630" y="692" width="285" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pecora.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJH-Vt-Adx">
+                                        <rect key="frame" x="802" y="112" width="233" height="189"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1024" id="FN3-TC-O9d"/>
@@ -1259,7 +1259,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="596dbc5eed07ad6118f9990a.png" width="326" height="438"/>
         <image name="HAI-COMPLETATO-LESERCIZ.png" width="503" height="41"/>
         <image name="IL-TRATTORE-MOLTIPLICATO-2.png" width="506" height="41"/>
         <image name="Risorsa 31.png" width="762" height="252"/>
@@ -1269,6 +1268,7 @@
         <image name="TROVA-IL-VALORE-MANCANTE.png" width="506" height="41"/>
         <image name="grass-303857_960_720.png" width="960" height="480"/>
         <image name="pannocchia.png" width="600" height="600"/>
+        <image name="pecora.png" width="254" height="199"/>
         <image name="trattore.png" width="254" height="199"/>
         <image name="verde-claro.jpg" width="458" height="324"/>
     </resources>

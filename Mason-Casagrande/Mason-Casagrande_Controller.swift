@@ -38,6 +38,8 @@ class Mason_Casagrande_Controller: UIViewController {
     var hiddenkeyboard = true
     var valorierraties1 = 0
     var valorierraties2 = 0
+    var tentativies1 = 18
+    var tentativies2 = 18
     var salvataggiovalories1 = true
     var salvataggiovalories2 = true
     var posizioneFinale : [CGPoint] = [
@@ -255,10 +257,8 @@ class Mason_Casagrande_Controller: UIViewController {
                     arrayTextFieldD[cont].layer.borderWidth = 2
                     arrayTextFieldD[cont].layer.borderColor = UIColor.red.cgColor
                     cont = cont + 1
-                    if(salvataggiovalories1 == true)
-                    {
-                        valorierraties1 = valorierraties1 + 1
-                    }
+                    valorierraties1 = valorierraties1 + 1
+                    tentativies1 = tentativies1 + 1
                 }
             }
             else
@@ -286,10 +286,8 @@ class Mason_Casagrande_Controller: UIViewController {
                     arrayTextFieldC[cont].layer.borderWidth = 2
                     arrayTextFieldC[cont].layer.borderColor = UIColor.red.cgColor
                     cont = cont + 1
-                    if(salvataggiovalories1 == true)
-                    {
-                        valorierraties1 = valorierraties1 + 1
-                    }
+                    valorierraties1 = valorierraties1 + 1
+                    tentativies1 = tentativies1 + 1
                 }
             }
             else
@@ -317,10 +315,8 @@ class Mason_Casagrande_Controller: UIViewController {
                     arrayTextFieldM[cont].layer.borderWidth = 2
                     arrayTextFieldM[cont].layer.borderColor = UIColor.red.cgColor
                     cont = cont + 1
-                    if(salvataggiovalories1 == true)
-                    {
-                        valorierraties1 = valorierraties1 + 1
-                    }
+                    valorierraties1 = valorierraties1 + 1
+                    tentativies1 = tentativies1 + 1
                 }
             }
             else
@@ -330,15 +326,14 @@ class Mason_Casagrande_Controller: UIViewController {
                 cont = cont + 1
             }
         }
-        salvataggiovalories1 = false
-        
+        Errories1.text = ("ERRORI: " + (String)(valorierraties1))
         if (sbagliato != true)
         {
-            salvataggiovalories1 = true
-            Errories1.text = ("ERRORI: " + (String)(valorierraties1))
-            //Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties1)
-            //Statistiche.aggiungiSbagliato(.19,num: valorierraties1)
+            Errories1.text = ("ERRORI: " + (String)(valorierraties1) + " / " + (String)(tentativies1))
+            Statistiche.aggiungiGiusto(.9,num: tentativies1 - valorierraties1)
+            Statistiche.aggiungiSbagliato(.9,num: tentativies1 - 18)
             valorierraties1 = 0
+            tentativies1 = 18
             Controlla.isHidden = true
             Azzera.isHidden = false
             Vittoria.isHidden = false
@@ -438,10 +433,8 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
                     item.layer.borderWidth = 2
                     item.layer.borderColor = UIColor.red.cgColor
                     controlla = true
-                    if(salvataggiovalories2 == true)
-                    {
-                        valorierraties2 = valorierraties2 + 1
-                    }
+                    valorierraties2 = valorierraties2 + 1
+                    tentativies2 = tentativies2 + 1
                 }
             }
             }
@@ -471,10 +464,8 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
                     item.layer.borderWidth = 2
                     item.layer.borderColor = UIColor.red.cgColor
                     controlla = true
-                    if(salvataggiovalories2 == true)
-                    {
-                        valorierraties2 = valorierraties2 + 1
-                    }
+                    valorierraties2 = valorierraties2 + 1
+                    tentativies2 = tentativies2 + 1
                 }
             }
             }
@@ -503,23 +494,21 @@ func QuizRandom() //Creazione numeri randomici Es parti mancanti
                     item.layer.borderWidth = 2
                     item.layer.borderColor = UIColor.red.cgColor
                     controlla = true
-                    if(salvataggiovalories2 == true)
-                    {
-                        valorierraties2 = valorierraties2 + 1
-                    }
+                    valorierraties2 = valorierraties2 + 1
+                    tentativies2 = tentativies2 + 1
                 }
             }
             }
             i = i + 1
         }
-        salvataggiovalories2 = false
+        Errories2.text = ("ERRORI: " + (String)(valorierraties2))
         if(controlla != true)
         {
-            salvataggiovalories2 = true
-            Errories2.text = ("ERRORI: " + (String)(valorierraties2))
-            //Statistiche.aggiungiGiusto(.19,num: 18 - valorierraties2)
-            //Statistiche.aggiungiSbagliato(.19,num: valorierraties2)
+            Errories2.text = ("ERRORI: " + (String)(valorierraties2) + " / " + (String)(tentativies2))
+            Statistiche.aggiungiGiusto(.9,num: tentativies2 - valorierraties2)
+            Statistiche.aggiungiSbagliato(.9,num: tentativies2 - 18)
             valorierraties2 = 0
+            tentativies2 = 18
             Vittoria.isHidden = false
             Animazione()
             buttonQuizNew.isHidden = false
